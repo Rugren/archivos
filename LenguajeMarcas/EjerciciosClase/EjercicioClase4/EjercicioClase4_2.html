@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            /* si pongo repeat(1, 1fr); me lo pega arriba, 
+            si pongo repeat(3, 1fr); baja más el .container de Publicidad al abrir la página al inicio*/
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+
+        .container-nombre {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+
+        .container-contacto {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+
+        .container-pais {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+
+        .texto-del-container-nombre {
+            grid-area: 3 / 1 / 13 / 8;
+        }
+
+        .texto-del-container-contacto {
+            grid-area: 3 / 1 / 13 / 8;
+        }
+
+        .texto-del-container-pais {
+            grid-area: 3 / 1 / 13 / 8;
+        }
+
+        .cuadrado {
+            grid-area: 2 / 1 / 3 / 8;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            width: 100px;
+            height: 75px;
+            background-color: red;
+        }
+
+        .cuadrado-nombre {
+            grid-area: 2 / 1 / 3 / 8;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            width: 100px;
+            height: 75px;
+            background-color:aqua;
+        }
+
+        .cuadrado-contacto {
+            grid-area: 2 / 1 / 3 / 8;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            width: 100px;
+            height: 75px;
+            background-color:blueviolet;
+        }
+
+        .cuadrado-pais {
+            grid-area: 2 / 1 / 3 / 8;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            width: 100px;
+            height: 75px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>EjercicioClase4_2</h2>
+
+    <table>
+    <!-- 
+    <tr class="container">
+        <div class="cuadrado">
+            <th class="container-nombre" class="cuadrado-nombre" class="texto-del-container-nombre">Nombre</th>
+            <th class="cuadrado-contacto" class="texto-del-container-contacto">Contacto</th>
+            <th class="cuadrado-pais" class="texto-del-container-pais">País</th>
+        </div>
+    </tr>
+    -->
+        <tr class="container-nombre">
+                <th class="cuadrado-nombre" class="texto-del-container-nombre">Nombre</th>
+        </tr>
+        <tr class="container-cuadrado"> <!-- he metido container-cuadrado y va, que son 2 distintos -->
+                <th class="cuadrado-contacto" class="texto-del-container-contacto">Contacto</th>
+        </tr>
+        <tr class="container-pais">
+                <th class="cuadrado-pais" class="texto-del-container-pais">País</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>AlfredsFutterkiste@gmail.com</td>
+            <td>Alemania</td>
+        </tr>
+        <tr>
+            <td>Francisco Estrada</td>
+            <td>FranciscoEstrada@gmail.com</td>
+            <td>Ecuador</td>
+        </tr>
+        <tr>
+            <td>Adrián Costa</td>
+            <td>adriancosta@gmail.com</td>
+            <td>España</td>
+        </tr>
+        <tr>
+            <td>Manuel Turizo</td>
+            <td>ManuelTurizo@gmail.com</td>
+            <td>Colombia</td>
+        </tr>
+        <tr>
+            <td>Jude Bellingham</td>
+            <td>JudeBellingham@gmail.com</td>
+            <td>Inglaterra</td>
+        </tr>
+        <tr>
+            <td>Pablo Bazzoni</td>
+            <td>PabloBazzoni@gmail.com</td>
+            <td>Italia</td>
+        </tr>
+
+        <tr>
+            <td>Pablo Bazzoni</td>
+            <td>PabloBazzoni@gmail.com</td>
+            <td>Italia</td>
+        </tr>
+        <tr>
+            <td>Pablo Bazzoni</td>
+            <td>PabloBazzoni@gmail.com</td>
+            <td>Italia</td>
+        </tr>
+        <tr>
+            <td>Pablo Bazzoni</td>
+            <td>PabloBazzoni@gmail.com</td>
+            <td>Italia</td>
+        </tr>
+        <tr>
+            <td>Pablo Bazzoni</td>
+            <td>PabloBazzoni@gmail.com</td>
+            <td>Italia</td>
+        </tr>
+        <tr>
+            <td>Pablo Bazzoni</td>
+            <td>PabloBazzoni@gmail.com</td>
+            <td>Italia</td>
+        </tr>
+        <tr>
+            <td>Pablo Bazzoni</td>
+            <td>PabloBazzoni@gmail.com</td>
+            <td>Italia</td>
+        </tr>
+        <tr>
+            <td>Pablo Bazzoni</td>
+            <td>PabloBazzoni@gmail.com</td>
+            <td>Italia</td>
+        </tr>
+        <tr>
+            <td>Pablo Bazzoni</td>
+            <td>PabloBazzoni@gmail.com</td>
+            <td>Italia</td>
+        </tr>
+        <tr>
+            <td>Pablo Bazzoni</td>
+            <td>PabloBazzoni@gmail.com</td>
+            <td>Italia</td>
+        </tr>
+        <tr>
+            <td>Pablo Bazzoni</td>
+            <td>PabloBazzoni@gmail.com</td>
+            <td>Italia</td>
+        </tr>
+        <tr>
+            <td>Pablo Bazzoni</td>
+            <td>PabloBazzoni@gmail.com</td>
+            <td>Italia</td>
+        </tr>
+        <tr>
+            <td>Pablo Bazzoni</td>
+            <td>PabloBazzoni@gmail.com</td>
+            <td>Italia</td>
+        </tr>
+        <tr>
+            <td>Pablo Bazzoni</td>
+            <td>PabloBazzoni@gmail.com</td>
+            <td>Italia</td>
+        </tr>
+        <tr>
+            <td>Pablo Bazzoni</td>
+            <td>PabloBazzoni@gmail.com</td>
+            <td>Italia</td>
+        </tr>
+        <tr>
+            <td>Pablo Bazzoni</td>
+            <td>PabloBazzoni@gmail.com</td>
+            <td>Italia</td>
+        </tr>
+        <tr>
+            <td>Pablo Bazzoni</td>
+            <td>PabloBazzoni@gmail.com</td>
+            <td>Italia</td>
+        </tr>
+        <tr>
+            <td>Pablo Bazzoni</td>
+            <td>PabloBazzoni@gmail.com</td>
+            <td>Italia</td>
+        </tr>
+        <tr>
+            <td>Pablo Bazzoni</td>
+            <td>PabloBazzoni@gmail.com</td>
+            <td>Italia</td>
+        </tr>
+        <tr>
+            <td>Último Bazzoni</td>
+            <td>ÚltimoBazzoni@gmail.com</td>
+            <td>España</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

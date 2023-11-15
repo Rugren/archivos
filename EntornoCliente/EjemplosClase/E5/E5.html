@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>RECORRIDO DE UN ARRAY</h1>
+
+    <h2> Tiene que salir así: las 2 frases siguiente en un mismo párrafo:</h2>
+    <p>lunes martes miércoles jueves viernes sábado domingo - 
+        lunes martes miércoles jueves viernes sábado domingo </p>
+
+    <h3> Bucle for </h3>
+    <script>
+        dias = ["lunes", "martes", "miércoles", "jueves", "viernes", "sabado", "domingo"];
+
+        for (i = dias; i <= dias.lenght; dias++){
+            document.write("<br>")
+            document.write("---")
+            dias += "Días: " + dias + " ";
+            console.log(dias);
+        }
+        document.write(i);
+    </script>
+
+<h3> Bucle foreach </h3>
+<script> // hacer*******
+    dias = ["lunes", "martes", "miércoles", "jueves", "viernes", "sabado", "domingo"];
+    var text = ""; 
+    for (i = 0; i <= 10; i++){
+        text += "Números: " + i + " ";
+        console.log(text);
+    }
+    document.write(i);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!-- Clase 27/09/23 -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E4</title>
+    <script src="eventos.js"></script>
+</head>
+<body>
+
+    <p onmouseover="mostrarAlert()">Aleeeeeeeertaaaa </p>
+    <img src="gato1.jpg" id="gato1" width="500px">
+    <input type="submit" value="Cambiar Color fondo" onclick="CambiarColor()">
+    <input type="submit" value="Poner Perro de fondo" onclick="CambiarFondo1()">
+    <input type="submit" value="Poner serpiente de fondo" onclick="CambiarFondo2()">
+
+    <script>
+        document.getElementById("gato1.jpg").addEventListener("mousemove", mostrarAlert);
+
+        function mostrarAlert(){
+            alert("alerta");
+        }
+    </script>
+
+    <!-- <p> Cambia el color del fondo </p> -->
+    <script>
+        function CambiarColor(){
+            document.body.style.background = "#0412ff"
+        }
+    </script>
+
+<script>
+    function CambiarFondo1(){
+        document.body.style.backgroundImage = "url(perro.jpg)";
+    }
+</script>
+
+<script>
+    function CambiarFondo2(){
+        document.body.style.background = "url(serpiente.jpg)";
+    }
+</script>
+
+
+</body>
+</html>

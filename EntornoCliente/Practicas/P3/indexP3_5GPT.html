@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Área de Rectángulo</title>
+</head>
+<body>
+    <label for="cuadrado_Largo">Largo:</label>
+    <input type="number" id="cuadrado_Largo" step="0.01">
+    <label for="cuadrado_Ancho">Ancho:</label>
+    <input type="number" id="cuadrado_Ancho" step="0.01">
+    <button id="calculo_areaRectangulo">Calcular Área</button>
+    <p id="resultado_areaRectangulo"></p>
+
+    <script>
+        const cuadradoLargo = document.getElementById("cuadrado_Largo");
+        const cuadradoAncho = document.getElementById("cuadrado_Ancho");
+        const botonAreaRectangulo = document.getElementById("calculo_areaRectangulo");
+        const pResultadoAreaRectangulo = document.getElementById("resultado_areaRectangulo");
+
+        botonAreaRectangulo.addEventListener('click', calculo_areaRectangulo);
+
+        function calculo_areaRectangulo() {
+            const cuadrado_Largo = parseFloat(cuadradoLargo.value);
+            const cuadrado_Ancho = parseFloat(cuadradoAncho.value);
+
+            if (!isNaN(cuadrado_Largo) && !isNaN(cuadrado_Ancho)) {
+                const resultado_areaRectangulo = cuadrado_Largo * cuadrado_Ancho;
+                pResultadoAreaRectangulo.style.color = "black";
+                pResultadoAreaRectangulo.innerText = "= " + resultado_areaRectangulo;
+            } else {
+                pResultadoAreaRectangulo.style.color = "red";
+                pResultadoAreaRectangulo.innerText = "Cálculo imposible";
+            }
+        }
+    </script>
+</body>
+</html>

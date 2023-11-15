@@ -1,0 +1,30 @@
+.card{
+    font-family: Arial, sans-serif;
+    /* font-size: 14px; */
+    width: 30vw; /* ancho de pantalla, esto no es necesario */
+    box-shadow: 1px 1 px 4px 4px lightgray;
+}
+
+.card-title{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color:gray;
+    padding: 8px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-body{
+    padding: 8px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.card-footer{
+    color: white;
+    background-color:lightgray;
+    text-align: center;
+    padding: 8px;
+}

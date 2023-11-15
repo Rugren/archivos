@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="E7.css"> <!-- iba type = "text/css" delante de href -->
+    <title>Formulario E7</title>
+
+    <script>
+        function mostrarCurso() {
+            var asuntoSelect = document.getElementById("asunto");
+            var cursoContainer = document.getElementById("curso-container");
+
+            if (asuntoSelect.value === "curso") {
+                cursoContainer.style.display = "block";
+                document.getElementById("curso").classList.add("borde-rojo");
+            } else {
+                cursoContainer.style.display = "none";
+                document.getElementById("curso").classList.remove("borde-rojo");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <div class="formulario-container"> <!-- llama a la clase ".formulario-container" y ya de ahí los coge todos sin necesidad de poner punto, si pongo .h2 por ejmplo, donde ponga h2 aquí para que coja el estilo tendría que poner: <div class="h2"> { del E7.css-->
+
+        <form action="#" method="post" id="formulario-contacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Escribe tu email">
+
+            <label for="asunto">Asunto:</label>
+            <select id="asunto" name="asunto" required style="width: 380px; height: 30px" onchange="mostrarCurso()">
+                <option value="Pedir información">Pedir información</option>
+                <option value="Apuntarse a un curso">Apuntarse a un curso</option>
+                <option value="otros">Otros</option>
+            </select>
+
+            <div id="curso-container" style="display: none;">
+                <label for="curso">Curso:</label>
+                <input type="text" id="curso" name="curso" required>
+            </div>
+
+            <br></br>
+
+            <label for="mensaje">Escriba su mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+</body>
+</html>

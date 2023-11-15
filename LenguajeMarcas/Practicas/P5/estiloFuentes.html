@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática 5 LM</title>
+    <link rel="stylesheet" type="text/css" href="estilopractica5.css">
+</head>
+
+<body>
+
+    <h1 class="cabecera-h1">La Tienda Amiga. Formulario De Alta</h1>
+
+    <h2 class="datos-personales">Datos personales</h2>
+    <div id="formulario-datos-personales">
+        <form action="">
+            <!-- Dentro del form, meteríamos el action para enviar el archivo o la página dónde llegarían los datos introducidos <form action="procesar_registro.php" method="post"> o action="/enviar-respuesta", dónde queramos mandarlo.-->
+            <!-- Un único formulario, cerrarlo al final después de los botones, para que puedan enviarse o borrar. -->
+
+            <!-- Meter en el div style="text-align: center;"> del .css -->
+
+            <!-- Poner uno a uno como esto: e ir poniendo parrafo1 etc. para ajustar el texto centro uno por uno.
+            Pero hecho todo centrado de una
+            <div>
+                <p id="parrafo"><label for="nif">Nif: </label><input class="datos-personales-nif" type="text" id="nif" name="nif" required></p>
+            </div>-->
+
+            <p><label for="nif">Nif: </label><input class="datos-personales-nif" type="text" id="nif" name="nif"
+                    required></p>
+
+            <label for="nombre">Nombre:</label>
+            <input class="datos-personales-nombre" type="text" id="nombre" name="nombre" required
+                value="Maria López"><br><br>
+
+            <label for="direccion">Dirección</label>
+            <input class="datos-personales-direccion" type="text" id="direccion" name="direccion" required><br><br>
+
+            <label for="fecha_nacimiento">Fecha de Nac.</label>
+            <input class="datos-personales-fechaNac" type="text" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+            <!-- <p>Así te deja elegir la fecha con un calendario (Así mejor, pero en el ejercicio no sale, así que hecho arriba con type="text" </p>
+            <label for="fecha_nacimiento">Fecha de Nac.</label>
+            <input class="datos-personales-fechaNac" type="date" id="fecha_nacimiento" name="fecha_nacimiento" required> -->
+
+            <label for="telefono">Teléfono</label>
+            <input class="datos-personales-telefono" type="tel" id="telefono" name="telefono" required><br><br>
+
+            <label for="localidad">Localidad:</label>
+            <input class="datos-personales-localidad" type="text" id="localidad" name="localidad" required>
+
+            <label for="provincia">Provincia:</label>
+            <input class="datos-personales-provincia" type="text" id="provincia" name="provincia" required>
+
+            <label for="cp">Cp:</label>
+            <input class="datos-personales-cp" type="text" id="cp" name="cp" required><br><br>
+
+            <label for="email">Email:</label>
+            <input class="datos-personales-email" type="email" id="email" name="email" required><br><br>
+
+            <label for="password">Password:</label>
+            <input class="datos-personales-password" type="password" id="password" name="password" required>
+
+            <!-- Este campor es Confirmar Contraseña: -->
+            <label for="confirm_password">Confirmar:</label>
+            <input class="datos-personales-confirmar" type="password" id="confirm_password" name="confirm_password"
+                required><br><br>
+    </div>
+
+
+    <h2 class="datos-musicales">Datos Musicales</h2>
+    <div id="formulario-datos-musicales">
+        <p for="idiomas">Idioma Preferido:</p>
+
+        <!-- <label for="idiomas">Idioma Preferido:</label> Esto es para que salga al lado de la selección multiple-->
+        <select name="idiomas" id="idiomas" multiple>
+            <option value="espanol">español</option>
+            <option value="ingles">inglés</option>
+            <option value="indiferente">indiferente</option>
+        </select>
+
+        <p>Tipo de música:</p>
+        <label for="pop">Pop<input id="pop" type="checkbox" name="pop-rock-folk-clasica"></label>
+        <label for="rock">Rock<input id="rock" type="checkbox" name="pop-rock-folk-clasica"></label>
+        <br>
+        <label for="folk">Folk<input id="folk" type="checkbox" name="pop-rock-folk-clasica"></label>
+        <label for="clasica">Clásica<input id="clasica" type="checkbox" name="pop-rock-folk-clasica"></label>
+
+        <br>
+        <label for="otrasMusicas">Otras <input class="otras-musicas" id="otrasMusicas" type="text"
+                name="pop-rock-folk-clasica"></label>
+
+    </div>
+
+    <h2 class="forma-de-pago">Forma De Pago</h2>
+    <div id="formulario-forma-de-pago">
+
+        <label for="contrareembolso">Contrareembolso<input id="contrareembolso" type="radio"
+                name="contrareembolso-conTarjeta"></label>
+
+        <label for="conTarjeta">Con Tarjeta<input id="conTarjeta" type="radio"
+                name="contrareembolso-conTarjeta"></label>
+
+        <br>
+        <label for="numTarjeta">Número Tarjeta <input class="numeroTarjeta" id="numTarjeta" type="text"
+                name="numTarjeta" required></label>
+        <!-- Para hacerlo más profesional habría que añadirle estos campos: placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="19" required -->
+    </div>
+
+    <div class="botones">
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </div>
+    </form>
+
+</body>
+
+</html>

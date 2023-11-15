@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+input {
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.botonesArea {
+  width: 35%;
+  height: 10%;
+  text-align: center;
+}
+
+.formulario-respuestaArea {
+  /* aqui darle estilo a lo que te da dentro del resultados de las areas */
+
+  width: 90%;
+  /* mejor el 90% que poner 350px a ojo*/
+  height: 50%;
+}
+.formulario-contenedor {
+  width: 50%;
+  margin: 50px auto;
+  background-color: #87CEEB;
+  /* para poner el color a azul cielo */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: rgb(0, 0, 255);
+}

@@ -1,0 +1,124 @@
+ATAJOS Visual Studio Code:
+
+ATAJOS TECLADO en VisualStudioCode:
+
+
+
++++ +++ +++ Más útiles, atajos más usado: (anotados abajo también):
+
+- Cntl + S: guardar el archivo que estamos usando.
+- Cntl + k + c: Comenta la línea o párrafos que seleccionemos. (Los comentarios serían: <!-- comentario1 --> /* Comentario2 */ //Comentario3 )
+- Cntl + k + u: Descomentar la línea o párrafos que seleccionemos. (aunque a veces también vale el mismo que comenta: Cntl + k + c)
+
+- Cntl + a: seleccionar todo.
+- Alt + z: el texto que se pasa de la pantalla pasa abajo para que sea más visible.
+- Alt + Shift + f: Ajusta todo el texto ordenado. Da formato al documento.
+
+Ctrl + F: abre el cuadro de búsqueda de elementos.
+Ctrl + H: abre el cuadro de búsqueda junto con el de reemplazo. 
+Ctrl + G: buscador con el que ir a una determinada línea en concreto del código.
+
+- Ctrl + Shift + T: permite abrir la última o últimas pestañas cerradas.
+- etiqueta*X + enter. Por ejemplo: div.perro*2 
+    <div class="perro"></div>
+    <div class="perro"></div>
+    (nos crea la class(clase) perro)
+
+- Ctrl + Alt + Flechas: Para poder escribir en diferentes líneas a la vez.
+- Ctrl + b: Oculta el panel explorador.
+
+
+
+
+ATAJOS DE FUNCIONALIDAD BÁSICA
+Ctrl + Shift + P: abre la paleta de comandos.
+Ctrl + Shift + N: abre una nueva ventana
+Ctrl + Shift + W: cierra una ventana
+F11: activa y desactiva la pantalla completa.
+- Ctrl + b: Oculta el panel explorador.
+
+ATAJOS DE VISUAL STUDIO CODE PARA LA GESTIÓN DE ARCHIVOS
+Ctrl + O: permite abrir con VS Code un archivo existente en el dispositivo.
+Ctrl + N: abre un archivo nuevo.
+Ctrl + S: guarda el archivo.
+Ctrl + Shift + S: realiza la acción «Guardar Como».
+Ctrl + K + Ctrl + W: cierra todas las pestañas que estén abiertas.
+Ctrl + Shift + T: permite abrir la última o últimas pestañas cerradas.
+Ctrl + 2: divide la pantalla en dos.
+
+
+ATAJOS PARA PROGRAMAR DE VISUAL STUDIO CODE:
+- html:5 + enter: cuando trabajamos con archivos .html
+- etiqueta*X + enter: cuando trabajamos con archivos .html, podemos escribir el nombre de cualquier etiqueta (sin los símbolos <>) y multiplicarla por el número que queramos mediante el símbolo *. De esta forma, al pulsar enter, se crearan tantas etiquetas como hayamos indicado. Por ejemplo, si escribimos en nuestro Visual Studio Code div.clase*3, el resultado es el siguiente: 
+    <div class="clase"></div>
+    <div class="clase"></div>
+    <div class="clase"></div>
+- etiqueta.clase + enter : cuando queremos crear una etiqueta que contenga una determinada clase, Visual Studio Code nos permite crearla escribiendo simplemente el nombre de la etiqueta seguido de un punto y el nombre de la clase.
+
+- Ctrl + Alt + Flechas: Para poder escribir en diferentes líneas a la vez. Insertar un mismo contenido en diferentes filas a la vez.
+
+- Shift + Alt + F: da formato al documento.
+Alt + Z: permite romper la línea, de forma que el código, en vez de coger todo el ancho posible, adquiera únicamente el ancho de nuestra pantalla.
+Ctrl + C: copia el fragmento de código seleccionado.
+Ctrl + X: corta el fragmento de código seleccionado.
+Ctrl + V: pega el fragmento de código copiado o cortado previamente.
+- Cntl + k + c: Comenta la línea o párrafos que seleccionemos. (Los comentarios serían: <!-- comentario1 --> /* Comentario2 */ //Comentario3 )
+- Cntl + k + u: Descomentar la línea o párrafos que seleccionemos. (aunque a veces también vale el mismo que comenta: Cntl + k + c)
+- Cntl + a: seleccionar todo.
+
+ATAJOS DE BÚSQUEDA:
+Ctrl + F: abre el cuadro de diálogo de búsqueda de elementos. Gracias a él, podremos encontrar los textos que queramos de forma rápida.
+Ctrl + H: abre el cuadro de diálogo de búsqueda junto con el de reemplazo. De esta manera, además de localizar un determinado contenido, podremos reemplazarlo por el que indiquemos. Por ejemplo, de la siguiente manera podremos reemplazar todas las etiquetas <h3> por <h2>.
+Ctrl + G: buscador con el que ir a una determinada línea en concreto del código.
+Alt + Enter: una vez hemos realizado una determinada búsqueda con el cuadro de diálogo, podemos emplear este atajo para seleccionar todos los elementos encontrados.
+Ctrl + D: una vez tenemos abierto el cuadro de búsqueda, podemos seleccionar un determinado fragmento de código y añadirlo automáticamente a la búsqueda, de forma que se identifiquen todas las coincidencias de dicho código.
+
++ Anotado desde la web: 
+https://carontestudio.com/blog/atajos-de-teclado-en-visual-studio-code/
+
+/// Ahora, lo anotado desde la web:
+https://damiandeluca.com.ar/visual-studio-code-atajos-de-teclado-shortcuts
+
+Abrir archivo: CTRL + O
+Abrir carpeta: CTRL + K + CTRL + O
+Guardar archivo: CTRL + S
+Crear un nuevo archivo: CTRL + N
+Cerrar archivo abierto: CTRL + W
+Deshacer: CTRL + Z
+Rehacer: CTRL + Y
+Buscar en archivo abierto: CTRL + F
+ Buscar en archivos: CTRL + SHIFT + F
+Reemplazar: CTRL + H
+Seleccionar todo: CTRL + A
+Pantalla completa: F11
+Acercar Zoom: CTRL + +
+Alejar Zoom: CTRL + –
+Abrir paleta de comandos: CTRL + SHIFT + P
+Abrir explorador de archivos: CTRL + SHIFT + E
+Acceder a extensiones (instaladas y para instalar): CTRL + SHIFT + X
+Debug: CTRL + SHIFT + D
+Corte de palabras (Word Wrap): ALT + Z
+Abrir terminal integrado: CTRL + SHIFT + Ñ
+Ver/editar atajos de teclado: CTRL + K + CTRL + S
+
+///
+
+
+--- --- --- 
+
+DENTRO DE UN html:
+- Para crear un archivo html desde 0 damos a:   html:5 + enter.
+- Están todos comentados dentro del archivo tutorial_HTML.html 
+
+DENTRO DE UNA WEB:
+- Ctrl + U: daría algo así(que es todo el código de una web): view-source:https://carontestudio.com/blog/atajos-de-teclado-en-visual-studio-code/ 
+
+--- --- --- 
+
+
+
+
+
+
+
+

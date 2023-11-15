@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="fecha"></p>
+    <script>
+        document.getElementById("fecha").innerHTML = Date();
+
+        var v = new Date ();
+        document.write(v.getseconds());
+
+        //var v1 = new Date ("29/09/2023");
+        //document.write(v1.getseconds());
+
+    </script>
+
+
+    <p id="aqui"></p>
+    <script>
+
+        var dias = ["lunes", "martes", "miércoles", "jueves", "viernes", "sabado", "domingo"];
+        dias[1]=Date();
+        document.getElementById("aqui").innerHTML = dias;
+
+        /*
+        toLocalDatestring()
+        toLocalDatestring(localizaciones)
+        toLocalDatestring(localizaciones, opciones)
+        */
+
+        new Date().toLocaleDateString()
+        // "7"2"2021"
+
+        const fechaActual = new Date();
+// esto está mal:    const opciones { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' };
+        // esto es en .js    console.log(fechaActual.toLocaleDateString('de-DE', opciones));
+        document.write(fechaActual.toLocaleDateString('de-DE', opciones));
+        // da en alemán: Freitag, 2, Juli 2021
+
+        longitud = dias.length;
+        document.write(longitud);
+
+        dias1 = dias.short;
+        document.write(dias1);
+
+        dias2 = dias.push("juernes");
+        document.write(dias2);
+
+        lastDay = dias.pop;
+        document.write(lastDay);
+
+        var diasMeses = [['Lunes', 'Martes', 'Miercoles','Jueves', 'Viernes', 'Sabado', 'Domingo']];
+        // Estas 3 líneas es en .js (javascript)
+        //console.log(dias[0][2]); // mostrará por consola miercoles
+        //console.log(dias[1][1]); // mostrará por consola domingo
+        //console.log(dias[1]); // mostrará por consola 
+        document.write(diasMeses[0][2]);
+        
+        "<br>";
+
+        saludo = new Date();
+
+        if(saludo.getHours() < 12) {
+            document.write("Buenos días");
+        } else if(saludo.getHours >12 && saludo.getHours < 18){
+            document.write("Buenas tardes");
+        } else if(saludo.getHours >18 && saludo.getHours < 23){
+            document.write("Buenas noches");
+        }
+
+
+        "<br>"
+
+        var x = new Date.getday();
+
+        var diaSemana;
+
+        switch(x){
+            case 0:
+            diaSemana = 'LUNES'
+            break;
+            case 1:
+            diaSemana = 'MARTES'
+            break;
+            case 2:
+            diaSemana = 'MIERCOLES'
+            break;
+            case 3:
+            diaSemana = 'JUEVES'
+            break;
+            case 4:
+            diaSemana = 'VIERNES'
+            break;
+            case 5:
+            diaSemana = 'SABADO'
+            break;
+            case 6:
+            diaSemana = 'DOMINGO'
+            break;
+        }
+        Document.write(diaSemana);
+
+    </script>
+
+    <script>
+        // ya escrito en archivo bucles.html de la carpeta EntornoCliente/EjemplosClase 
+        for (i = 0; i <= 10; i++){
+            text += "Número: " + i + " ";
+        }
+        document.write(i);
+
+    </script>
+
+<script>
+    txt = " ";
+    function muestra (valor){
+        document.write(valor)
+    }
+    dias.array.forEach("muestra");
+
+</script>
+
+
+
+</body>
+</html>

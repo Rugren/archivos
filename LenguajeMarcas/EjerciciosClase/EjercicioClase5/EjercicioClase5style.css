@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkorchid;
+    border-style: dotted;
+    border-width: 10px; /* para que separe los puntos del border-style, que dotted es para que haga puntos */
+    width: 350px;
+    height: 250px;
+}
+
+/*
+body{
+    /* aquí cogería todo el cuerpo
+}
+*/
+
+/*
+.body{
+    /* aquí llamaría a la clase que se llama body, por eso poner algo delante para identificarlas
+}
+*/
+
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black; /* por defecto me coge negro si no pongo color al texto */
+}
+
+/*
+.classy {
+    background-color: DodgerBlue;
+  }
+  
+  */

@@ -1,0 +1,28 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 255, 0.3); /* El Azul con 30% de transparencia(el 0.3 del final) */
+}
+
+.contenedorDeColumnas {
+    display: flex;
+}
+
+.columnas {
+    flex: 1;
+    height: 200px; /* Altura de las columnas */
+}
+
+/* Colores de fondo para cada columna */
+.columnas:nth-child(1) {
+    background-color: #f5a623; /* Ejemplo de columnas color naranja */
+}
+
+.columnas:nth-child(2) {
+    background-color: #d11141; /* Ejemplo de columnas color rojo oscuro */
+}
+
+.columnas:nth-child(3) {
+    background-color: #00b159; /* Ejemplo de columnas color verde */
+}

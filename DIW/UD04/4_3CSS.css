@@ -1,0 +1,52 @@
+
+body{
+    border-width: 10px;
+    border-color: blue;
+    color: red;
+}
+
+h1{
+    color: green;
+
+    border: inherit;
+}
+
+p {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+
+    border-width: inherit;
+    border-color: inherit;
+    color: inherit;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+
+    border-width: inherit;
+    border-color: inherit;
+    color: inherit;
+}
+
+/* ¿Hay que añadir si o si media="screen" en el <head> del .html? */
+
+@media screen {
+    img {
+        text-align: center;
+    }
+}
+
+/* En este ejemplo, el hijo hereda del padre, el tipo de letra con la propiedad: inherit
+.parent {
+    font-family: Arial, sans-serif;
+    color: blue;
+  }
+  
+  .child {
+    font-size: inherit; 
+    La fuente de tamaño se heredará del elemento padre
+  } */
