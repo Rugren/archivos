@@ -5,6 +5,20 @@
     $dbname = "blog"; // Crear en la base de datos el nombre de blog
 
     $conexion = new mysqli($servername, $username, $password, $dbname);
+    // no creaba bien la base de datos blog en phpmyadmin, así que la creamos en phpmyadmin a mano
+
+    // AQUÍ LO CONECTABA BIEN
+    // //Conectamos con el servidor
+    // $username = "root";
+    // $conexion=new mysqli("localhost", "root", "");
+    // $password = "";
+    // $dbname = "blog"; // Crear en la base de datos el nombre de blog
+ 
+    // $conexion = new mysqli($servername, $username, $password, $dbname);
+    // //Creamos la base de datos si no existe
+    // $consulta="CREATE DATABASE IF NOT EXISTS blog;";
+    // $conexion->query($consulta);
+
 
     // si en el otro hemos puesto $textoSQL en vez de $consulta no influye, porque aquí es otro distinto
     $consulta = "CREATE TABLE IF NOT EXISTS articulos (
