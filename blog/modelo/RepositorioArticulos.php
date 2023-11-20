@@ -49,8 +49,21 @@
             $this->conexion->query($textoSQL);
         }
 
+        public function update($articulo){
+            $textoSQL = "UPDATE articulos SET titulo='" . $articulo->getTitulo() . "', ";
+            // concatenamos con . todo el UPDATE, para no hacerno en una línea larga dentro de la anterior:
+            $textoSQL .= " contenido='" . $articulo->getContenido() . "', ";
+            $textoSQL .= " imagen='" . $articulo->getImagen() . "', ";
+            $textoSQL .= " fecha='" . $articulo->getFecha() . "' "; // quitada la coma porque ya no hay más campos, fecha es el último
+            $textoSQL .= "WHERE id=" . $articulo->getId();
+
+            $this->conexion->query($textoSQL);
+        }
+
+        public function deleteById($id){
+            $textoSQL = "DELETE FROM articulos WHERE id=$id";
+        }
 
 
 
-
-    }
+}

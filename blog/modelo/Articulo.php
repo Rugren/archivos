@@ -38,6 +38,10 @@ Class Articulo{
         return $texto;
     }
 
+    public function mostrarCard(){
+        
+    }
+
     // Función para mostrar la miniatura
     public function mostrarMini(){
         return $this->titulo;
@@ -51,5 +55,34 @@ Class Articulo{
     public function setId($id){
         $this->id=$id;
     }
+
+    public function setFecha($fecha){
+        $this->fecha=$fecha;
+    }
+    public function getFecha(){
+        return $this->fecha;
+    }
+
+    public function setTitulo($titulo){
+        $this->titulo=$titulo;
+    }
+    public function getTitulo(){
+        return $this->titulo;
+    }
+
+    public function setContenido($contenido){
+        $this->contenido=$contenido;
+    }
+    public function getContenido(){
+        return $this->contenido;
+    }
+
+    public function setImagen($imagen){
+        $this->imagen=$imagen;
+    }
+    public function getImagen(){
+        return $this->imagen;
+    }
+
 
 }
