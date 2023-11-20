@@ -12,7 +12,7 @@
 
     echo "<div class='container'>";
 
-    echo "<a class='btn-primary' href='form_add.php'>Añadir artículo</a>";
+    echo "<a class='btn btn-primary' href='form_add.php'>Añadir artículo</a>";
 
     echo "<table class='table'>";
     echo "<tr><th>Id</th><th>Título</th><th>Acciones</th></tr>";
