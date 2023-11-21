@@ -1,0 +1,24 @@
+
+/* Estilos para todas las imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para las imágenes que no tienen el atributo "alt" */
+img:not([alt]) {
+    border: 3px solid red;
+}
+
+/* Añadido un icono(imagen) PDF después de los enlaces que apuntan a un archivo PDF */
+a[href$=".pdf"]::after {
+    content: url('img/logoPDF.png'); /* poner bien siempre la url dónde está nuestra imagen, que la enlace */
+    display: inline-block;
+    margin-left: 5px;
+    
+    /* No coge el código del tamaño *VER POR QUÉ* */
+    width: 15px !important; /* ajustado el Ancho porque la imagen era muy grande */
+    height: 15px !important; /* ajustado la Altura porque la imagen era muy grande */
+}
+
+

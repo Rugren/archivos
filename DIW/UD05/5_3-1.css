@@ -1,0 +1,53 @@
+
+
+/* ¡¡¡NO CAMBIAR NOMBRE AL ARCHIVO A 5_3.css pensando que se trata de un error!!!
+POR ALGUNA EXTRAÑA RAZÓN, TUVE QUE LLAMAR al archivo de css 5_3-1.css porque si lo llamaba 5_3.css no me lo cogía 
+(aun cambiando el nombre en el archivo .css) */
+
+
+/* https://www.seobility.net/es/wiki/Viewport 
+Ver ejemplo en la imagen: Sin la metaetiqueta viewport y con la metaetiqueta viewport (para ver que hace uno y otro, el responsive)
+Sin: Se queda todo al inio, o como esté en Pc
+Con: Se adapta a la pantalla que pongamos el máximo; como para tabletas o dispositivos móviles.
+
+Poner siempre en el html: <meta name=viewport content="width=device-width, initial-scale=1">
+*/
+
+/* Estilos generales para todos los dispositivos */
+body {
+    font-family: Arial, sans-serif;
+    color: #b08888;
+    margin: 0;
+    padding: 0;
+    background-color: red;
+}
+
+
+/* Estilos específicos para dispositivos (o para pantallas pequeñas) con un ancho de pantalla menor o igual a 768 píxeles 
+(por ejemplo, dispositivos móviles) */
+@media screen and (max-width: 768px) {
+    body {
+        background-color: lightsalmon;
+        font-size: 16px;
+    }
+
+}
+
+/* Estilos para pantallas medianas */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        background-color: lightblue;
+        font-size: 14px;
+    }
+}
+
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 1025px) {
+    body {
+        background-color: lightgreen;
+        font-size: 18px;
+    }
+}
+
+/* Podríamos poner otros estilos específicos para dispositivos móviles más pequeños, 
+o para iPads/tablets en función al tamaño que le queramos dar*/
