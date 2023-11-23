@@ -1,0 +1,9 @@
+
+
+En el ejercicio 5_6 desde el archivo 5_6.html no coge bien el 5_6.css para aplicar los estilos en la segunda parte del ejercicio.
+
+Hace bien la funcionalidad de poner la imagen logoPDF.png a los archivos PDF
+
+Pero no cambia el tamaño a dicha imagen (no lo requiere el ejercicio, pero por darle forma nosotros no nos deja).
+
+Por alguna extraña razón no aplica el width, ni el height a la imagen. Pero los demás estilos y funcionalidades si los coge.

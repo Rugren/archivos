@@ -45,7 +45,9 @@
             $textoSQL = "INSERT INTO articulos(titulo, contenido, imagen, fecha) VALUES ";
             // esta línea siguiente se puede hacer en la anterior, pero hemos concatenado con el . para no hacerlo todo en una línea larga
             $textoSQL .= "('$articulo->titulo', '$articulo->contenido', '$articulo->imagen', '$articulo->fecha')";
-
+            
+            /* Ejecutar la línea siguiente SIEMPRE cada vez que llamemos a la Base de Datos, 
+            sino es sólo una función vacía */
             $this->conexion->query($textoSQL);
         }
 
@@ -57,11 +59,17 @@
             $textoSQL .= " fecha='" . $articulo->getFecha() . "' "; // quitada la coma porque ya no hay más campos, fecha es el último
             $textoSQL .= "WHERE id=" . $articulo->getId();
 
+            /* Ejecutar la línea siguiente SIEMPRE cada vez que llamemos a la Base de Datos, 
+            sino es sólo una función vacía */
             $this->conexion->query($textoSQL);
         }
 
         public function deleteById($id){
             $textoSQL = "DELETE FROM articulos WHERE id=$id";
+
+            /* Ejecutar la línea siguiente SIEMPRE cada vez que llamemos a la Base de Datos, 
+            sino es sólo una función vacía */
+            $this->conexion->query($textoSQL);
         }
 
 

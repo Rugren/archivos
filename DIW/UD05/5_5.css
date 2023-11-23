@@ -13,6 +13,17 @@ header {
     /* Sombra inferior negra: 10px de desplazamiento vertical y con un desenfoque de 15px */
 }
 
+
+/* Lo ideal sería que hubiera hecho en el html lo siguiente: 
+Dentro del <nav> haber puesto <nav class="menu"> 
+y aquí en el css haber hecho un clase: .menu { y aquí dentro haber dado el formato }
+
+Porque de la manera que lo he hecho ha sido genérica para todos los apartado del <nav>, 
+porque si hubiera hecho varios <nav> me cogería siempre el mismo formato de estilo.
+Como lo he hecho, con nav ul (<ul> son las listas no ordenadas), nav li (<li> listas ordenadas) y nav a (el <a> es el enlace: <a href="...")
+
+me coge el estilo para todas las <ul> <li> y <a> que estén dentro de un <nav>
+*/
 nav ul {
     list-style: none;
     padding: 0;
