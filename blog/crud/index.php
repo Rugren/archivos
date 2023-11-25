@@ -1,5 +1,6 @@
 <?php
     // ¡CUIDADO AHORA! estamos dentro de la carpeta crud(que salga atrás con ../ ) y tenemos que coger dentro de la carpeta modelo
+    require_once "../templates/header.php";
     require_once "../modelo/Articulo.php";
     require_once "../modelo/RepositorioArticulos.php";
     require_once "../modelo/conexion.php";
@@ -9,6 +10,12 @@
     $repo=new RepositorioArticulos($conexion);
 
     $lista = $repo->findAll();
+
+
+    /* Esto cogido de: C:\xampp\htdocs\archivos\TIENDA\crud 
+    Solo que ahí estaba con dobles comillas (" ") y aquí así PHP no lo coge, lo coge bien con comillas simples (' '):
+    echo "<p class="text-center"><a class="btn btn-primary" href="../index.php">Inicio de la Tienda</a></p>" */
+    echo "<p class='text-center'><a class='btn btn-primary' href='../index.php'>Inicio del blog</a></p>";
 
     echo "<div class='container'>";
 

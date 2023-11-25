@@ -1,0 +1,58 @@
+body {
+  background-color: #121212;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background-color: #333;
+  padding: 20px;
+}
+
+.title-coffe-cesur {
+  grid-area: 1 / 2 / 2 / 4;
+  display: flex;
+  justify-content: center;
+}
+.grano {
+  grid-area: 2 / 2 / 4 / 3;
+}
+.soluble {
+  grid-area: 2 / 3 / 4 / 4;
+}
+.capuchino {
+  grid-area: 4 / 2 / 6 / 3;
+}
+.infusiones {
+  grid-area: 4 / 3 / 6 / 4;
+}
+.sin-vaso {
+  grid-area: 6 / 2 / 8 / 3;
+}
+.grano, .soluble, .capuchino, .infusiones, .sin-vaso {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #444;
+  border: 1px solid #555;
+  text-align: center;
+  padding: 20px;
+}
+.grano img, .soluble img, .capuchino img, .infusiones img, .sin-vaso img {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+.label {
+  margin-top: 10px;
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}

@@ -1,0 +1,6 @@
+
+
+De esta carpeta OtrosDaw: 
+Solo ver el código, 
+no ejecutar con el xampp porque fallan en las rutas, 
+solo se apreciará el estilo, ni las mecánica de los botones funcionará.

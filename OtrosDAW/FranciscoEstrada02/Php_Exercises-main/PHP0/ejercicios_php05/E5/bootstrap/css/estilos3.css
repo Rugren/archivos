@@ -1,0 +1,123 @@
+body {
+  background-color: #121212;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col {
+  float: left;
+  width: 100%;
+}
+
+.col img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.resultados {
+  margin-top: 20px;
+  border: 2px solid #a5c5e7;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #292929;
+}
+
+.resultado {
+  font-weight: bold;
+  color: white;
+}
+input[type="range"] {
+  width: 100%;
+  height: 30px;
+  background: #333; /* Color de fondo */
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  position: relative;
+}
+
+/* Cambiar el color de la barra cuando está activa */
+input[type="range"]:active {
+  opacity: 1;
+}
+
+/* Estilo para las barras de rango */
+input[name="largoAzucar"],
+input[name="largoCafe"] {
+  position: relative;
+}
+
+/* Estilo para el título "Corto" a la izquierda de la barra largoAzucar */
+input[name="largoAzucar"]::before {
+  content: "Corto";
+  position: absolute;
+  top: 5px;
+  left: -40px; /* Alineación a la izquierda */
+  color: #fff;
+}
+
+/* Estilo para el título "Largo" a la derecha de la barra largoAzucar */
+input[name="largoAzucar"]::after {
+  content: "Largo";
+  position: absolute;
+  top: 5px;
+  right: -40px; /* Alineación a la derecha */
+  color: #fff;
+}
+
+/* Estilo para el título "Corto" a la izquierda de la barra largoCafe */
+input[name="largoCafe"]::before {
+  content: "Corto";
+  position: absolute;
+  top: 5px;
+  left: -40px; /* Alineación a la izquierda */
+  color: #fff;
+}
+
+/* Estilo para el título "Largo" a la derecha de la barra largoCafe */
+input[name="largoCafe"]::after {
+  content: "Largo";
+  position: absolute;
+  top: 5px;
+  right: -40px; /* Alineación a la derecha */
+  color: #fff;
+}
+
+#botonSubmit{
+  background: #007bff; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  border: none; /* Quita el borde */
+  border-radius: 5px; /* Agrega esquinas redondeadas */
+  padding: 10px 20px; /* Espaciado interno */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  font-size: 16px; /* Tamaño de fuente */
+  transition: background 0.3s, transform 0.1s;
+}
+
+/* Estilo para el botón de submit al pasar el cursor por encima */
+#botonSubmit:hover {
+  background: #0056b3; /* Cambia el color de fondo al pasar el cursor */
+  transform: scale(
+    1.05
+  ); /* Realiza un pequeño aumento en el tamaño al pasar el cursor */
+}

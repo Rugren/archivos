@@ -1,5 +1,5 @@
 <?php
-    $tipos=["cafe_grano", "cafe_soluble", "cafe_soluble", "infusiones", "sinvaso"]; // llamar a grano como cafe_grano para que los coja abajo en $imagen en .jpg: cafe_grano.jpg 
+    $tipos=["cafe_grano", "cafe_soluble", "cafe_capuchino", "infusiones", "sinvaso"]; // llamar a grano como cafe_grano para que los coja abajo en $imagen en .jpg: cafe_grano.jpg 
     $imagen=["cafe_grano.jpg", "cafe_soluble.jpg", "cafe_capuchino.jpg", "infusiones.jpg", "sinvaso.jpg"];
 
     foreach($tipos as $tipo){
