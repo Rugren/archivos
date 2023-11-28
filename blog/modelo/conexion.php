@@ -26,6 +26,7 @@
         titulo VARCHAR(255) NOT NULL,
         contenido TEXT,
         imagen VARCHAR(255) NOT NULL,
-        fecha DATE
+        fecha DATE,
+        destacado INT(11) NOT NULL
       );";
     $conexion->query($consulta);

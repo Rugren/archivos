@@ -1,0 +1,86 @@
+Evolución de la informática resumida
+
+SS00AC.
+
+1646
+
+1792
+
+1852
+
+1986
+
+1948
+
+1958
+
+1963
+
+1964
+
+1969
+
+Marzo
+
+Abril
+
+Septiembre
+
+1
+
+1
+
+15
+
+Abaco
+
+Calculadora Leibritz
+universal
+
+Máquina Charles Babbage
+naltica y Ade Lovelace
+
+Varias máquinas Torres Quevedo
+
+Máquina de Alan Turing.
+
+Turing
+
+Ordenador Maurice V.
+
+digital Wilkes
+
+electrónico
+
+Segunda generacion de ordenadores IBM
+
+
+Código ASCII ANSI
+
+Chips Jack. Kilby y Robert Noyce
+
+ARPANET MIT (Massa-chusetts Institute of Technology)
+
+Es el dispositivo más antiguo utilizado
+para realizar operaciones antméticas.
+
+Máquina que suma, resta, multilca,
+vice y hace raíces cuacradas.
+
+Máquina que resolia funciones y
+obtenía tablas
+
+Construyó una máquina para jugar al
+ajedrez y una calculadora.
+
+Máquina capaz de resolver todo tipo de problemas con la solución algorlimica. Con Turing se inició la teoría matemática de la computación.
+
+El primer ordenador del mundo fue el EDSAC, desarrolado en la Universicad de Cambridge.
+
+Reemplaza las válvulas de vacío por los transistores. Son más pequeños y consumen menos electricidad.
+
+Nace a partir de reordenar y expancir el conjunto de simbolos y caracteres utilizados en aquel momento en telegrafía por la compañía Bell.
+
+Estructura de pequeñas dimensiones de material semiconductor, sobre la que se fabrican circuitos electrónicos.
+
+Red de computadoras construida en 1969 como un medio para enviar datos miltares y conectar grupos de investigación, a través de los Estados Unidos.

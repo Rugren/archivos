@@ -11,13 +11,21 @@
           //movemos el archivo a la carpeta deseada
           move_uploaded_file($file_loc, "../img/".$nombreFichero); 
         }else{
-          $nombreFichero="imagen.jpg";
+          // así lo tenía antes $nombreFichero="imagen.jpg";
+          $nombreFichero=$_POST["imagen_actual"];
+        }
+
+        if (isset($_POST["destacado"])) {
+          $destacado = 1;
+        }else{
+          $destacado = 0;
         }
 
         $articulo=new Articulo();
         $articulo->setPropiedades($_POST["titulo"], $_POST["contenido"], $nombreFichero);
         $articulo->setFecha($_POST["fecha"]);
         $articulo->setId($_POST["id"]);
+        $articulo->setDestacado($destacado);
         $repo=new RepositorioArticulos($conexion);
         $repo->update($articulo);
  

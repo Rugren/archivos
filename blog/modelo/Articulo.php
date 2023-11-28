@@ -1,4 +1,5 @@
 <?php
+
 Class Articulo{
     // se tiene que poner private, pero lo hemos puesto public para hacer rápido en RepositorioArticulos.php en el Método para guardar atículos: la línea 46;  $textoSQL .= "('$articulo->titulo', '$articulo->contenido', '$articulo->imagen', '$articulo->fecha')";
     // porque tendríamos que crear los getter y los setters
@@ -15,6 +16,7 @@ Class Articulo{
     public $contenido;
     public $imagen;
     public $fecha;
+    public $destacado;
     public $id_tema;
 
     // Hacer vacío el constructor y luego un setter (setPropiedades)
@@ -28,18 +30,48 @@ Class Articulo{
         $this->imagen = $img;
     }
 
-    public function mostrar(){
+    /* Así era como lo teníamos */
+    /*public function mostrar(){
         $texto = "<h1>$this->titulo</h1>";
         $texto .= "<h6>$this->fecha</h6>";
         $texto .= "<img src='$this->imagen'>";
         $texto .= "<p>$this->contenido</p>";
         $texto .= "<h6>$this->id_tema</h6>";
-
         return $texto;
+    } */
+
+    // así no va: (por el img) pero este mejor
+    public function mostrar(){
+        echo "<div class='container mt-4'>";
+        echo "<h2>$this->titulo</h2>";
+        echo "<h6>$this->fecha</h6>";
+        echo "<img src='$this->imagen' class='img-fluid' alt='Imagen del artículo'>";
+        echo "<p>$this->contenido</p>";
+        // $texto .= "<h6>$this->id_tema</h6>";
+    }
+
+    public function cortarContenido()
+    {
+        $contenido = $this->contenido;
+        $contenido = $this->contenido;
+        if (strlen($contenido) > 25) {
+            return substr($contenido, 0, 100);
+        } else {
+        return $contenido;
+        }
     }
 
     public function mostrarCard(){
-        
+        echo "<div class='card m-5' style='width: 25rem;'>
+                <div class='w-100 d-flex justify-content-center'>
+                    <img src='../img/$this->imagen' class='card-img-top' alt='' style='width:300px; height:300px; '>
+                </div>
+                 <div class='card-body'>
+                    <h5 class='card-title'>$this->titulo</h5>
+                    <p class='card-text'>".$this->cortarContenido()."...</p>
+                    <a class='btn btn-primary' href='detalle.php?id=$this->id'>Ver Más</a>
+                </div>
+        </div>";
     }
 
     // Función para mostrar la miniatura
@@ -47,7 +79,7 @@ Class Articulo{
         return $this->titulo;
     }
 
-    // Como está en prinvado hacemos un get id
+    // Como está en privado hacemos un get id
     public function getId(){
         return $this->id;
     }
@@ -82,6 +114,13 @@ Class Articulo{
     }
     public function getImagen(){
         return $this->imagen;
+    }
+
+    public function getDestacado(){
+        return $this->destacado;
+    }
+    public function setDestacado($destacado){
+        $this->destacado = $destacado;
     }
 
 
