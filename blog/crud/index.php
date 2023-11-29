@@ -30,7 +30,7 @@
     echo "
     <header class='d-flex justify-content-center'>
     <nav class='navbar navbar-expand-lg navbar-dark bg-dark'>
-        <div class='container-fluid' style='background-color: #8B4513;'>
+        <div class='container-fluid' style='background-color: #13438b;'>
             <a class='navbar-brand' href='/archivos/blog/index.php'>Blog Rubén García</a>
             <button class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation'>
                 <span class='navbar-toggler-icon'></span>

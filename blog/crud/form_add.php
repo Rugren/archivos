@@ -18,7 +18,7 @@
     echo "
     <header class='d-flex justify-content-center'>
     <nav class='navbar navbar-expand-lg navbar-dark bg-dark'>
-        <div class='container-fluid' style='background-color: #8B4513;'>
+        <div class='container-fluid' style='background-color: #138b81;'>
             <a class='navbar-brand' href='/archivos/blog/index.php'>Blog Rubén García</a>
             <button class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation'>
                 <span class='navbar-toggler-icon'></span>
@@ -37,29 +37,29 @@
 <div class="container">
   <!-- Formulario para añadir artículos -->
   <h1>Añadir articulo</h1>
- 
+
   <form action="add.php" method="post" enctype="multipart/form-data">
- 
+
     <div class="mb-3">
       <label for="titulo" class="form-label">Título</label>
       <input type="text" class="form-control" id="titulo" name="titulo" required>
     </div>
- 
+
     <div class="mb-3">
       <label for="contenido" class="form-label">Contenido</label>
       <textarea class="form-control" id="contenido" name="contenido" rows="3" required></textarea>
     </div>
- 
+
     <div class="mb-3">
       <label for="imagen" class="form-label">Imagen</label>
       <input type="file" class="form-control" id="imagen" name="imagen">
     </div>
- 
+
     <div class="mb-3">
       <label for="fecha" class="form-label">Fecha</label>
       <input type="date" class="form-control" id="fecha" name="fecha" required>
     </div>
- 
+
     <div class="mb-3 form-check">
     <input class="form-check-input" type="checkbox" id="destacado" name="destacado">
     <label class="form-check-label" for="destacado">Destacado</label>
