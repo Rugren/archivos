@@ -24,14 +24,14 @@
     <header class='d-flex justify-content-center'>
     <nav class='navbar navbar-expand-lg navbar-dark bg-dark'>
         <div class='container-fluid' style='background-color: #8B4513;'>
-            <a class='navbar-brand' href='../index.php'>Blog Rubén García</a>
+            <a class='navbar-brand' href='/archivos/blog/index.php'>Blog Rubén García</a>
             <button class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation'>
                 <span class='navbar-toggler-icon'></span>
             </button>
             <div class='collapse navbar-collapse' id='navbarNavAltMarkup'>
                 <div class='navbar-nav'>
-                    <a class='nav-link' aria-current='page' href='../index.php'>Inicio</a>
-                    <a class='nav-link' href='index.php'>CRUD</a>
+                    <a class='nav-link' aria-current='page' href='/archivos/blog/index.php'>Inicio</a>
+                    <a class='nav-link' href='/archivos/blog/crud/index.php'>CRUD</a>
                 </div>
             </div>
         </div>
@@ -45,33 +45,32 @@
 <!-- El value de php poner en la mayoría de los input -->
 <div class="container">
   <h1>Formulario para modificar artículos</h1>
- 
+
   <!-- Aquí se lee con el get AQUÍ SE HARÍA CON EL -->
   <form action="update.php?id=<?php echo $id;?>" method="post" enctype="multipart/form-data">
   <!-- Con POST se haría: -->
   <input type="hidden" name="id" value='<?php echo $id ?>'>
   <!-- el: value="< ?php echo $id ?>"> estaba puesto con comillas dobles, dejar con las simples por si acaso no funcionase -->
- 
+
     <div class="mb-3">
       <label for="titulo" class="form-label">Título</label>
       <input type="text" class="form-control" id="titulo" name="titulo" value='<?php echo $articulo->getTitulo();?>' required>
     </div>
- 
+
     <div class="mb-3">
       <label for="contenido" class="form-label">Contenido</label>
       <textarea class="form-control" id="contenido" name="contenido" rows="3" required><?php echo $articulo->getContenido();?></textarea>
     </div>
- 
     
     <div class="mb-3">
       <label for="imagen" class="form-label">Imagen</label>
-      
-      <input type="file" class="form-control" id="imagen" name="imagen">
-      <!-- <input type="hidden" name="imagen_actual" value="< ?php echo $articulo->getImagen(); ?>"> -->
-      <!-- <input type="file" class="form-control" id="imagen" name="imagen" value> -->
+      <!-- El "imagen_actual" debe ser igual que en el update, cambiarlo para que coincida el nombre 
+      El hidden oculta la ruta para que no vea dónde hemos guardado la imagen (nuestra carpeta) -->
+      <input type="hidden" name="imagen_actual" value="<?php echo $articulo->getImagen(); ?>">
+      <input type="file" class="form-control" id="imagen" name="imagen" value>
       <img src="../img/<?php echo $articulo->getImagen();?>" style="height: 100px;">
     </div>
- 
+
     <div class="mb-3">
       <label for="fecha" class="form-label">Fecha</label>
       <input type="date" class="form-control" id="fecha" name="fecha" value='<?php echo $articulo->getFecha();?>' required>
@@ -81,7 +80,7 @@
       <label for="destacado" class="form-label">Destacado</label>
       <input type="checkbox" class="form-label" id="destacado" name="destacado" <?php echo $articulo->getDestacado() == 0 ? "" : "checked" ?>>
     </div>
- 
+
     <button type="submit" name="submit" class="btn btn-primary">Enviar</button>
   </form>
   <div class="container my-5">

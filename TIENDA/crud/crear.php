@@ -1,6 +1,7 @@
 <?php
 include "templates/header.php";
 include "conexion.php";
+
 if (isset($_POST['submit'])) {
   if(isset($_FILES['imagen']) && $_FILES['imagen']['tmp_name']!=""){ // Esta línea es la que hace que nos coja por defecto la imagen
   $nombreFichero = date("Y-m-d - H-i-s") . "-" . $_FILES['imagen']['name'];

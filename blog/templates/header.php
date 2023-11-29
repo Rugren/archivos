@@ -24,8 +24,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link" aria-current="page" href="index.php">Inicio</a>
-                        <a class="nav-link" href="crud/index.php">CRUD</a>
+                        <a class="nav-link" aria-current="page" href="/archivos/blog/index.php">Inicio</a>
+                        <!-- Puesta ruta absoluta /archivos/blog/crud/index.php valen para todos los header 
+                        Pero en el CRUD hemos hecho otro Crud distinto (con otro estilo de diseño también) -->
+                        <a class="nav-link" href="/archivos/blog/crud/index.php">CRUD</a>
                     </div>
                 </div>
             </div>

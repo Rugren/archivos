@@ -14,8 +14,8 @@
 ?>
 
     <div class="text-blak d-flex flex-column align-items-center ">
-    <h1>¡Bienvenido al Blog de Rubén!</h1>
-    <h3>Aquí verás todo el contenido del blog de Rubén</h3>
+        <h1>¡Bienvenido al Blog de Rubén!</h1>
+        <h3>Aquí verás todo el contenido del blog de Rubén</h3>
     </div>
 
 <?php
@@ -35,10 +35,13 @@
     // Hacemos un bucle para que se muestren todos los artículos
     foreach ($articulos as $a) {
         echo "<a href='detalle.php?id=" . $a->getId() . "'><h2>" . $a->mostrarMini() . "</h2></a>";
+
     }
 
 ?>
-
+    <div>
+        <h2 class="text-blak d-flex flex-column align-items-center ">¡¡¡Los mejores estadios de fútbol de España!!!</h2>
+    </div>
 
 <?php
     $rep->mostrarCarousel();
