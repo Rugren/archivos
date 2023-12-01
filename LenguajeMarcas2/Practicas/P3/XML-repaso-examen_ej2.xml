@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<biblioteca xmlns:libro="/libro" xmlns:evento="/evento">
+    <informacion>
+        <libro:informacion>
+            <libro:ID>1</libro:ID>
+            <libro:nombre>"El señor de los anillos" de J.R.R. Tolkien</libro:nombre>
+            <libro:descripcion>Esta trilogía épica, compuesta por "La Comunidad del Anillo", "Las Dos Torres" y "El Retorno del Rey", sumerge a los lectores en el mundo de la Tierra Media. Tolkien crea una historia de proporciones épicas, llena de personajes memorables, razas fantásticas y una lucha épica entre el bien y el mal. A través de la odisea de Frodo Bolsón, el autor explora temas de amistad, coraje y la tentación del poder.</libro:descripcion>
+        </libro:informacion>
+
+        <libro:informacion>
+            <libro:ID>2</libro:ID>
+            <libro:nombre>"Sapiens: De animales a dioses" de Yuval Noah Harari</libro:nombre>
+            <libro:descripcion>En este libro, Harari ofrece una visión panorámica de la historia de la humanidad, desde nuestros antiguos ancestros hasta la era moderna. Explora cómo las creencias, las instituciones y las innovaciones han dado forma a la evolución de la sociedad, desafiando y provocando reflexiones sobre nuestro presente y futuro.</libro:descripcion>
+        </libro:informacion>
+
+        <libro:informacion>
+            <libro:ID>3</libro:ID>
+            <libro:nombre>"Cien años de soledad" de Gabriel García Márquez</libro:nombre>
+            <libro:descripcion>Publicada en 1967, esta obra maestra del realismo mágico narra la historia de la familia Buendía en el ficticio pueblo de Macondo. García Márquez teje un tapiz narrativo que abarca generaciones, mezclando lo real y lo fantástico para explorar la complejidad de la experiencia humana.</libro:descripcion>
+        </libro:informacion>
+
+        <evento:informacion>
+            <evento:ID>1</evento:ID>
+            <evento:nombre>Feria de Murcia</evento:nombre>
+            <evento:descripcion>Esta feria anual, también conocida como la Feria de Septiembre, transforma la ciudad con actividades festivas, conciertos, atracciones, casetas de comida y bebida, y fuegos artificiales. Es una celebración animada que atrae a residentes y visitantes por igual.</evento:descripcion>
+        </evento:informacion>
+
+        <evento:informacion>
+            <evento:ID>2</evento:ID>
+            <evento:nombre>Semana Santa en Murcia</evento:nombre>
+            <evento:descripcion>La Semana Santa es una celebración importante en toda España, y en Murcia, se lleva a cabo con procesiones impresionantes, donde las hermandades recorren las calles con pasos religiosos. Los eventos ofrecen una oportunidad para la reflexión espiritual y la participación comunitaria.</evento:descripcion>
+        </evento:informacion>
+
+        <evento:informacion>
+            <evento:ID>3</evento:ID>
+            <evento:nombre>Festival Internacional del Cante de las Minas</evento:nombre>
+            <evento:descripcion>Este evento anual en La Unión celebra el flamenco, declarado Bien de Interés Cultural. Incluye competiciones de cante, baile y guitarra flamenca, atrayendo a artistas y amantes del flamenco de todo el mundo.</evento:descripcion>
+        </evento:informacion>
+
+    </informacion>
+
+</biblioteca>

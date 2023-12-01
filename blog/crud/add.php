@@ -39,7 +39,6 @@
 
 
             header("location: index.php");
-            // ++++antes tenía este, si da fallo el de la línea anterior, poner este: header("location: form_add.php");
       }
       ?>
 

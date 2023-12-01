@@ -53,6 +53,7 @@
     <div class="mb-3">
       <label for="imagen" class="form-label">Imagen</label>
       <input type="file" class="form-control" id="imagen" name="imagen">
+    
     </div>
 
     <div class="mb-3">

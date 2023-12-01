@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<redBibliotecas>
+    <bibliotecas>
+        <!-- Biblioteca 1 -->
+        <biblioteca id="1">
+            <nombre>Regional de Murcia</nombre>
+            <direccion>Av. Juan Carlos I, 17</direccion>
+            <Salas>
+                <!-- Sala 1 -->
+                <Sala id="1">
+                    <nombreSala>Sala de Ciencia Ficción</nombreSala>
+                    <capacidadMaxima>50</capacidadMaxima>
+
+                    <!-- Estante 1 -->
+                    <estantes>
+                        <Estante numeroIdentificativo="1">
+                            <tema>Ciencia Ficción</tema>
+                            <libros>
+                                <!-- Libro 1 -->
+                                <Libro id="1">
+                                    <tituloLibro>El fin de la eternidad</tituloLibro>
+                                    <fechaPublicacion>
+                                        <anio>1955</anio>
+                                        <mes>12</mes>
+                                        <dia>1</dia>
+                                    </fechaPublicacion>
+                                    <autores>
+                                        <!-- Autor 1 -->
+                                        <autor id="1">
+                                            <autorNombre>Isaac Asimov</autorNombre>
+                                            <fechaNacimiento>1920-01-02</fechaNacimiento>
+                                        </autor>
+                                        <!-- Autor 2 -->
+                                        <autor id="2">
+                                            <autorNombre>John Doe</autorNombre>
+                                            <fechaNacimiento>1980-05-15</fechaNacimiento>
+                                        </autor>
+                                    </autores>
+                                </Libro>
+
+                                <!-- Libro 2 -->
+                                <Libro id="2">
+                                    <tituloLibro>Fundación</tituloLibro>
+                                    <fechaPublicacion>
+                                        <anio>1951</anio>
+                                        <mes>5</mes>
+                                        <dia>1</dia>
+                                    </fechaPublicacion>
+                                    <autores>
+                                        <!-- Autor 3 -->
+                                        <autor id="3">
+                                            <autorNombre>Isaac Asimov</autorNombre>
+                                            <fechaNacimiento>1920-01-02</fechaNacimiento>
+                                        </autor>
+                                        <!-- Autor 4 -->
+                                        <autor id="4">
+                                            <autorNombre>Jane Smith</autorNombre>
+                                            <fechaNacimiento>1975-09-20</fechaNacimiento>
+                                        </autor>
+                                    </autores>
+                                </Libro>
+                            </libros>
+                        </Estante>
+
+                        <!-- Estante 2 -->
+                        <Estante numeroIdentificativo="2">
+                            <tema>Misterio</tema>
+                            <libros>
+                                <!-- Libro 3 -->
+                                <Libro id="3">
+                                    <tituloLibro>El caso del asesinato en el orient express</tituloLibro>
+                                    <fechaPublicacion>
+                                        <anio>1934</anio>
+                                        <mes>1</mes>
+                                        <dia>1</dia>
+                                    </fechaPublicacion>
+                                    <autores>
+                                        <!-- Autor 5 -->
+                                        <autor id="5">
+                                            <autorNombre>Agatha Christie</autorNombre>
+                                            <fechaNacimiento>1890-09-15</fechaNacimiento>
+                                        </autor>
+                                        <!-- Autor 6 -->
+                                        <autor id="6">
+                                            <autorNombre>Robert Johnson</autorNombre>
+                                            <fechaNacimiento>1985-11-10</fechaNacimiento>
+                                        </autor>
+                                    </autores>
+                                </Libro>
+
+                                <!-- Libro 4 -->
+                                <Libro id="4">
+                                    <tituloLibro>Sherlock Holmes</tituloLibro>
+                                    <fechaPublicacion>
+                                        <anio>1887</anio>
+                                        <mes>12</mes>
+                                        <dia>1</dia>
+                                    </fechaPublicacion>
+                                    <autores>
+                                        <!-- Autor 7 -->
+                                        <autor id="7">
+                                            <autorNombre>Arthur Conan Doyle</autorNombre>
+                                            <fechaNacimiento>1859-05-22</fechaNacimiento>
+                                        </autor>
+                                        <!-- Autor 8 -->
+                                        <autor id="8">
+                                            <autorNombre>Linda Adams</autorNombre>
+                                            <fechaNacimiento>1972-08-03</fechaNacimiento>
+                                        </autor>
+                                    </autores>
+                                </Libro>
+                            </libros>
+                        </Estante>
+                    </estantes>
+                    
+                </Sala>
+
+                <!-- Sala 2 -->
+                <Sala id="2">
+                    <nombreSala>Sala de Historia</nombreSala>
+                    <capacidadMaxima>40</capacidadMaxima>
+
+                    <!-- Estante 3 -->
+                    <estantes>
+                        <Estante numeroIdentificativo="3">
+                            <tema>Historia Antigua</tema>
+                            <libros>
+                                <!-- Libro 5 -->
+                                <Libro id="5">
+                                    <tituloLibro>El arte de la guerra</tituloLibro>
+                                    <fechaPublicacion>
+                                        <anio>5 a.C.</anio>
+                                    </fechaPublicacion>
+                                    <autores>
+                                        <!-- Autor 9 -->
+                                        <autor id="9">
+                                            <autorNombre>Sun Tzu</autorNombre>
+                                        </autor>
+                                    </autores>
+                                </Libro>
+
+                                <!-- Libro 6 -->
+                                <Libro id="6">
+                                    <tituloLibro>Historia del mundo en 100 objetos</tituloLibro>
+                                    <fechaPublicacion>
+                                        <anio>2010</anio>
+                                        <mes>1</mes>
+                                        <dia>1</dia>
+                                    </fechaPublicacion>
+                                    <autores>
+                                        <!-- Autor 10 -->
+                                        <autor id="10">
+                                            <autorNombre>Neil MacGregor</autorNombre>
+                                        </autor>
+                                    </autores>
+                                </Libro>
+                            </libros>
+                        </Estante>
+
+                        <!-- Estante 4 -->
+                        <Estante numeroIdentificativo="4">
+                            <tema>Edad Media</tema>
+                            <libros>
+                                <!-- Libro 7 -->
+                                <Libro id="7">
+                                    <tituloLibro>Los pilares de la Tierra</tituloLibro>
+                                    <fechaPublicacion>
+                                        <anio>1989</anio>
+                                        <mes>10</mes>
+                                        <dia>2</dia>
+                                    </fechaPublicacion>
+                                    <autores>
+                                        <!-- Autor 11 -->
+                                        <autor id="11">
+                                            <autorNombre>Ken Follett</autorNombre>
+                                            <fechaNacimiento>1949-06-05</fechaNacimiento>
+                                        </autor>
+                                    </autores>
+                                </Libro>
+
+                                <!-- Libro 8 -->
+                                <Libro id="8">
+                                    <tituloLibro>La muerte negra</tituloLibro>
+                                    <fechaPublicacion>
+                                        <anio>2003</anio>
+                                        <mes>8</mes>
+                                        <dia>15</dia>
+                                    </fechaPublicacion>
+                                    <autores>
+                                        <!-- Autor 12 -->
+                                        <autor id="12">
+                                            <autorNombre>John Kelly</autorNombre>
+                                        </autor>
+                                    </autores>
+                                </Libro>
+                            </libros>
+                        </Estante>
+                    </estantes>
+                    
+                </Sala>
+            </Salas>
+        </biblioteca>
+
+        <!-- Biblioteca 2 -->
+        <biblioteca id="2">
+            <nombre>Biblioteca Regional</nombre>
+            <direccion>Avenida Principal, Ciudad B</direccion>
+            <Salas>
+                <!-- Sala 3 -->
+                <Sala id="3">
+                    <nombreSala>Sala de Literatura Clásica</nombreSala>
+                    <capacidadMaxima>30</capacidadMaxima>
+
+                    <!-- Estante 5 -->
+                    <estantes>
+                        <Estante numeroIdentificativo="5">
+                            <tema>Literatura Griega</tema>
+                            <libros>
+                                <!-- Libro 9 -->
+                                <Libro id="9">
+                                    <tituloLibro>La Odisea</tituloLibro>
+                                    <fechaPublicacion>
+                                        <anio>8 a.C.</anio>
+                                    </fechaPublicacion>
+                                    <autores>
+                                        <!-- Autor 13 -->
+                                        <autor id="13">
+                                            <autorNombre>Homer</autorNombre>
+                                        </autor>
+                                    </autores>
+                                </Libro>
+
+                                <!-- Libro 10 -->
+                                <Libro id="10">
+                                    <tituloLibro>Antígona</tituloLibro>
+                                    <fechaPublicacion>
+                                        <anio>441 a.C.</anio>
+                                    </fechaPublicacion>
+                                    <autores>
+                                        <!-- Autor 14 -->
+                                        <autor id="14">
+                                            <autorNombre>Sófocles</autorNombre>
+                                        </autor>
+                                    </autores>
+                                </Libro>
+                            </libros>
+                        </Estante>
+
+                        <!-- Estante 6 -->
+                        <Estante numeroIdentificativo="6">
+                            <tema>Literatura Romana</tema>
+                            <libros>
+                                <!-- Libro 11 -->
+                                <Libro id="11">
+                                    <tituloLibro>La Eneida</tituloLibro>
+                                    <fechaPublicacion>
+                                        <anio>29-19 a.C.</anio>
+                                    </fechaPublicacion>
+                                    <autores>
+                                        <!-- Autor 15 -->
+                                        <autor id="15">
+                                            <autorNombre>Virgilio</autorNombre>
+                                        </autor>
+                                    </autores>
+                                </Libro>
+
+                                <!-- Libro 12 -->
+                                <Libro id="12">
+                                    <tituloLibro>Metamorfosis</tituloLibro>
+                                    <fechaPublicacion>
+                                        <anio>8 d.C.</anio>
+                                    </fechaPublicacion>
+                                    <autores>
+                                        <!-- Autor 16 -->
+                                        <autor id="16">
+                                            <autorNombre>Ovidio</autorNombre>
+                                        </autor>
+                                    </autores>
+                                </Libro>
+                            </libros>
+                        </Estante>
+                    </estantes>
+                    
+                </Sala>
+
+                <!-- Sala 4 -->
+                <Sala id="4">
+                    <nombreSala>Sala de Poesía Contemporánea</nombreSala>
+                    <capacidadMaxima>25</capacidadMaxima>
+
+                    <!-- Estante 7 -->
+                    <estantes>
+                        <Estante numeroIdentificativo="7">
+                            <tema>Poesía del Siglo XXI</tema>
+                            <libros>
+                                <!-- Libro 13 -->
+                                <Libro id="13">
+                                    <tituloLibro>Alas de Palabras</tituloLibro>
+                                    <fechaPublicacion>
+                                        <anio>2022</anio>
+                                        <mes>4</mes>
+                                        <dia>15</dia>
+                                    </fechaPublicacion>
+                                    <autores>
+                                        <!-- Autor 17 -->
+                                        <autor id="17">
+                                            <autorNombre>Maria Rodriguez</autorNombre>
+                                            <fechaNacimiento>1988-07-20</fechaNacimiento>
+                                        </autor>
+                                    </autores>
+                                </Libro>
+
+                                <!-- Libro 14 -->
+                                <Libro id="14">
+                                    <tituloLibro>Susurros de la Luna</tituloLibro>
+                                    <fechaPublicacion>
+                                        <anio>2021</anio>
+                                        <mes>9</mes>
+                                        <dia>3</dia>
+                                    </fechaPublicacion>
+                                    <autores>
+                                        <!-- Autor 18 -->
+                                        <autor id="18">
+                                            <autorNombre>Carlos Martinez</autorNombre>
+                                            <fechaNacimiento>1995-02-12</fechaNacimiento>
+                                        </autor>
+                                    </autores>
+                                </Libro>
+                            </libros>
+                        </Estante>
+
+                        <!-- Estante 8 -->
+                        <Estante numeroIdentificativo="8">
+                            <tema>Poesía Experimental</tema>
+                            <libros>
+                                <!-- Libro 15 -->
+                                <Libro id="15">
+                                    <tituloLibro>Fragmentos en el Viento</tituloLibro>
+                                    <fechaPublicacion>
+                                        <anio>2019</anio>
+                                        <mes>7</mes>
+                                        <dia>10</dia>
+                                    </fechaPublicacion>
+                                    <autores>
+                                        <!-- Autor 19 -->
+                                        <autor id="19">
+                                            <autorNombre>Elena Gutierrez</autorNombre>
+                                            <fechaNacimiento>1970-12-01</fechaNacimiento>
+                                        </autor>
+                                    </autores>
+                                </Libro>
+
+                                <!-- Libro 16 -->
+                                <Libro id="16">
+                                    <tituloLibro>Poemas de la Ciudad</tituloLibro>
+                                    <fechaPublicacion>
+                                        <anio>2018</anio>
+                                        <mes>11</mes>
+                                        <dia>25</dia>
+                                    </fechaPublicacion>
+                                    <autores>
+                                        <!-- Autor 20 -->
+                                        <autor id="20">
+                                            <autorNombre>Javier Torres</autorNombre>
+                                            <fechaNacimiento>1982-04-05</fechaNacimiento>
+                                        </autor>
+                                    </autores>
+                                </Libro>
+                            </libros>
+                        </Estante>
+                    </estantes>
+                    
+                </Sala>
+            </Salas>
+        </biblioteca>
+    </bibliotecas>
+</redBibliotecas>
+
+
+
+
+
+
+
+<!-- Estructura -->
+<!-- <redBibliotecas>
+    <bibliotecas>
+        <biblioteca id="1">
+            <nombre></nombre>
+            <direccion></direccion>
+            <Salas>
+                <Sala id="1">
+                    <nombreSala></nombreSala>
+                    <capacidadMaxima></capacidadMaxima>
+
+                    <estantes>
+                        <Estante numeroIdentificativo="1">
+                            <tema></tema>
+                            <libros>
+                                <Libro id="1">
+                                    <tituloLibro></tituloLibro>
+                                    <fechaPublicacion>
+                                        <anio></anio>
+                                        <mes></mes>
+                                        <dia></dia>
+                                    </fechaPublicacion>
+                                    <autores>
+                                        <autor id="1">
+                                            <autorNombre></autorNombre>
+                                            <fechaNacimiento></fechaNacimiento>
+                                        </autor>
+                                    </autores>
+                                </Libro>
+                            </libros>
+                        </Estante>
+                    </estantes>
+                    
+                </Sala>
+            </Salas>
+        </biblioteca>
+    </bibliotecas>
+
+</redBibliotecas> -->
