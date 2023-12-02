@@ -5,7 +5,6 @@
     /* Esto de $titulo="XXX"; poner en cada página para que coja el nombre que le demos a cada página php, 
     que la coje del header.php */
     $titulo="Inicio del blog de Rubén";
-    $activo = "Inicio";
 
     require_once "templates/header.php";
     require_once "modelo/Articulo.php";
