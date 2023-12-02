@@ -42,6 +42,7 @@ Class Articulo{
         return $texto;
     } */
 
+    // Esta función "mostrar" muestra el archivo en detalle.php
     public function mostrar(){
         echo "<div class='container mt-4'>";
         echo "<h2>$this->titulo</h2>";
@@ -51,6 +52,9 @@ Class Articulo{
         // echo "<h6>$this->id_tema</h6>";
     }
 
+    /*  Esta funcion cortarContenido es llamada en function mostrarCard 
+        (y mostrarCard la llamamos en index.php de la página principal 
+        para que acorte el texto y no se ponga completo todo el contenido) */
     public function cortarContenido()
     {
         $contenido = $this->contenido;

@@ -64,10 +64,10 @@
     
     <div class="mb-3">
       <label for="imagen" class="form-label">Imagen</label>
-      <!-- El "imagen_actual" debe ser igual que en el update, cambiarlo para que coincida el nombre 
+      <!-- El "imagen_actual_Oculta" debe ser igual que en el update, cambiarlo para que coincida el nombre 
       El hidden oculta la ruta para que no vea dónde hemos guardado la imagen (nuestra carpeta) -->
-      <input type="hidden" name="imagen_actual" value="<?php echo $articulo->getImagen(); ?>">
-      <input type="file" class="form-control" id="imagen" name="imagen" value>
+      <input type="hidden" name="imagen_actual_Oculta" value="<?php echo $articulo->getImagen(); ?>">
+      <input type="file" class="form-control" id="imagen" name="imagen">
       <img src="../img/<?php echo $articulo->getImagen();?>" style="height: 100px;">
     </div>
 
@@ -81,9 +81,9 @@
       <input type="checkbox" class="form-label" id="destacado" name="destacado" <?php echo $articulo->getDestacado() == 0 ? "" : "checked" ?>>
     </div>
 
-    <button type="submit" name="submit" class="btn btn-primary">Enviar</button>
+    <button type="submit" name="submit" class="btn btn-primary">Modificar Artículo</button>
   </form>
   <div class="container my-5">
-    <a href="index.php" class="btn btn-primary">Volver al listado</a>
+    <a href="index.php" class="btn btn-outline-dark">Volver al listado</a>
   </div>
 </div>

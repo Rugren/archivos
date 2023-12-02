@@ -14,8 +14,8 @@
           move_uploaded_file($file_loc, "../img/".$nombreFichero); 
 
         }else{
-          // así lo tenía antes $nombreFichero="imagen.jpg"; cambiado al imagen_actual que es el que está en el form_update.php
-          $nombreFichero=$_POST["imagen_actual"];
+          // así lo tenía antes $nombreFichero="imagen.jpg"; cambiado al imagen_actual_Oculta que es el que está en el form_update.php
+          $nombreFichero=$_POST["imagen_actual_Oculta"];
         }
 
         if (isset($_POST["destacado"])) {

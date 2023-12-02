@@ -11,7 +11,7 @@ Añadido BORRAR con método deleteById($id) en RepositorioArticulos.php
   $id = $_GET["id"];
 
   $repositorio = new RepositorioArticulos($conexion);
-//   $repositorio->deleteById($id); puesta esta línea abajo con el if
+//   $repositorio->deleteById($id); puesta esta línea abajo con el if (Si no pongo el if, con esta línea vale para borrar)
   if ($repositorio->deleteById($id)) {
     // no salen al eliminar los echo de "Artículo eliminado..." o "Error al..." porque habría que pasarle un Alert que nos avise
     echo "Artículo eliminado correctamente.";
@@ -19,7 +19,7 @@ Añadido BORRAR con método deleteById($id) en RepositorioArticulos.php
     echo "Error al intentar eliminar el artículo.";
     }
 
-  header("Location: index.php");
+  header("location: index.php");
   exit;
 
 

@@ -78,5 +78,5 @@
     echo "<table></div>";
 
     require_once "../templates/footer.php";
-    // el footer aquí manda al index.php que coge el mismo CRUD, dentro del inicio del blog cogerá el index.php del inicio del blog principal.
+    // el footer aquí manda al index.php del CRUD, dentro del inicio del blog cogerá el index.php del inicio del blog principal.
 

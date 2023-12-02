@@ -53,7 +53,6 @@
     <div class="mb-3">
       <label for="imagen" class="form-label">Imagen</label>
       <input type="file" class="form-control" id="imagen" name="imagen" accept="image/*">
-    
     </div>
 
     <div class="mb-3">
@@ -65,10 +64,18 @@
     <input class="form-check-input" type="checkbox" id="destacado" name="destacado">
     <label class="form-check-label" for="destacado">Destacado</label>
     </div>
+    <!-- <div class="mb-3">
+      <label for="destacado" class="form-label">Destacado</label>
+      <input type="checkbox" class="form-label" id="destacado" name="destacado">
+    </div> -->
     
-    <button type="submit" name="submit" class="btn btn-primary">Enviar</button>
+    <button type="submit" name="submit" class="btn btn-primary">Crear Artículo</button>
   </form>
   <div class="container my-5">
-    <a href="index.php" class="btn btn-primary">Volver al listado</a>
+    <a href="index.php" class="btn btn-outline-dark">Volver al listado</a>
   </div>
 </div>
+
+<?php
+require_once "../templates/footer.php";
+?>

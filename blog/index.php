@@ -5,6 +5,7 @@
     /* Esto de $titulo="XXX"; poner en cada página para que coja el nombre que le demos a cada página php, 
     que la coje del header.php */
     $titulo="Inicio del blog de Rubén";
+    $activo = "Inicio";
 
     require_once "templates/header.php";
     require_once "modelo/Articulo.php";
@@ -18,7 +19,10 @@
         <h3>Aquí verás todo el contenido del blog de Rubén</h3>
     </div>
 
+<main>
+
 <?php
+
     // Utilizo la conexión que se crea en conexion.php para pasarla como parámetro al repo
     $rep = new RepositorioArticulos($conexion);
 
@@ -44,6 +48,7 @@
     </div>
 
 <?php
+    // Para mostrar carousel de imágenes 
     $rep->mostrarCarousel();
 ?>
     
@@ -56,6 +61,7 @@
 ?>
     </div>
 
+</main>
 
 <?php
     require_once "templates/footer.php";
