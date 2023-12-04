@@ -1,0 +1,42 @@
+body {
+    background-color: #CFC;
+    font-family: Georgia, Cambria, serif;
+    font-size: 16px;
+    color: #00F;
+}
+
+/* p {
+    color: #00F;
+} */
+
+h1 {
+    color: #F00;
+    font-family: Verdana, Calibri, sans-serif;
+    font-size: 32px;
+}
+
+h2 {
+    color: #A00;
+    font-family: Verdana, Calibri, sans-serif;
+    font-size: 24px;
+}
+
+.datos-libro {
+    color: #060;
+}
+
+.sustantivo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cursivaYNegrita{
+    font-style: italic;
+    font-weight: bold;
+}
+
+.personaje {
+    color: #FFF;
+    background-color: #000;
+    font-style: italic;
+}
