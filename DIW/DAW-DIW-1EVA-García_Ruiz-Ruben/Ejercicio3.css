@@ -1,0 +1,88 @@
+/*
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-wrap: wrap -> permite que los elementos se envuelvan a la siguiente línea si no hay suficiente espacio /
+    justify-content: space-around;
+    /* justify-content: space-around -> distribuye el espacio alrededor de los elementos de manera que haya un espacio uniforme entre ellos /
+    align-items: center;
+    /* align-items: center -> centra los elementos verticalmente en el contenedor (en la clase .container que hemos creado) /
+
+    height: 100vh; 
+    /* height: 100vh; -> Asegura que la altura ocupe el 100% de la ventana /
+    background-color: #f0f0f0;
+}
+/* La clase .container la hemos utilizado para el contenedor principal con display: flex, 
+lo que convierte a sus hijos directos (los elementos con la clase .item que hemos creado líneas despues) 
+en elementos flexibles. /
+
+.item {
+    /*flex: 1 0 30%;  Flex-grow: 1, flex-shrink: 0, y el flex-basis es: 30% /
+
+/* Cada .item tiene un ancho flexible con -> flex: 1 0 30%, 
+lo que significa que pueden crecer pero no encogerse, 
+y su tamaño base es el 30% del contenedor. /
+
+    margin: 10px;
+    padding: 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-align: left;
+}
+*/
+
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.columna-unica, .dos-columnas, .tres-columnas {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .dos-columnas,
+    .tres-columnas {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+
+    .columna-unica,
+    .tres-columnas {
+        display: none;
+    }
+
+    .dos-columnas {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+
+    .columna-unica,
+    .dos-columnas {
+        display: none;
+    }
+
+    .tres-columnas {
+        display: block;
+    }
+}

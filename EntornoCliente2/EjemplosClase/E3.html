@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PruebaDia1</title>
+</head>
+<body>
+    <h1>3. Ejemplos y ejercicios</h1>
+
+    <script>
+        var i = "12.5";
+        var x = "10";
+
+        // la suma
+        document.write(parseFloat(i) + parseInt(x));
+    </script>
+
+    <h3>Mejores maneras de hacerlo</h3>
+    <!-- Hechos varios script, de ejemplos de la diapositiva del profesor Miguel -->
+    <script>
+        // Conversión implícita de tipos o uso de toString 
+        var i = "3" + 3; // Así i sería solo 33: i == "33"
+
+        // pasamos a número la cadena completo de texto (lo convierte a entero)
+        var valorNumerico = parseInt(i);
+        console.log(valorNumerico);
+
+        var variable = true;
+        variable.toString(); // devuelve true como cadena de texto
+    </script>
+
+    <script>
+        // Conversión cadenas a números:
+        var i = parseInt("10");
+        var f = parseFloat("10.2");
+
+        // esto lo suma solo
+        console.log(i + f)
+    </script>
+
+    <script>
+        // Conversión números a cadenas:
+        var s = "" + 10;
+
+        /* IGUALDAD ==
+        Aplica a objetos compara referencia.
+        Tipos primitivos: realiza conversión tipos: 3 == "3"; esto es true
+        IDENTIDAD ===
+        Sin conversión de tipos: 3 === "3"; esto es false */
+    </script>
+
+</body>
+</html>
