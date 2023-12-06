@@ -1,4 +1,13 @@
 <?php
+
+/* Está dentro de C:\xampp\htdocs\archivos\PHP0\aprende-php-con-ejercicios-master\soluciones\03_SentenciaCondicional es el ejercicio 15 
+
+Para ejecutar con el xampp sería:
+http://localhost/archivos/php0/aprende-php-con-ejercicios-master/soluciones/03_SentenciaCondicional/15.php
+*/
+
+
+
     $preguntas[0]="1. Tu pareja parece estar más inquieta de lo normal sin ningún motivo aparente.";
     $preguntas[1]="2. Ha aumentado sus gastos de vestuario";
     $preguntas[2]="3. Ha perdido el interés que mostraba anteriormente por ti";
