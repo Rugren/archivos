@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- Los enlaces es por poner un ejemplo -->
+<datos xmlns:dp="http://www.datospersonales.com" xmlns:de="http://www.datosempleados.com">
+
+    <!-- "dp" para datos personales y "de" para datos de empleados -->
+    
+    <!-- Datos Personales -->
+    <dp:persona>
+        <dp:nombre>Nombre Persona</dp:nombre>
+        <dp:direccion>Direccion Persona</dp:direccion>
+        <dp:contacto>Contacto Persona</dp:contacto>
+    </dp:persona>
+
+    <!-- Datos de Empleados -->
+    <de:empleado>
+        <de:nombre>Nombre Empleado</de:nombre>
+        <de:direccion>Direccion Empleado</de:direccion>
+        <de:cargo>Cargo Empleado</de:cargo>
+    </de:empleado>
+</datos>
