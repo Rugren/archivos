@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Agregar Jugador</title>
+</head>
+<body>
+    <h2>Agregar Jugador</h2>
+    <form action="procesar_registro.php" method="post" enctype="multipart/form-data">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" required><br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="text" name="telefono" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" required><br>
+
+        <label for="equipo">Equipo:</label>
+        <select name="equipo" required>
+            <!-- Aquí debes obtener los nombres de los equipos desde la base de datos -->
+            <option value="equipo1">Equipo 1</option>
+            <option value="equipo2">Equipo 2</option>
+            <!-- ... otras opciones ... -->
+        </select><br>
+
+        <label for="foto">Fotografía:</label>
+        <input type="file" name="foto" accept="image/*" required><br>
+
+        <input type="submit" value="Agregar Jugador">
+    </form>
+</body>
+</html>
