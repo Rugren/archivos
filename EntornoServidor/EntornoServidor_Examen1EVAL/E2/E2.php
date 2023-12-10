@@ -32,7 +32,7 @@
         <label for="team2Points">Puntos equipo 2:</label>
         <input type="number" id="team2Points" placeholder="Puntos equipo 2">
 
-        <button type="button" onclick="calcularGanador()">Submit</button>
+        <button type="button" onclick="calcularGanador()">Calcula el ganador</button>
     </form>
 
     <div id="resultMessage" style="display: none;">
