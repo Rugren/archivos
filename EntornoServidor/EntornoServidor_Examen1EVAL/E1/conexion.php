@@ -1,6 +1,6 @@
 <?php
     //Conectamos con el servidor 
-    $conexion=new mysqli("localhost", "ruben", "Murcia2023");
+    $conexion=new mysqli("localhost", "ruben", "Murcia2023", "h0122u0007_ruben");
     // para subirlo a https://telosabes.com/ruben 
 
     //Creamos la base de datos si no existe

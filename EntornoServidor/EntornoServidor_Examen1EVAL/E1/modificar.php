@@ -9,6 +9,8 @@
         $consulta="UPDATE equipos SET nombre='$nombre', observaciones='$observaciones' WHERE id=$id";
         $conexion->query($consulta);
 
+        header("location:index.php");
+
     } else {
         $id=$_GET["id"];
 
@@ -20,8 +22,6 @@
     }
 ?>
 
-<!-- COMPARAR CON EL MODIFICAR DEL PROFESOR sssssssssssssssssssssssssssssssssssssSsssSSs -->
-
 <html>
     <head>
     <title>Modificar</title>
@@ -32,7 +32,7 @@
     <input type="hidden" name="id" value="<?php echo $equipo->id ?>">
     <div class="mb-3">
         <label for="nombre">Nombre</label>
-        <input type="text" class="form-control" id="nombre" name="nombre" value="<?php echo $equipo->nombre?>">
+        <input type="text" class="form-control" id="nombre" name="nombre" value="<?php echo $equipo->nombre; ?>">
     </div>
     <div class="mb-3">
         <label for="observaciones">Observaciones</label>

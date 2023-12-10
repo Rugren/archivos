@@ -20,15 +20,17 @@
     </head>
 <body>
 <form action="" method="post">
-    <input type="hidden" name="id" value="<?php echo $equipo->id ?>">
+    <!-- (esto el profesor no lo puso) <input type="hidden" name="id" value="<?php echo $equipo->id ?>"> -->
     <div class="mb-3">
         <label for="nombre">Nombre</label>
-        <input type="text" class="form-control" id="nombre" name="nombre" value="<?php echo $equipo->nombre?>">
+        <!-- <input type="text" class="form-control" id="nombre" name="nombre" value="< ?php echo $equipo->nombre?>"> (el profesor no puso el php) -->
+        <input type="text" class="form-control" id="nombre" name="nombre" value="">
     </div>
     <div class="mb-3">
         <label for="observaciones">Observaciones</label>
         <!-- En el textArea no se pone un Value -->
-        <textarea class="form-control" id="observaciones" name="observaciones"><?php echo $equipo->observaciones; ?></textarea>
+        <!-- <textarea class="form-control" id="observaciones" name="observaciones">< ?php echo $equipo->observaciones; ?></textarea> (el profesor no puso el php) -->
+        <textarea class="form-control" id="observaciones" name="observaciones"></textarea>
     </div>
     <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
