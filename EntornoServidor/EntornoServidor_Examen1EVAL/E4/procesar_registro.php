@@ -1,5 +1,6 @@
 <?php
 // este procesar_registro.php es el editado y adaptado.
+// no está bien
 
 // Conectar a la base de datos (la ya creada del ejercicio 1)
 $servername = "localhost";
