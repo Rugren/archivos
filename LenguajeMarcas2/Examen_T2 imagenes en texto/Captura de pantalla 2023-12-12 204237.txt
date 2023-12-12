@@ -1,0 +1,36 @@
+PARTE HTML:
+
+Hastiales de Amsterdam
+
+Pico
+Escalonado
+Campana
+
+Paseando por Amsterdam llaman la atención las terminaciones de las fachadas de las casas, todas parecidas pero
+todas diferentes.
+
+Son los llamados hastiales o piñones, un elemento arquitectónico que remata la fachada y que queda enmarcado
+por las dos vertientes del tejado. Se trata de un elemento decorativo cuyo estilo fue evolucionando a lo largo del
+siglo XVII hasta ser sustituidos por balaustradas y cornisas barrocas.
+
+1 Hastial en pico
+
+El hastial en pico, o de caño, es el más común en los almacenes del siglo XVII y consiste en una protuberancia
+rectangular en el extremo del edificio.
+
+2 Hastial escalonado
+
+El hastial escalonado, más ornamentado, se puso de moda en el primer tercio del siglo XVII en las casa
+particulares.
+
+3 Hastial campana
+
+El hastial campana se puso de moda entre 1660 y 1670.
+
+En esta página se utilizan las entidades de carácter (1) (&#9461;), (2) (&#9462;) y (3)
+(&#9464).
+
+PARTE CSS:
+
+Deberá quedar definido el contenido alternativo de la imagen que se muestra si por alguna
+razón la imagen no se puede mostrar
