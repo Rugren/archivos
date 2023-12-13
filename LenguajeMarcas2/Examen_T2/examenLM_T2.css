@@ -1,0 +1,96 @@
+body {
+    background-color: #56595F;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+
+/* #linea-Blanca {
+    background-color: white;
+} */
+
+/* p {
+    no es necesario para el texto del primer párrafo o los párrafos en general.
+    text-align: justify;
+} */
+
+
+h1,
+h2 {
+    border-bottom: 3px solid white;
+    clear: both; /* para asegurarse de que los encabezados no sean afectados por otros elementos flotantes 
+    que podrían estar alrededor. Ni coja todo lo del body que no queramos */
+}
+
+.menu {
+    background-color: white;
+    padding: 10px 0;
+    text-align: center; /* puesto aquí el texto centrado para que no coja el texto justificado del body */
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block; /* la lista <li> se mostrarán uno al lado del otro (en línea), no en una lista vertical */
+    margin-right: 20px;
+}
+
+.menu a { /* para los enlaces <a> dentro del menú*/
+    color: #56595F;
+    text-decoration: none;
+    /* Si ponemos (: none;) Eliminaríamos cualquier decoración del texto, incluido el subrayado
+    (que lo hemos puesto en "menu a", porque por defecto lo subraya cuando es un enlace)*/
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    /* cuando el ratón pasa sobre el enlace (:hover), se añadirá un subrayado al texto, de que el enlace es interactivo. */
+}
+
+img {
+    /* max-width: 100%; */
+    height: auto;  /* La altura se ajustará automáticamente para mantener la proporción de la imagen */
+
+    width: 150px; /* Ancho fijo de 150 píxeles que pide el ejercicio */
+    border: 3px solid white;
+    margin: 10px;
+}
+
+#img-alineada-derecha {
+    float: right;
+    /* me coge todas las opciones de img + lo que ponga en #img-alineada-derecha 
+    (porque en el html está metido dentro de la etiqueta img) */
+}
+#img-alineada-izquierda {
+    float: left;
+    /* me coge todas las opciones de img + lo que ponga en #img-alineada-izquierda
+    (porque en el html está metido dentro de la etiqueta img) */
+}
+
+.contenedorTextoIzquierda {
+    float: left;
+}
+.contenedorTextoDerecha {
+    float: right;
+}
+
+
+/*
+.entidad {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+*/
+.subtitle {
+    margin-top: 50px; /* margen superior */
+    border-top: 20px solid white; /* para una separación distintiva */
+    padding-top: 20px; /* relleno superior */
+}

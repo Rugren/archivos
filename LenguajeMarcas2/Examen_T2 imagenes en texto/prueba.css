@@ -1,0 +1,21 @@
+body {
+    background-color: #56595F;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  img {
+    width: 150px;
+    height: auto;
+    border: 3px solid white;
+    margin: 10px;
+    float: left; /* Hace que la imagen flote a la izquierda */
+  }
+  
+  .container {
+    margin-left: 180px; /* Ajusta el margen para dejar espacio a la imagen */
+  }
+  
