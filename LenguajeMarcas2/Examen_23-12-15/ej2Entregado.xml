@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<festival xmlns:peliculas="http://www.ejercicio2.com/peliculas"
+xmlns:directores="http://www.ejercicio2.com/directores">
+
+<festival xmlns:peliculas="http://www.ejercicio2.com/peliculas"
+xmlns:directores="http://www.ejercicio2.com/directores">
+
+<peliculas:pelicula>
+<peliculas:identificador>P1</peliculas:identificador>
+<peliculas:nombre>Lobo del Wall Street</peliculas:nombre>
+<peliculas:descripcion>Trata sobre la inversión en Bolsa</peliculas:descripcion>
+</peliculas:pelicula>
+
+<peliculas:pelicula>
+<peliculas:identificador>P2</peliculas:identificador>
+<peliculas:nombre>Up la película</peliculas:nombre>
+<peliculas:descripcion>Trata sobre un anciano y un niño que va en una casa en globo a todas partes</peliculas:descripcion>
+</peliculas:pelicula>
+
+
+<directores:director>
+<directores:identificador>D1</directores:identificador>
+<directores:nombre>Director Robert De Niro</directores:nombre>
+<directores:descripcion>Director curtido en películas de los años 80-90</directores:descripcion>
+</directores:director>
+
+<directores:director>
+<directores:identificador>D2</directores:identificador>
+<directores:nombre>Director Rubén García</directores:nombre>
+<directores:descripcion>Director especialista en películas de acción e infantiles</directores:descripcion>
+</directores:director>
+
+</festival>
