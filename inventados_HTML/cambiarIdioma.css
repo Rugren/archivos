@@ -1,0 +1,33 @@
+.panel-idioma {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.panel-idioma h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+.panel-idioma ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.panel-idioma li {
+    margin: 5px 0;
+}
+
+.panel-idioma a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.panel-idioma a:hover {
+    color: #007bff; /* Cambiar el color al pasar el mouse por encima */
+}

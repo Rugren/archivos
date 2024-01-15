@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario LM_practica4</title>
+    <style>
+        /* ¿¿??Quiero coger todo este CSS de style para pasarlo a LM_practica4.html 
+        
+        llamarlo distinto, por ejemplo a "body {..." llamarlo "#bodyFORMULARIO {..." y llamarlo luego abajo en los <div>, concretamente en: 
+            <div id="abajo">
+            <p style="text-align: left;">Texto</p>
+
+            y llamarlos con: id="bodyFORMULARIO"
+        */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        hr {
+            border: 1px solid #ddd;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px 0;
+            box-sizing: border-box;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
+            border: 1px solid #ddd;
+        }
+
+        textarea {
+            border: 1px solid #ddd;
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background-color:rgb(62, 57, 57);
+            color: white;
+            padding: 15px 38px;
+            /* para aumentar el tamaño del botón */
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+            /* Centrado el botón */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="mailto:reclamos@gmail.com?subject=pedido de reparación" method="post" enctype="text/plain">
+    <!-- <form action="mailto:xxx@gmail.com" method="post" enctype="text/plain" onsubmit="return populateFields()"> -->
+        <h2>Formulario de Contacto</h2>
+        <p> Déjenos saber sus preguntas, sugerencias o preocupaciones llenando el formulario de contacto debajo</p>
+        <hr> <!-- para que me coja la línea como en el ejercicio, la línea vacía esa -->
+
+        <!-- Nombre y apellidos -->
+
+        <!-- Nombre en una fila y apellido en otra
+        <label for="nombreCompleto"><strong>Nombre completo</strong></label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+        <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+        </div> -->
+
+        <label for="nombreCompleto"><strong>Nombre Completo</strong><span style="color: red;">*</span></label>
+        <div style="display: flex;">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" style="flex: 1; margin-right: 10px;">
+            <input type="text" id="apellido" name="apellido" placeholder="Apellido" style="flex: 1;">
+        </div>
+
+        <!-- Email -->
+        <label for="email"><strong>Email</strong><span style="color: red;">*</span></label>
+        <div>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <!-- Teléfono -->
+        <label for="telefono"><strong>Teléfono</strong><span style="color: red;">*</span></label>
+        <div>
+            <input type="tel" id="telefono" name="telefono" pattern="\d{2} \d{4} \d{4}" placeholder="## #### ####">
+        </div>
+
+        <!-- Asunto del Mensaje -->
+        <!-- 
+        <label for="asunto"><strong>Asunto del mensaje</strong></label>
+        <div>
+            <input type="text" id="asunto" name="asunto" placeholder="Consulta">
+        </div>
+        -->
+
+        <!-- Asunto del Mensaje -->
+        <label for="asunto"><strong>Asunto del mensaje</strong><span style="color: red;">*</span></label>
+        <div>
+            <select id="asunto" name="asunto" style="width: 600px; height: 30px;">
+                <option value="consulta">Consulta</option>
+                <option value="contacto">Contacto</option>
+                <option value="otros">Otros motivos</option>
+            </select>
+        </div>
+
+        <!-- Mensaje -->
+        <label for="mensaje"><strong>Mensaje</strong><span style="color: red;">*</span></label>
+        <div>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea> <!-- placeholder="Escribe tu mensaje..." -->
+        </div>
+
+        <!-- Botón de Enviar -->
+        <input type="submit" value="Enviar">
+    </form>
+
+    <!-- Este script no ejecuta bien, al enviarlo, en el correo no aparece el nombre, apellidos, ni ningún campo rellenado, aparece así:
+nombre=
+apellido=
+email=
+telefono=
+asunto=
+mensaje=
+
+Enviado desde Correo para Windows
+-->
+    <!-- 
+    <script>
+        function populateFields() {
+            // Rellenar los campos con lo que el usuario haya ingresado
+            document.getElementById('nombre').value = localStorage.getItem('nombre') || '';
+            document.getElementById('apellido').value = localStorage.getItem('apellido') || '';
+            document.getElementById('email').value = localStorage.getItem('email') || '';
+            document.getElementById('telefono').value = localStorage.getItem('telefono') || '';
+            document.getElementById('asunto').value = localStorage.getItem('asunto') || '';
+            document.getElementById('mensaje').value = localStorage.getItem('mensaje') || '';
+
+            // Guardar los valores en el almacenamiento local
+            localStorage.setItem('nombre', document.getElementById('nombre').value);
+            localStorage.setItem('apellido', document.getElementById('apellido').value);
+            localStorage.setItem('email', document.getElementById('email').value);
+            localStorage.setItem('telefono', document.getElementById('telefono').value);
+            localStorage.setItem('asunto', document.getElementById('asunto').value);
+            localStorage.setItem('mensaje', document.getElementById('mensaje').value);
+
+            return true; // Permitir el envío del formulario
+        }
+    </script>
+    -->
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+
+/* Estilos para todas las imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para las imágenes que no tienen el atributo "alt" */
+img:not([alt]) {
+    border: 3px solid red;
+}
+
+/* Añadido un icono(imagen) PDF después de los enlaces que apuntan a un archivo PDF */
+a[href$=".pdf"]::after {
+
+    background-image: url('img/logoPDF.png');
+    /* background-image: url(/img/pdf.png); Adri lo tenía así, pero a mi me va con la línea mía de arriba */
+    background-size: 200px 200px;
+    /* Si en background-size pongo 150px 150px -> en wi width: y height: poner el mismo nº del tamaño que le demos */
+    background-repeat: no-repeat;
+    display: inline-block;
+
+    /* Si modifico width: y height: poner arriba en background-size el mismo nº del tamaño */
+    width: 200px;
+    height: 200px;
+    content: "";
+}
+    /* Así lo tenía yo que no me cogía el tamaño de la imagen: 
+    a[href$=".pdf"]::after {
+    content: url('img/logoPDF.png'); poner bien siempre la url dónde está nuestra imagen, que la enlace
+    
+    Cada vez que enlacemos un archivo pdf se pondrá de imagen el icono del PDF, 
+    es decir, redirige a nuestra foto: logoPDF.png 
+
+    display: inline-block;
+    margin-left: 5px;
+    
+     No coge el código del tamaño *VER POR QUÉ* 
+    width: 15px !important; ajustado el Ancho porque la imagen era muy grande 
+    height: 15px !important;  ajustado la Altura porque la imagen era muy grande  
+    } */
+
+/* Así como lo tenía Adri (para que no me diese error en el código comentado de arriba, había que poner el background.
+a.pdf::after {
+    background-image: url(/img/pdf.png);
+    background-size: 2vw 2vw;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 2vw;
+    height: 2vw;
+    content: "";
+}
+*/
+

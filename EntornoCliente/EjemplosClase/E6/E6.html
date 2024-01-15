@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='es'>
+    <html>
+        <head>
+            <title>rombo con asteriscos</title>
+                <meta charset='UTF-8'/>
+                <meta name='description' content='Página web'>
+                <meta name='keywords' content=', rombo,piramide, javascript'>
+           <!-- http://aprendecurso.blogspot.com/2017/03/crear-rombo-con-asteriscos.html -->
+        </head>
+        <body>
+            
+            <h1>Ejercicio clase rombo con asteriscos</h1> 
+        <script type="text/javascript">
+        //declaracion variables
+            var f, c;
+            for(f=1;f<=6;f++)
+            {
+                for(c=1;c<=6-f;c++)
+                    document.write("&nbsp"); // para poner el espacio
+                for (c=1;c<=f;c++){
+                    document.write("*");
+                    }
+                    document.write("</br>");
+            }
+            for(f=5;f>=1;f--)
+            {
+                for(c=1;c<=6-f;c++)
+                    document.write("&nbsp");
+                for (c=f; c>=1;c--){
+                    document.write("*");
+                    }
+                document.write("</br>");
+                   
+            }
+           
+        </script>
+    </body>
+</html>

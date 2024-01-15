@@ -1,0 +1,14 @@
+
+<!-- Para usar espacios de nombres en xml -->
+
+<!-- Se pondría con xmlns:profesor="/profesor" xmlns:alumno="/alumno"
+Y luego con profesor y las etiquetas de dentro, en este caso solo hay nombre -->
+
+<CursoCesur xmlns:profesor="/profesor" xmlns:alumno="/alumno">
+    <profesor:nombre>Luis Juan Pérez</profesor:nombre>
+    <profesor:nombre>Ana López Pérez</profesor:nombre>
+
+    <alumno:nombre>Juan García Martín</alumno:nombre>
+    <alumno:nombre>María Gómez Sanjuán</alumno:nombre>
+    <alumno:nombre>José López Murillo</alumno:nombre>
+</CursoCesur>

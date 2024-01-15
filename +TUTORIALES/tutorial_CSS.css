@@ -1,0 +1,303 @@
+/* En css por defecto se suelen llamar las hojas de estilo style.css o styles.css
+Al igual que en html se suele llamar index.html*/
+
+/* Webs CSS de ayuda:
+https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors
+
+
+*/
+
+
+
+/*
+h3 {
+    color: rgb(3, 72, 31);
+}
+
+* { /* el asterisco (*) es para escoger todo, no usar
+    color:blueviolet;
+}
+
+p { /* el p* es para escoger todos los párrafos, elementos <p>
+    color:brown;
+}
+
+/* También valdría p.parrafo1 para asignar un nombre al parrafo1 dónde queramos ponerlo, pero así no hacer.
+p.parrafo1 {
+}
+
+ul {
+    Como <ul> son las listas no ordenadas, pues aplicaría el mismo estilo para todas. (La etiqueta <ol> crea una lista ordenada)
+    Y como queremos separarlas unas de otras, y para no repetirlas, están los selectores de clase, ver abajo.
+    color: chocolate;
+}
+*/
+
+/* Ver ejemplos en C:\Users\rubga\OneDrive\Escritorio\CESUR - DAW 2º\2.0 MÓDULOS\Diseño de interfaces web\Temarios
+
+DAW-DIW-UT04-LENGUAJE_DE_HOJAS_DE_ESTILO_CSS.pdf
+DAW-DIW-UT04-LENGUAJE_DE_HOJAS_DE_ESTILO_CSS_DIAPO.pdf (aquí ver el 4.2 selectores, 4.5 Propiedades de texto, 4.6 propiedades de fuente, etc.).
+*/
+
+
+/* SELECTORES DE CLASES
+Se crea con un punto y el texto seguido de guión.
+Como por ejemplo: .cosas-que-aman-los-gatos */
+
+.cosas-que-aman-los-gatos {
+    color: chocolate;
+}
+
+.estilo1 {
+    color: blue;
+    /* Color del texto */
+
+    text-align: center;
+    /* para alinear el texto centrado */
+
+    font-size: 15px;
+    /* Tamaño del texto */
+
+    /* font-family: Verdana; /* Fuente del texto, como es una palabra se pone así, si es con espacios, se pone (ver la siguiente línea) */
+
+    /* font-family: 'Times New Roman'; /* Como el tipo de palabra va separado, se pone entre comillas simples 'xxx' */
+
+    /* font-family: 'Courier New', Courier, monospace; /* El font-family coge varios formatos de fuente del texto, por si el navegador no acepta alguno o falla. */
+
+    font-family: Arial, Helvetica, sans-serif, 'Times New Roman';
+
+}
+
+
+/* BORDES */
+.bordes-estilos {
+    /* para aplicarle este estilo a una imagen, no poner img porque coge todas las imágenes */
+    /* Poner el class="bordes-estilos" dentro de la etiqueta <img>*/
+    /* si quiero editar una foto en concreto y darle estilos, llamar a la clase imagen1 y luego llamarla en html con class="imagen1"*/
+
+    width: 200px;
+    /* ancho */
+
+    border-width: 10px;
+    /* ancho del borde*/
+    border-color: brown;
+    /* color del borde */
+    border-style: outset;
+    /* estilo del borde */
+    border-style: solid dashed dotted double;
+    /* Cambia los 4 valores del borde(cuadrado) se mueve en sentido agujas del reloj (en cada borde del cuadrado hemos puesto un estilo diferente para que se vea; ya que podría ser solid solid double double, por poner un ejemplo):
+    solid (el estilo que le hemos dado para el borde superior, la parte de arriba del cuadrado)
+    dashed (el estilo de la parte derecha), que aquí podríamos haber puesto también solid solid y cogería este formato para la parte de arriba y de la derecha del borde.
+    dotted (estilo para el borde inferior)
+    double (estilo para el borde izquierdo)
+    */
+}
+
+.bordes-redondeados {
+    width: 200px;
+    border-radius: 20px;
+    /* cuanto menos sea el valor, menos redondeado se ve */
+}
+
+/* CONTENEDORES del div. El estilo se va a aplicar dentro de todo el div dónde lo metamos */
+.div1 {
+    background-color: blue;
+}
+
+/* ATRIBUTOS id en CSS */
+/* Con el id asignamos un estilo solo a un elemento (un identificador único), un h2, un p, etc. */
+/* Se pone con una almohadilla delante #*/
+#titulo-app-gatos {
+    font-size: 30px;
+    color: green;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#imagen-gatitos1 {
+    /* solo se puede aplicar de forma única. La aplicaré a la imagen gatitos.jpg */
+    width: 250px;
+    border-radius: 50%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: aqua;
+}
+
+/* PADDING: lo que está entre la imagen(o contenido de texto) y el borde
+Es la distancia entre el contenido de un elemento y su borde.
+
+Pero también podemos especificar la distancia que debe haber entre el borde del elemento y otros elementos, que lo contengan o que estén junto al elemento, esto SE DENOMINA MARGEN (que lo veremos en #imagen-gatitos4 )
+*/
+.div2 {
+    background-color: red;
+}
+
+#imagen-gatitos2 {
+    width: 250px;
+
+    padding: 15px;
+    /* está dentro de la imagen y el borde */
+    background-color: yellow;
+    /* color del fondo de padding*/
+
+    border-width: 2px;
+    border-color: black;
+    /* El color del borde o recuadro*/
+    border-style: solid;
+}
+
+#imagen-gatitos3 {
+    width: 250px;
+    /* Aquí vamos a poner el padding eligiendo cada apartado del cuadrado, como en los bordes que hemos hecho anteriormente de: border-style: solid dashed dotted double */
+
+    padding: 20px 15px 5px 10px;
+    /* En vez de poner estos 4, dejar como la línea del padding anterior(que es lo mismo), con los 4 pixeles anotados seguidos sin comas.
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+
+    Valores del padding (también aplicables a la propiedad margin): 
+    - Un valor: se aplica el estilo a los 4 lados. 
+    - Dos valores: el primer valor se aplica a arriba y abajo, el segundo valor se aplica a derecha e izquierda. 
+    - Tres valores: el primer valor se aplica a arriba, el segundo valor a derecha e izquierda y el tercer valor se aplica a abajo del elemento. 
+    - Cuatro valores: el primer valor se aplica a arriba, el segundo valor se aplica a la derecha, el tercer valor se aplica a abajo y el cuarto valor se aplica a la izquierda. 
+    (Ver en carpeta: C:\Users\rubga\OneDrive\Escritorio\CESUR - DAW 2º\2.0 MÓDULOS\Diseño de interfaces web\Temarios 
+    archivo: DAW-DIW-UT04-LENGUAJE_DE_HOJAS_DE_ESTILO_CSS.pdf - 4.12.1 Padding o relleno.
+    */
+
+    background-color: rebeccapurple;
+
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+}
+
+/* Margen: la distancia que debe haber entre el borde del elemento y el borde de otros elementos(otros bordes), que lo contengan o que estén junto al elemento. */
+/* Vídeo https://www.youtube.com/watch?v=XqFR2lqBYPs&t=4836s ya puesto para que esté dónde lo dice; 3h 34 min*/
+#imagen-gatitos4 {
+    width: 250px;
+    margin: 15px;
+    /* margin es el margen*/
+
+    background-color: yellow;
+
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+
+}
+
+/* Ajustar el margen */
+#imagen-gatitos5 {
+    width: 250px;
+
+    /*
+    margin-top: 20px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    */
+    /* En lugar de ponerlos uno por uno, poner en una sola línea, en el mismo orden que el anterior: */
+    /* margin: 20px 15px 10px 5px; */
+
+    /* También se puede poner con solo 2, que sería la primera(margen superior e inferior) y el segundo(margen izquiero y derecho) */
+
+    margin: 20px 15px;
+    background-color: yellow;
+
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+}
+
+/* margin vs padding: */
+
+#imagen-gatitos6 {
+    width: 250px;
+    margin: 25px;
+    padding: 25px;
+
+    background-color: yellow;
+
+    border-width: 4px;
+    border-color: black;
+    border-style: solid;
+}
+
+
+/* Selecciones de Atributos (INICIO) */
+
+/* Aquí me cogería todas las imágenes que tengan el atributo alt(en las imágenes por ejemplo, les puse alt="Gatitos pequeños"). */
+
+/* comentado para que no me influya:
+img[alt] {
+    border-radius: 50%;
+}
+*/
+
+/* Otros ejemplos (Selecciones de Atributos): */
+/* input[type="radio"] {
+    margin: 5px;
+}
+
+Igualmente se puede omitir input, puesto que es para que coja todos los elementos input de type radio o type checkbox, como en el siguiente ejemplo: 
+[type="checkbox"]{
+    margin: 8px;
+} 
+*/
+
+/* Aquí me cogería todos los enlaces con la misma url con este formato */
+a[href="https://www.rugren.es"] {
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+    /* Si pongo text-align: center; aquí, todos los texto que lleven el enlace a rugren.es se alinea el texto*/
+}
+
+/* Selecciones de Atributos (FIN) */
+
+
+
+/* UNIDADES ABSOLUTAS Y RELATIVAS
+Hasta ahora hemos visto px(pixeles) y %(porcentaje) como unidades que les damos. Ahora veremos vw y em - UNIDADES DE LONGITUDES RELATIVAS - Unidad de longitud relativa: */
+/* Documentación: https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Values_and_units */
+
+/* 
+em: Tamaño de letra del elemento padre.
+vw: 1% del ancho de la ventana gráfica. 
+[vw viene de anchura/ancho ventana gráfica; w viene de Width(anchura/ancho) ]
+vh:	1% de la altura de la ventana gráfica.
+[vh viene de altura ventana gráfica; h viene de Height(altura) ]
+*/
+#contenedor-prueba-unidades {
+    color: white;
+    padding: 5px;
+    font-size: 10px;
+    background-color: yellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.rectangulo1 {
+    padding: 5px;
+    margin: 5px;
+}
+
+.px1 {
+    background-color: crimson;
+    width: 200px;
+}
+
+.vw1 {
+    /* Es una unidad relativa al tamaño de la ventana del navegador (cuando la hacemos más grande la ventana, también se agranda, si la encogemos se empequeñará */
+    background-color: darkmagenta;
+}
+
+.em1 {
+    /* Es una unidad relativa al tamaño del texto, de la fuente (si aumentamos el tamaño de letra aumenta el contenedor donde se encuentre) */
+    /* En este caso, como el tamaño de letra donde está .em1 es #contenedor-prueba-unidades pues ahí si modificamos el font-size: 10px; a font-size: 25px; cambiará el tamaño de letra y se ajustará a dónde esté incluido el texto */
+    background-color: green;
+    width: 15em;
+}
+
+/* Aplicar Estilo a <body> */
+/*Viendo por https://www.youtube.com/watch?v=XqFR2lqBYPs&t=4836s */

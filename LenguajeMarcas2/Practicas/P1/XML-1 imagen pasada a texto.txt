@@ -1,0 +1,36 @@
+Vamos a crear un documento válido en XML que permita estructurar la información de varias
+recetas de concina de la página web de un restaurante.
+
+Para cada receta habrá que indicar: su nombre, el tipo de receta (entrantes, sopas, ensaladas, carnes,
+pescados, postres), la dificultad, el tiempo total, el número de raciones, las calorías por ración, los
+ingredientes, y la descripción del procedimiento.
+
+A continuación, se incluye una receta del tipo «postre» como ejemplo:
+
+Bizcocho de calabaza (8 raciones)
+
+Ingredientes:
+
+250 gr calabaza asada limpia.
+200 gr panela
+3 huevos.
+70 gr aceite de girasol
+250 gr harina repostería
+3 sobres dobles de gaseosas.
+
+Preparación
+
+Forrar un molde rectangular de 18 x 30 cm aprox.
+Batir la calabaza asada con la panela.
+Añadir los huevos y seguir batiendo hasta que la panela esté disuelta.
+Añadir el aceite y seguir batiendo hasta que quede mezclado.
+Añadir la harina y los sobres blancos. Remover con cuidado y sin que queden grumos
+Añadir los sobres azules. Remover hasta que queden mezclados.
+Verter la mezcla en el molde ya preparado. Espolvorear la superficie con azúcar y canela.
+Hornear a 175%C durante 25 minutos con horno precalentado.
+
+
+Tiempo de resolución: 1 h aprox.
+
+
+https://www.ocr2edit.com/es

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- <html lang="en"> Idioma en inglés; "es" es para el español -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial HTML</title>
+    <!-- <title>Document</title> Título del documento web, lo que se vería en la pestaña del navegador -->
+</head>
+
+<body>
+    <!-- <body> el cuerpo empezaría aquí y seguiría con el header hasta abajo;
+        <header>
+            // place navbar here. Esto lo tiene bootstrap, que es para poner una cabecera. No la solemos poner en los ejercicios
+        </header>
+
+        Despúes de cerrar el header, vendría el main (donde va a ir todo nuestro cuerpo y toda la estructura de la página)
+        <main>
+            todo iría aquí
+        </main>
+
+        Despúes de cerrar el main, vendría el footer (donde va a ir el pie de página)
+        <footer>
+            // place footer here. El pie de la pagina aqui
+        </footer>
+        Y ya después del cerrar el footer, cerrariamos la etiqueta del cuerpo y del html: </body> </html>-->
+
+
+    <!-- Títulos, poner h1 + enter y te lo abre y cierra, así no hace falta poner los < > -->
+    <h1>Elementos y etiquetas</h1>
+    <h2>Elementos y etiquetas</h2>
+    <h3>Elementos y etiquetas</h3>
+    <h4>Elementos y etiquetas</h4>
+    <h5>Elementos y etiquetas</h5>
+    <h6>Elementos y etiquetas</h6>
+
+    <br> <!-- br es un salto de línea y no requiere de cierre -->
+    <hr> <!-- hr es una Línea horizonal y no requiere de cierre -->
+
+    <p>Párrafos</p>
+
+    <p>Esto
+        es un
+        párrafo
+        <!-- Aunque puesto así, lo pone en una misma línea, para que esté separado en otra línea o párrafo habría que meterlo todo dentro de <p>texto en una línea aquí</p> (abriendo la etiqueta p y cerrándola)-->
+    </p>
+
+    <br>
+    <h3>Imágenes</h3>
+    <img src="https://s1.ppllstatics.com/lasprovincias/www/multimedia/202112/12/media/cortadas/gatos-kb2-U160232243326NVC-624x385@Las%20Provincias.jpg"
+        alt="Un lindo gatito">
+    <!-- La imagen está sacada de: https://www.lasprovincias.es/sociedad/mascotas/gatos/gato-reconoce-rostro-20211212195831-nt.html  -->
+    <!-- Atributo src="" es para sacar de un enlace que ya está alojada en internet, solo con un enlace a la foto (darle a "Copiar dirección de imagen") -->
+    <!-- Atributo alt="" es una descripción alternativa para el lector, cuando no hay internet o no carga bien, se ve en texto lo que se supone que sería la imagen que no se ha podido visualizar -->
+
+    <img src="imgTutoriales/lasana.jpg" alt="Lasaña">
+    <!-- Si la imagen está en una carpeta dentro de la misma carpeta de este archivo html, poner la ruta: nombreCarpeta/imagen.jpg - Si la imagen está fuera poner ..carpeta/img (algo así, ir probando) -->
+    <!-- En el alt se pueden poner ñ y espacios, porque es lo que se ve, no afecta al código -->
+
+    <br>
+    <h3>Crear Enlaces Externos:</h3>
+    <!-- Con enlace en la misma página (etiqueta <a href="">texto a enlazar aquí</a>) -->
+    <p>Haz <a href="https://www.zooplus.es/magazine/gatos/gatitos">clic aquí</a> para ver más imágenes de gatitos</p>
+
+    <!-- Con enlace en una pestaña nueva (etiqueta <a href="" target="_blank">texto a enlazar aquí</a>) -->
+    <p>Haz <a href="https://www.zooplus.es/magazine/gatos/gatitos" target="_blank">clic aquí(abre nueva pestaña)</a>
+        para ver más imágenes de gatitos</p>
+
+    <!-- Por motivos de seguridad, añadir atributo: rel="noopener noreferrer" para evitar el ataque Tabnabbing(la pestaña de origen se reemplaza para que el usurio ingrese sus datos y eso es una brecha de seguridad) -->
+    <p>Haz <a href="https://www.zooplus.es/magazine/gatos/gatitos" target="_blank" rel="noopener noreferrer">clic
+            aquí(abre nueva pestaña con más seguridad)</a> para ver más imágenes de gatitos</p>
+
+    <br>
+    <h3>Enlaces a secciones internas, como un índice: </h3>
+    <a href="#parrafo-1">Manda al párrafo 1</a>
+    <a href="#parrafo-2">Manda al párrafo 2</a>
+    <a href="#parrafo-3">Manda al párrafo 3</a>
+    <a href="#parrafo-4">Manda al párrafo 4</a>
+
+    <!-- Con la etiqueta <p></p> lo deja uno debajo de otro
+    <p><a href="#parrafo-1">Manda al párrafo 1</a></p>
+    <p><a href="#parrafo-2">Manda al párrafo 2</a></p>
+    <p><a href="#parrafo-3">Manda al párrafo 3</a></p>
+    <p><a href="#parrafo-4">Manda al párrafo 4</a></p> -->
+
+    <h4 id="parrafo-1">Párrafo 1</h4>
+    <p>Texto 1</p>
+
+    <h4 id="parrafo-2">Párrafo 2</h4>
+    <p>Texto 2</p>
+
+    <h4 id="parrafo-3">Párrafo 3</h4>
+    <p>Texto 3</p>
+
+    <h4 id="parrafo-4">Párrafo 4</h4>
+    <p>Texto 4</p>
+
+    <h3>Enlaces con imágenes</h3>
+    <!-- Es poner la etiqueta del enlace ( <a href=""></a> ) delante de la etiqueta imagen <img> y cerrar el enlace </a>-->
+    <!-- Aquí está separado el enlace al que nos manda y el enlace del que coge la foto -->
+    <a href="https://www.lasprovincias.es/sociedad/mascotas/gatos/gato-reconoce-rostro-20211212195831-nt.html"
+        target="_blank"><img
+            src="https://s1.ppllstatics.com/lasprovincias/www/multimedia/202112/12/media/cortadas/gatos-kb2-U160232243326NVC-624x385@Las%20Provincias.jpg"
+            alt="Un lindo gatito"></a>
+
+    <a href="https://www.annarecetasfaciles.com/lasana-de-carne-con-pasta-fresca-receta-facil-y-rapida.html"
+        target="_blank"><img src="imgTutoriales/lasana.jpg" alt="Lasaña"></a>
+
+    <h4>Enlaces muertos con imágenes (que no te llevan a ningún lado):</h4>
+    <a href="#"><img src="imgTutoriales/lasana.jpg" alt="Lasaña"></a>
+    <!-- Con texto es lo mismo, pero sin <img>, dentro de un <p> -->
+
+    <br>
+    <h3>Listas no ordenadas</h3>
+    <p>Cosas que los gatos aman:</p>
+    <!-- La etiqueta <ul> crea una lista no ordenada, cerrarla siempre </ul>. Y dentro crear <li>Lista 1</li> -->
+    <ul>
+        <li>Menta gatuna</li>
+        <li>Apuntadores Láser</li>
+        <li>Lasaña</li>
+    </ul>
+
+    <br>
+    <h3>Listas ordenadas</h3>
+    <p>Cosas que los gatos odian:</p>
+    <!-- La etiqueta <ol> crea una lista ordenada, cerrarla siempre </ol>. Y dentro crear <li>Lista 1</li> -->
+    <ol>
+        <li>Tratamientos antipulgas</li>
+        <li>Truenos</li>
+        <li>Lluvia</li>
+    </ol>
+
+
+    <br>
+    <h3>Etiquetas para usar negrita, cursiva, subrayado, etc.</h3>
+    <!-- Negrita: (añadir la etiqueta <strong>palabra negrita</strong> dentro de un párrafo) -->
+    <p><strong>Palabra en negrita</strong></p>
+    <p>Palabra en <strong>negrita</strong>.</p>
+    <!-- Cursiva: (añadir la etiqueta <em>palabra cursiva</em> dentro de un párrafo) -->
+    <p><em>Palabra en Cursiva</em></p>
+
+    <p><u>Palabra subrayada</u></p>
+    <p><s>Palabra tachada</s></p>
+
+
+    <br>
+    <h3>1.0 Crear FORMULARIOS</h3>
+
+    <!-- action enviará el formulario a una url donde cogemos los datos introducidos por el usuario <form action="url"> -->
+    <form action="/enviar-respuesta">
+        <!-- input es un elemento para obtener una respuesta del usuario, con un tipo; texto, número, etc. (Y no se cierra)-->
+        <input type="text">
+        <!-- button es un elemento y hemos puesto un type de enviar y como texto también le hemos puesto Enviar (Y se cierra siempre button)-->
+        <button type="submit">Enviar</button>
+    </form>
+
+    <br>
+    <p>1.1 Texto marcador de posición</p>
+    <form>
+        <!-- placeholder="texto que se muestra dentro del recuadro del formulario" -->
+        <input type="text" placeholder="Escribe algo aquí">
+        <button type="submit">Enviar 2</button>
+    </form>
+
+    <br>
+    <p>1.2 Campo obligatorio, que no esté el campo vacío</p>
+    <form>
+        <!-- solo poner required -->
+        <input type="text" placeholder="Campo obligatorio" required>
+        <button type="submit">Enviar 3</button>
+    </form>
+
+    <br>
+    <h4>1.3 Botones de radio (Se pueden marcar varias)</h4>
+    <form>
+        <!-- no necesita una etiqueta de cierre -->
+        <input type="radio">Interior
+        <input type="radio">Exterior
+    </form>
+
+    <br>
+    <h4>1.4 Botones de radio (Solo se puede marcar uno de los grupos de radio)</h4>
+    <form>
+        <p>Elige solo una opción</p>
+        <!-- Dentro del input poner id que le demos a cada apartado y name con todos las opciones que tengamos, para así solo poder elegir una opción -->
+        <input id="opcion1" type="radio" name="opcion1-opcion2-opcion3">Opción 1.
+        <input id="opcion2" type="radio" name="opcion1-opcion2-opcion3">Opción 2.
+        <input id="opcion3" type="radio" name="opcion1-opcion2-opcion3">Opción 3.
+    </form>
+
+    <br>
+    <h4>1.5 Botones de radio (Se pueda marcar también si hacemos click en el texto)</h4>
+    <form>
+        <!-- poner etiqueta label rodeando el texto, LABEL para que nos coja el texto-->
+        <label><input type="radio">El texto también marca1</label>
+        <label><input type="radio">El texto también marca2</label>
+    </form>
+
+    <br>
+    <h4>1.6 Botones de radio (Solo se puede marcar uno de los grupos de radio) + (Se pueda marcar también si hacemos
+        click en el texto)</h4>
+    <form>
+        <p>Elige solo una opción texto</p>
+        <label><input id="1" type="radio" name="1-2-3">Opción texto 1.</label>
+        <label><input id="2" type="radio" name="1-2-3">Opción texto 2.</label>
+        <label><input id="3" type="radio" name="1-2-3">Opción texto 3.</label>
+    </form>
+
+    <br>
+    <h4>+++ 1.7 Botones de radio (Solo se puede marcar uno de los grupos de radio) + (Se pueda marcar también si hacemos
+        click en el texto) + etiqueta for(en código)</h4>
+    <form>
+        <p>Escoge una opción</p>
+        <!-- a la etiqueta label le podemos añadir un atributo for cuyo VALOR debe ser igual al id del elemeto input. Así conecta la opción con la etiqueta-->
+        <label for="dentro"><input id="dentro" type="radio" name="dentro-fuera-alLado">Dentro.</label>
+        <br>
+        <label for="fuera"><input id="fuera" type="radio" name="dentro-fuera-alLado">Fuera</label>
+        <br>
+        <label for="alLado"><input id="alLado" type="radio" name="dentro-fuera-alLado">Al lado</label>
+    </form>
+
+    <br>
+    <h4>1.8 Casillas de verificación</h4>
+    <form>
+        <!-- solo poner type="checkbox" -->
+        <p>1.8.1 Marcador único o Selección única</p>
+        <!-- Para que sea un único marcaje se utiliza type="radio", pero con un script de javascript que hemos añadido abajo se puede conseguir -->
+        <label for="carinoso"><input id="carinoso" type="checkbox" name="caracteristica"
+                onclick="desmarcarCasillas(this)">Cariñoso</label>
+        <br>
+        <label for="perezoso"><input id="perezoso" type="checkbox" name="caracteristica"
+                onclick="desmarcarCasillas(this)">Perezoso</label>
+        <br>
+        <label for="energico"><input id="energico" type="checkbox" name="caracteristica"
+                onclick="desmarcarCasillas(this)">Enérgico</label>
+    </form>
+    <script>
+        function desmarcarCasillas(CajaDeMarcado) {
+            var casillasDeVerificacion = document.querySelectorAll('input[type="checkbox"][name="caracteristica"]');
+            casillasDeVerificacion.forEach(function (element) {
+                if (element !== CajaDeMarcado) {
+                    element.checked = false;
+                }
+            });
+        }
+    </script>
+
+    <p>1.8.2 Marcados varios</p>
+    <!-- IMPORTANTE: No poner el mismo nombre, porque me marcarían las anteriores casillas del marcado único de arriba, puesto el mismo nombre pero con un 1 al final; carinoso1 -->
+    <form>
+        <label for="carinoso1"><input id="carinoso1" type="checkbox" name="carinoso1-perezoso1-energico1">Cariñoso
+            1</label>
+        <br>
+        <label for="perezoso1"><input id="perezoso1" type="checkbox" name="carinoso1-perezoso1-energico1">Perezoso
+            1</label>
+        <br>
+        <label for="energico1"><input id="energico1" type="checkbox" name="carinoso1-perezoso1-energico1">Enérgico
+            1</label>
+    </form>
+
+    <form action=""> 
+        <!-- Con el action="" (así vacío) me lo manda a mi misma página, se queda arriba en el buscador web -->
+        <p>1.8.3 Marcados varios (Con la casilla verificación a la derecha)</p>
+        <p>Tipo de música:</p>
+        <label for="pop">Pop<input id="pop" type="checkbox" name="pop-rock-folk-clasica"></label>
+        <label for="rock">Rock<input id="rock" type="checkbox" name="pop-rock-folk-clasica"></label>
+        <br>
+        <label for="folk">Folk<input id="folk" type="checkbox" name="pop-rock-folk-clasica"></label>
+        <label for="clasica">Clásica<input id="clasica" type="checkbox" name="pop-rock-folk-clasica"></label>
+
+        <br>
+        <label for="otrasMusicas">Otras <input class="otras-musicas" id="otrasMusicas" type="text"
+                name="pop-rock-folk-clasica"></label>
+
+                <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </form>
+
+    <br>
+    <h4>1.9 Atributo 'checked' para que esté una por defecto</h4>
+    <form>
+        <p>Se marca opción por defecto, en este caso: Prefiero no decirlo</p>
+        <!-- solo poner checked -->
+        <label for="hombreee"><input id="hombreee" type="radio"
+                name="hombreee-mujerrr-prefieroNoDecirlooo">Hombreee.</label>
+        <br>
+        <label for="mujerrr"><input id="mujerrr" type="radio"
+                name="hombreee-mujerrr-prefieroNoDecirlooo">Mujerrr</label>
+        <br>
+        <label for="prefieroNoDecirlooo"><input id="prefieroNoDecirlooo" type="radio"
+                name="hombreee-mujerrr-prefieroNoDecirlooo" checked>Prefiero no decirlo</label>
+    </form>
+
+    <br>
+    <h4>2.0 El Atributo 'value'</h4>
+    <form>
+        <!-- Añadidos value="" antes del name="". Así el servidor sabe que de cada grupo que opción se eligió -->
+        <!-- cambiado los nombres con respecto al anterior, poniendole 1 -->
+        <label for="hombreee1"><input id="hombreee1" type="radio" value="hombreee1"
+                name="hombreee1-mujerrr1-prefieroNoDecirlooo1">Hombreee 1.</label>
+        <br>
+        <label for="mujerrr1"><input id="mujerrr1" type="radio" value="mujerrr1"
+                name="hombreee1-mujerrr1-prefieroNoDecirlooo1">Mujerrr 1</label>
+        <br>
+        <label for="prefieroNoDecirlooo1"><input id="prefieroNoDecirlooo1" type="radio" value="prefieroNoDecirlooo1"
+                name="hombreee1-mujerrr1-prefieroNoDecirlooo1" checked>Prefiero no decirlo 1</label>
+    </form>
+
+    <br>
+    <h4>3.0 Elementos Div</h4>
+    <div>
+        <!-- Los <div> son para agrupar un mismo contenido en un mismo contenedor (para poder darle estilos con .css)-->
+        <!-- Cerrar siempre los <div></div> -->
+        <form>
+
+            <label for="hombreee1"><input id="hombreee1" type="radio" value="hombreee1"
+                    name="hombreee1-mujerrr1-prefieroNoDecirlooo1">Hombreee 1.</label>
+            <br>
+            <label for="mujerrr1"><input id="mujerrr1" type="radio" value="mujerrr1"
+                    name="hombreee1-mujerrr1-prefieroNoDecirlooo1">Mujerrr 1</label>
+            <br>
+            <label for="prefieroNoDecirlooo1"><input id="prefieroNoDecirlooo1" type="radio" value="prefieroNoDecirlooo1"
+                    name="hombreee1-mujerrr1-prefieroNoDecirlooo1" checked>Prefiero no decirlo 1</label>
+        </form>
+    </div>
+
+
+
+    <!-- Aquí ya hemos metido el <footer>. Cerrar siempre</footer> -->
+    <footer>
+        <br>
+        <h4>4.0 Footer o pie de página</h4>
+        <!-- Para indicar que un texto sea más pequeño (poner <small> dentro del párrafo y cerrar </small> junto al cierre del párrafo </p>), que por lo general es para el pie de pagina -->
+        <p><small>Todos los derechos reservados - <a href="https://rugren.es/" target="_blank">rugren.es</a> ® </small>
+        </p>
+    </footer>
+
+</body>
+
+</html>

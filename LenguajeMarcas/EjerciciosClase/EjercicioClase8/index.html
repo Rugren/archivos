@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+    <header>
+        <!--  <img src="imagen_de_fondo.jpg" alt="Imagen de encabezado"> (Quitado esto porque ya está referenciada la imagen en el estilos.css) -->
+        <h1>Encabezado de la foto mundo</h1>
+    </header>
+    <main>
+        <aside>
+            <ul class="menu">
+                <li><a href="#" style="color: white;">Opción1</a></li> <!-- metido aquí el estilo de color blanco porque en el otro lado no lo coge -->
+                <li><a href="#" style="color: white;">Opción2</a></li> <!-- el href="#" es para que no nos enlace a nada -->
+                <li><a href="#" style="color: white;">Opción3</a></li>
+            </ul>
+        </aside>
+
+        <form>
+            <label for="usuario">Nombre de usuario:</label>
+            <input type="text" id="usuario" name="usuario">
+
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena">
+            <button type="submit">Login</button>
+        </form>
+
+
+    </main>
+
+    <!-- <footer> para el pie de página normal, pero hemos metido la clase zoomInLeft (que es el efecto que hemos puesto desde: https://www.theappguruz.com/tag-tools/web/CSSAnimations/ ) 
+        en el pie de página para que nos coja el efecto-->
+    <footer class="zoomInLeft">
+        <p> &copy; Página del ejercicio 8 de Lenguaje de Marcas / 2023 </p>
+
+        <!-- Script para dar el copyright y la fecha actual -->
+        <script type="text/javascript">
+            copyright=new Date();
+            update=copyright.getFullYear();
+            document.write("© 2020 a " + update + " " + " - 2º DAW");
+        </script>
+
+
+
+    </footer>
+</body>
+</html>

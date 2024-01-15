@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sumaDiasAUnaFecha</title>
+</head>
+
+<body>
+
+    <h1>Suma días a la fecha</h1>
+    <p>Sumamos, a la fecha que nos has dicho, los siguientes días (+30 días, +60 días, +90 días)</p>
+
+
+    <script>
+        // PEDIMOS LOS DATOS POR TECLADO
+        var ano = Number(prompt("Año:"));
+        var mes = Number(prompt("Mes"));
+        var dia = Number(prompt("Día"));
+
+        mes--;  // Restamos 1 para colocar el mes exacto en el objeto Date.
+        var fecha = new Date(ano, mes, dia);   //Crea objeto fecha de la fecha introducida.
+
+
+        document.write("Fecha que nos has indicado: ");
+        if (fecha.getDate() < 10) { // Añadir un cero cuando el dia es menor que diez.
+            document.write("0" + fecha.getDate());
+        } else {
+            document.write(fecha.getDate());
+        }
+        document.write("/");
+        if (fecha.getMonth() < 9) {    // Añadir un cero cuando el mes es menor que 9+1.
+            document.write("0" + (fecha.getMonth() + 1)); // Para mostrar el mes sumarle 1.
+        } else {
+            document.write(fecha.getMonth() + 1);   // Sumamos 1 para que ponga el mes correcto.
+        }
+        document.write("/" + fecha.getFullYear() + ".<br>");
+
+        var i, j;
+        var plazo = 30; // Variable para sacar 30, 60 y 90.
+
+        for (i = 0; i < 3; i++) {   // Bucle para las otras tres fechas.
+
+            document.write("Fecha a " + plazo + " días: ");
+            fecha.setMonth(fecha.getMonth() + 1); // Se suma un mes a la fecha.
+
+            if (fecha.getDate() < 10) { // Poner un cero delante en los dias menores de 10.
+
+                document.write("0" + fecha.getDate());
+            } else {
+
+                document.write(fecha.getDate());
+            }
+            document.write("/");
+
+            if (fecha.getMonth() < 9) {    // Poner un cero delante a los meses menores de 9+1;
+
+                document.write("0" + (fecha.getMonth() + 1));   // Sumamos 1 para que ponga el mes correcto.
+            } else {
+
+                document.write(fecha.getMonth() + 1);
+            }
+
+            document.write("/" + fecha.getFullYear() + ".<br>");
+            plazo += 30;
+        }
+    </script>
+
+    <!-- https://tutobasico.com/basicos-fechas-javascript/ -->
+
+</body>
+
+</html>

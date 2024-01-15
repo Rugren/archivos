@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-wrap: wrap -> permite que los elementos se envuelvan a la siguiente línea si no hay suficiente espacio */
+    justify-content: space-around;
+    /* justify-content: space-around -> distribuye el espacio alrededor de los elementos de manera que haya un espacio uniforme entre ellos */
+    align-items: center;
+    /* align-items: center -> centra los elementos verticalmente en el contenedor (en la clase .container que hemos creado) */
+
+    height: 100vh; 
+    /* height: 100vh; -> Asegura que la altura ocupe el 100% de la ventana */
+    background-color: #f0f0f0;
+}
+/* La clase .container la hemos utilizado para el contenedor principal con display: flex, 
+lo que convierte a sus hijos directos (los elementos con la clase .item que hemos creado líneas despues) 
+en elementos flexibles. */
+
+
+.item {
+    flex: 1 0 30%; /* Flex-grow: 1, flex-shrink: 0, y el flex-basis es: 30% */
+
+/* Cada .item tiene un ancho flexible con -> flex: 1 0 30%, 
+lo que significa que pueden crecer pero no encogerse, 
+y su tamaño base es el 30% del contenedor. */
+
+    margin: 10px;
+    padding: 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+}
+
+
+

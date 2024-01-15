@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial HTML con CSS</title>
+
+    <!-- Para poner los estilos de diseño dentro del head: (mejor hacer siempre en un archivo .css)
+        <style>
+        h3 {
+            color: rgb(0, 255, 34);
+        }
+    </style> -->
+
+    <!-- +++ IMPORTANTE REVISAR SIEMPRE: 
+        en href debe enlazar a nuestro archivo de CSS y en rel poner siempre stylesheet, como está en la siguiente línea: -->
+    <link href="tutorial_CSS.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <h1>En este archivo cogidos estilos del archivo tutorial_CSS.css</h1>
+    <!-- <h2>Título en color azul</h2>
+    <h3>Título en color verde claro</h3>
+
+    Para poner los estilos de diseño dentro de un párrafo, título o línea:
+    <h2 style="color: blue;">Título 2</h2> -->
+    <!-- O el puesto dentro del head puesto otro ejemplo con h3 puesto dentro del <style> dentro del head -->
+    <!-- Pero comentados el <h2 style...></h2> y el <style>h3</style> porque vamos a llamar a las clases del archivo CSS: tutorial_CSS.css  -->
+
+    <br>
+    <h3>Cosas que los gatos aman:</h3>
+    <!-- +++ Con class="" añadimos las clases a las que queramos aplicar el estilo. -->
+    <ul class="cosas-que-aman-los-gatos">
+        <li>Menta gatuna</li>
+        <li>Apuntadores Láser</li>
+        <li>Lasaña</li>
+    </ul>
+
+    <p><a href="https://www.rugren.es" target="_blank">Rugren.es</p>
+
+    <p class="estilo1">Esto es un archivo largo con el estilo aplicado de nuestro archivo tutorial_CSS.css</p>
+
+    <a href="https://www.lasprovincias.es/sociedad/mascotas/gatos/gato-reconoce-rostro-20211212195831-nt.html"
+        target="_blank"><img
+            src="https://s1.ppllstatics.com/lasprovincias/www/multimedia/202112/12/media/cortadas/gatos-kb2-U160232243326NVC-624x385@Las%20Provincias.jpg"
+            class="bordes-estilos" alt="Un lindo gatito"></a>
+
+    <a href="https://www.annarecetasfaciles.com/lasana-de-carne-con-pasta-fresca-receta-facil-y-rapida.html"
+        target="_blank"><img src="imgTutoriales/lasana.jpg" class="bordes-redondeados" alt="Lasaña"></a>
+
+    <br>
+    <br>
+    <a href="https://www.lasprovincias.es/sociedad/mascotas/gatos/gato-reconoce-rostro-20211212195831-nt.html"
+        target="_blank"><img
+            src="https://s1.ppllstatics.com/lasprovincias/www/multimedia/202112/12/media/cortadas/gatos-kb2-U160232243326NVC-624x385@Las%20Provincias.jpg"
+            class="bordes-estilos" alt="Un lindo gatito"></a>
+    <br>
+    <a href="https://www.annarecetasfaciles.com/lasana-de-carne-con-pasta-fresca-receta-facil-y-rapida.html"
+        target="_blank"><img src="imgTutoriales/lasana.jpg" class="bordes-redondeados" alt="Lasaña"></a>
+
+    <br>
+    <h3>Aquí ya vamos a meter los div:</h3>
+    <div class="div1">
+        <a href="https://www.lasprovincias.es/sociedad/mascotas/gatos/gato-reconoce-rostro-20211212195831-nt.html"
+            target="_blank"><img
+                src="https://s1.ppllstatics.com/lasprovincias/www/multimedia/202112/12/media/cortadas/gatos-kb2-U160232243326NVC-624x385@Las%20Provincias.jpg"
+                class="bordes-estilos" alt="Un lindo gatito"></a>
+
+        <a href="https://www.annarecetasfaciles.com/lasana-de-carne-con-pasta-fresca-receta-facil-y-rapida.html"
+            target="_blank"><img src="imgTutoriales/lasana.jpg" class="bordes-estilos" alt="Lasaña"></a>
+    </div>
+
+    <br>
+    <h2 id="titulo-app-gatos">App de gatos</h2>
+    <img id="imagen-gatitos1" src="imgTutoriales/gatitos.jpg" alt="Gatitos pequeños"></a>
+
+    <br>
+    <br>
+    <div class="div2">
+        <img id="imagen-gatitos2" src="imgTutoriales/gatitos.jpg" alt="Gatitos pequeños"></a>
+    </div>
+
+    <br>
+    <div class="div2">
+        <img id="imagen-gatitos3" src="imgTutoriales/gatitos.jpg" alt="Gatitos pequeños"></a>
+    </div>
+
+    <br>
+    <div class="div2">
+        <img id="imagen-gatitos4" src="imgTutoriales/gatitos.jpg" alt="Gatitos pequeños"></a>
+    </div>
+
+    <br>
+    <div class="div2">
+        <img id="imagen-gatitos5" src="imgTutoriales/gatitos.jpg" alt="Gatitos pequeños"></a>
+    </div>
+
+    <br>
+    <div class="div2">
+        <img id="imagen-gatitos6" src="imgTutoriales/gatitos.jpg" alt="Gatitos pequeños"></a>
+    </div>
+
+    <br>
+    <h3>Prueba de unidades</h3>
+    <div id="contenedor-prueba-unidades">
+        <div class="rectangulo1 px1">200px de Ancho</div>
+        <div class="rectangulo1 vw1">20vw de Ancho</div>
+        <div class="rectangulo1 em1">15em de Ancho</div>
+    </div>
+
+
+
+</body>
+
+</html>

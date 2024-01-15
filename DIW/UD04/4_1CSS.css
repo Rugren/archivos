@@ -1,0 +1,15 @@
+
+@media screen{
+    p {
+        font-weight: bold; /* para que ponga el texto en negrita */
+        font-size: 20px;
+        text-align: left;
+    }
+
+    img{
+        /* para centrar las imágenes es con display: block; y margin: 0 auto; */
+        display: block;
+        margin: 0 auto;
+    }
+    
+}

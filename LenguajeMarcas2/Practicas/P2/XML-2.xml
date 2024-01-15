@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hechosHistoricos>
+    <hechoHistorico id="1">
+        <fecha>
+            <anio>3500 A.C.</anio>
+            <mes></mes>
+            <dia></dia>
+        </fecha>
+        <hecho>Ábaco</hecho>
+        <autor></autor>
+        <descripcion>Es el dispositivo más antiguo utilizado para realizar operaciones aritméticas.</descripcion>
+    </hechoHistorico>
+
+    <hechoHistorico id="2">
+        <fecha>
+            <anio>1646</anio>
+            <mes>Marzo</mes>
+            <dia>8</dia>
+        </fecha>
+        <hecho>Calculadora universal</hecho>
+        <autor>Leibritz</autor>
+        <descripcion>Máquina que suma, resta, multiplica, divide y hace raíces cuadradas.</descripcion>
+    </hechoHistorico>
+
+    <hechoHistorico id="3">
+        <fecha>
+            <anio>1792</anio>
+            <mes>Marzo</mes>
+            <dia>14</dia>
+        </fecha>
+        <hecho>Máquina analítica </hecho>
+        <autor>Charles Babbage y Ada Lovelace</autor>
+        <descripcion>Máquina que resolia funciones y obtenía tablas</descripcion>
+    </hechoHistorico>
+
+    <hechoHistorico id="4">
+        <fecha>
+            <anio>1852</anio>
+            <mes>Abril</mes>
+            <dia>12</dia>
+        </fecha>
+        <hecho>Varias máquinas</hecho>
+        <autor>Torres Quevedo</autor>
+        <descripcion>Construyó una máquina para jugar al ajedrez y una calculadora.</descripcion>
+    </hechoHistorico>
+    
+    <hechoHistorico id="5">
+        <fecha>
+            <anio>1936</anio>
+            <mes>Septiembre</mes>
+            <dia>15</dia>
+        </fecha>
+        <hecho>Máquina de Turing</hecho>
+        <autor>Alan Turing</autor>
+        <descripcion>Máquina capaz de resolver todo tipo de problemas con la solución algorlimica. Con Turing se inició la teoría matemática de la computación.</descripcion>
+    </hechoHistorico>
+    
+    <hechoHistorico id="6">
+        <fecha>
+            <anio>1943</anio>
+            <mes></mes>
+            <dia></dia>
+        </fecha>
+        <hecho>Ordenador digital electrónico</hecho>
+        <autor>Maurice V. Wilkes</autor>
+        <descripcion>El primer ordenador del mundo fue el EDSAC, desarrolado en la Universicad de Cambridge.</descripcion>
+    </hechoHistorico>
+
+    <hechoHistorico id="7">
+        <fecha>
+            <anio>1958</anio>
+            <mes></mes>
+            <dia></dia>
+        </fecha>
+        <hecho>Segunda generacion de ordenadores</hecho>
+        <autor>IBM</autor>
+        <descripcion>Reemplaza las válvulas de vacío por los transistores. Son más pequeños y consumen menos electricidad.</descripcion>
+    </hechoHistorico>
+
+    <hechoHistorico id="8">
+        <fecha>
+            <anio>1963</anio>
+            <mes></mes>
+            <dia></dia>
+        </fecha>
+        <hecho>Código ASCII</hecho>
+        <autor>ANSI</autor>
+        <descripcion>Nace a partir de reordenar y expancir el conjunto de simbolos y caracteres utilizados en aquel momento en telegrafía por la compañía Bell.</descripcion>
+    </hechoHistorico>
+
+    <hechoHistorico id="9">
+        <fecha>
+            <anio>1964</anio>
+            <mes></mes>
+            <dia></dia>
+        </fecha>
+        <hecho>Chips</hecho>
+        <autor>Jack S. Kilby y Robert Noyce</autor>
+        <descripcion>Estructura de pequeñas dimensiones de material semiconductor, sobre la que se fabrican circuitos electrónicos.</descripcion>
+    </hechoHistorico>
+
+    <hechoHistorico id="10">
+        <fecha>
+            <anio>1969</anio>
+            <mes></mes>
+            <dia></dia>
+        </fecha>
+        <hecho>ARPANET</hecho>
+        <autor>MIT (Massa-chusetts Institute of Technology)</autor>
+        <descripcion>Red de computadoras construida en 1969 como un medio para enviar datos miltares y conectar grupos de investigación, a través de los Estados Unidos.</descripcion>
+    </hechoHistorico>
+
+</hechosHistoricos>
+
+    <!-- <hechoHistorico id="">
+        <fecha>
+            <anio></anio>
+            <mes></mes>
+            <dia></dia>
+        </fecha>
+        <hecho></hecho>
+        <autor></autor>
+        <descripcion></descripcion>
+    </hechoHistorico> -->

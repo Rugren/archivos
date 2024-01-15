@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema3_e1</title>
+
+    <script type="text/javascript">
+        function inicializar() {
+            document.getElementById("crear-ventana").onclick = crearNueva;
+            document.getElementById("cerrar-ventana").onclick = cerrarNueva
+        }
+        var nuevaVentana;
+        function crearNueva() {
+            // añadido esto con respecto al ejercicio Tema3_e1
+            if (window.confirm()){
+            nuevaVentana = window.open("E4.html", "", "height=400,width=800");
+            }
+        }
+        function cerrarNueva() {
+            if (nuevaVentana) {
+                nuevaVentana.close(); nuevaVentana = null;
+            }
+        }
+    </script>
+</head>
+
+<body onLoad="inicializar()">
+    <h1>Confirmar que quiero abrir el archivo (abriendo en una nueva ventana)</h1>
+    <p>Con un archivo local si cierra</p>
+    <form>
+        <p> <input type="button" id="crear-ventana" value="Abrir en Nueva Ventana ejercicio E4">
+            <input type="button" id="cerrar-ventana" value="Cerrar Nueva Ventana ejercicio E4">
+        </p>
+    </form>
+
+</body>
+
+</html>

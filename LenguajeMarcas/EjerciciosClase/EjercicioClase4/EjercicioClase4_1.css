@@ -1,0 +1,62 @@
+
+/*
+body{
+    font-size: 500px;
+}
+*/
+
+p{
+    font-size: 180px; /* para que coja todo el párrafo: p (si quiero que sea un párrafo en concreto nombrarlos; p1, p2, p3, etc.*/
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, 1fr); /* si pongo repeat(1, 1fr); me lo pega arriba, 
+            si pongo repeat(3, 1fr); baja más el .container de Publicidad al abrir la página al inicio*/
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.verde{
+    color: green;
+    text-decoration: underline;
+}
+
+.rojo1{
+    color: red;
+}
+
+.bordeado{
+    text-decoration: underline overline; /* poner underline y overline juntos, para que una no machaque la otra*/
+}
+
+.textoGrande{
+    font-size: larger; /* si pongo large lo hace pequeño */
+    font-weight: bold;
+}
+
+.azul{
+    color: blue;
+}
+
+.rojo2{
+    color: red;
+    text-decoration: underline;
+}
+
+.texto-del-container{
+    grid-area: 3 / 1 / 13 / 8;
+}
+.square{
+    grid-area: 2 / 1 / 3 / 8;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100px;
+    height: 75px;
+    background-color: burlywood;
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<empresa_tecnologia>
+    <oficina>
+        <nombre>Oficina1</nombre>
+        <equipos>
+            <equipo>
+                <nombre>Equipo1</nombre>
+                <numero_miembros>5</numero_miembros>
+                <miembros>
+                    <miembro>
+                        <nombre>Juan</nombre>
+                        <edad>30</edad>
+                        <especializacion>Desarrollo de Software</especializacion>
+                        <habilidades>
+                            <habilidad>
+                                <nombre>Programación en Python</nombre>
+                                <nivel_experiencia>Avanzado</nivel_experiencia>
+                            </habilidad>
+                            <!-- Otras habilidades del miembro -->
+                        </habilidades>
+                    </miembro>
+                    <!-- Otros miembros del equipo -->
+                </miembros>
+            </equipo>
+            <!-- Otros equipos de la oficina -->
+        </equipos>
+    </oficina>
+
+    <!-- Otras oficinas de la empresa -->
+
+    <proyectos>
+        <proyecto>
+            <nombre>Proyecto1</nombre>
+            <fecha_finalizacion>2023-12-31</fecha_finalizacion>
+            <habilidades_relacionadas>
+                <habilidad>Programación en Python</habilidad>
+                <!-- Otras habilidades relacionadas con el proyecto -->
+            </habilidades_relacionadas>
+        </proyecto>
+        <!-- Otros proyectos de la empresa -->
+    </proyectos>
+</empresa_tecnologia>

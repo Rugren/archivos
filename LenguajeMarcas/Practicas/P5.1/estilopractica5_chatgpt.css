@@ -1,0 +1,30 @@
+/* Estilos para la cabecera */
+h1 {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para el texto con fuente Garamond y tamaño 1.2em */
+.garamond-text {
+    font-family: Garamond, serif;
+    font-size: 1.2em;
+}
+
+/* Estilos para resaltar con fondo azul y texto blanco */
+.resaltar {
+    background-color: blue;
+    color: white;
+}
+
+/* Estilos para cajas de texto */
+.caja-texto input[type="text"] {
+    text-transform: uppercase;
+    color: yellow;
+}
+
+/* Estilos para botones de envío y borrado */
+.botones input[type="submit"],
+.botones input[type="reset"] {
+    font-family: Garamond, serif;
+    font-size: 1.1em;
+    background-color: rgb(200, 200, 200);
+}

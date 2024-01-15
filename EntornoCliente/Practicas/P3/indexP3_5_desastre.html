@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Práctica 3 (Entorno cliente)</title>
+  <script src="P3_5_desastre.js" defer></script>
+  <link href="P3_5_desastre.css" rel="stylesheet"> <!-- Poniendo esto también enlaza al .css : <link rel="stylesheet" href="P3_5.css"> -->
+
+</head>
+
+<body>
+  <h1>Ejercicio 5</h1>
+  
+  <form action="" method="dialog"> <!-- method="dialog" es para que no me recargue la página, porque si le doy a Calcular no haría el cálculo y volvería a salir todo de nuevo. -->
+    <input type="text" id="op1" placeholder="Operador 1">
+    <input type="text" id="operacion" placeholder="+, -, *, /">
+    <input type="text" id="op2" placeholder="Operador 2">
+
+    <input type="submit" value="Calcular" id="calcular">
+  </form>
+  <p id="resultado"></p>
+
+
+
+
+  <h1>La prueba de fuego (GPT)</h1>
+<!-- esto dentro del div form(en la tabla) no lo coge -->
+
+  <label for="cuadrado_Largo">Largo:</label>
+  <input type="number" id="cuadrado_Largo" step="0.01">
+  <label for="cuadrado_Ancho">Ancho:</label>
+  <input type="number" id="cuadrado_Ancho" step="0.01">
+  <button id="calculo_areaRectangulo">Calcular Área</button>
+  <p id="resultado_areaRectangulo"></p>
+
+
+
+  <h1>Funciones y Areas</h1>
+
+<div class="formulario-contenedor">
+  <form action="#" method="dialog"> <!-- method="dialog" es para que no me recargue la página, porque si le doy a Calcular no haría el cálculo y volvería a salir todo de nuevo. -->
+
+      <p>Area Cuadrado</p>
+
+      <label for="cuadrado_Largo">Largo:</label>
+      <input type="number" id="cuadrado_Largo">
+
+      <label for="cuadrado_Ancho">Ancho:</label>
+      <input type="number" id="cuadrado_Ancho">
+
+      <!-- <button type="submit" class="botonesArea">Area Rectangulo</button> -->
+
+      <button class="botonesArea" id="calculo_areaRectangulo">Area Rectangulo</button>
+    <p id="resultado_areaRectangulo"></p>
+
+      <br>
+      <br>
+      <br>
+      
+      <label for="areaRectangulo">Este sería el Area del Rectangulo:</label>
+      <input class="formulario-respuestaArea" type="number">
+    
+  </form>
+</div>
+
+<!-- aplicar ahora el formato de arriba, las class="" del .css  -->
+
+<div class="formulario-contenedor">
+  <form action="#" method="dialog"> <!-- method="dialog" es para que no me recargue la página, porque si le doy a Calcular no haría el cálculo y volvería a salir todo de nuevo. -->
+
+      <p>Area Cuadrado igual y no va</p>
+
+    <label for="cuadrado_Largo">Largo:</label>
+    <input type="number" id="cuadrado_Largo" step="0.01">
+    <label for="cuadrado_Ancho">Ancho:</label>
+    <input type="number" id="cuadrado_Ancho" step="0.01">
+    <input type="submit" value="Calcular Área"  id="calculo_areaRectangulo">
+    
+  <p id="resultado_areaRectangulo"></p>
+    
+  </form>
+</div>
+
+
+</body>
+
+</html>

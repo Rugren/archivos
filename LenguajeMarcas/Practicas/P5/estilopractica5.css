@@ -1,0 +1,324 @@
+body {
+    background-color: rgb(0, 145, 255);
+}
+
+.cabecera-h1 {
+    font-family: Arial;
+    text-align: center;
+    color: blue;
+
+}
+
+/* Estilo para los campos de entrada (así es más fácil, pero no hacer así porque los cogería todos los input y sus entradas, sino hacer clases diferentes */
+/*
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
+    background-color: blue;
+    color: white;
+    padding: 5px;
+}
+
+Se podría hacer tipo estilos para las cajas de texto
+.caja-texto input[type="text"] {
+    text-transform: uppercase;
+    color: yellow;
+}
+y luego llamar en html la class="caja-texto" dentro de un div(y que ese div abarque todos los imput tipo texto) PARA ASÍ NO LO PONDRÍA CÓMO LO ESTOY HACIENDO UNO POR UNO, pero lo estoy haciendo uno a uno porque tienen distintos width(distintos anchos para los recuadros).
+*/
+
+.datos-personales {
+    /* El “resaltar” de la leyenda de grupos de opciones tendrá el texto en blanco y el fondo en un azul distinto */
+    display: inline-block;
+    /* display: inline-block; es para ajustar el fondo(background-color) al texto que hayamos escrito. */
+    background-color: rgb(12, 106, 178);
+    padding: 1px;
+    color: white;
+
+    /* No hace falta borde, pero si queremos, aquí tiene un estilo sencillo */
+    /* border: 1px; */
+    /* border-color: rgb(4, 0, 133); */
+    /* El color del recuadro, para que el borde tenga un color azul distinto */
+    /* border-width: 2px; */
+    /* border-style: solid; */
+}
+
+#formulario-datos-personales {
+    /* este sería el primero de nuestros contenedores div */
+    background-color: rgb(0, 160, 299);
+    /* Color del fondo puesto parecido al del cuerpo(para distinguirlos un poco)*/
+    padding: 10px;
+    border: 2px solid rgb(0, 64, 255);
+    border-style: inset;
+    /* align-items: center; no lo coge */
+    /* align-content: center; no lo coge */
+    /* text-align: center; no lo coge */
+    /* Si pongo esto: text-transform: uppercase; dentro del div me pone todos los campos en mayúsculas. */
+    font-family: garamond;
+    font-size: 1.2em;
+
+    text-align: center;
+    /* ESTO PARA CENTRARLO TODO, BORRAR SI QUIERO QUE ESTÉ A LA IZQUIERDA, O SI QUIERO AJUSTARLO TODO MANUALMENTE*/
+}
+
+.datos-personales-nif {
+
+    position: relative;
+    left: 1%;
+    /* Para separarlo de .datos-personales-nif2  */
+
+    background-color: blue;
+    color: yellow;
+    padding: 1px;
+    /* ajustamos el espacio interno alrededor del contenido de poco tamaño acorde con el ejercicio */
+    border: 2px solid black;
+    /* Grosor y color del borde */
+    /* border-radius: 5px; bordes redondeados */
+    width: 80px;
+    /* aquí jugar con ancho para hacer como el ejercicio, en distintos tamaños según sea el campo NIF, Nombre, Password, etc.*/
+    text-transform: uppercase;
+    /* Para que el texto que escribamos salga directamente en mayúscula */
+
+    /* Con esto pondría el campo debajo del campo Nombre. Meter en otro contenedor aparte (div) (creada otra clase .datos-personales-nif2) y metido esto: 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    */
+
+}
+
+/* Comentado, por no estar usado, pero no borrar
+#parrafo {
+    /* CREADO ESTE PARA PONERLOS TODOS CENTRADOS, si queremos poner campo más a un lado u otro, crear por ejemplo .datos-personales-nif2 y ponerle el mismo código que aquí de #parrafo, pero ajustando el left: -1%, a -3%, o 3% e ir ajustando manualmente
+    position: relative;
+    left: -1%;
+    /* para poner la posicion centrada (más a la derecha o izquierda con respecto al centro) 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* letter-spacing: 10px;  */
+    /* Coge espacios entre las letras */
+    /* padding: 10px;  */
+    /* espacio entre uno y otro 
+    margin: 10px;
+    margin-inline-end: 10px;
+    text-align: center;
+} */
+
+.datos-personales-nombre {
+    position: relative;
+    left: 1%;
+    background-color: blue;
+    color: yellow;
+    padding: 1px;
+    border: 2px solid black;
+    width: 350px;
+    text-transform: uppercase;
+}
+
+/* 
+.datos-personales-nombre2 {
+    position: relative;
+    left: -1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+    margin-inline-end: 10px;
+    text-align: center;
+} */
+
+.datos-personales-direccion {
+    position: relative;
+    left: 1%;
+    background-color: blue;
+    color: yellow;
+    padding: 1px;
+    border: 2px solid black;
+    width: 500px;
+    text-transform: uppercase;
+}
+
+.datos-personales-fechaNac {
+    /* postition y left comentados para que no se junten fecha con telefono */
+    /* position: relative; */
+    /* left: 1%; */
+    background-color: blue;
+    color: yellow;
+    padding: 1px;
+    border: 2px solid black;
+    width: 105px;
+    text-transform: uppercase;
+}
+
+.datos-personales-telefono {
+    /* position: relative; */
+    /* left: 1%; */
+    background-color: blue;
+    color: yellow;
+    padding: 1px;
+    border: 2px solid black;
+    width: 140px;
+    text-transform: uppercase;
+}
+
+.datos-personales-localidad {
+    /* position: relative; */
+    /* left: 1%; */
+    background-color: blue;
+    color: yellow;
+    padding: 1px;
+    border: 2px solid black;
+    width: 150px;
+    text-transform: uppercase;
+}
+
+.datos-personales-provincia {
+    /* position: relative; */
+    /* left: 1%; */
+    background-color: blue;
+    color: yellow;
+    padding: 1px;
+    border: 2px solid black;
+    width: 160px;
+    text-transform: uppercase;
+}
+
+.datos-personales-cp {
+    /* position: relative;
+    left: 1%; */
+    background-color: blue;
+    color: yellow;
+    padding: 1px;
+    border: 2px solid black;
+    width: 70px;
+    text-transform: uppercase;
+}
+
+.datos-personales-email {
+    /* position: relative;
+    left: 1%; */
+    background-color: blue;
+    color: yellow;
+    padding: 1px;
+    border: 2px solid black;
+    width: 365px;
+    text-transform: uppercase;
+}
+
+.datos-personales-password {
+    /* position: relative;
+    left: 1%; */
+    background-color: blue;
+    color: yellow;
+    padding: 1px;
+    border: 2px solid black;
+    width: 100px;
+    /* text-transform: uppercase; porque sino su contraseña sería todo mayúsculas */
+}
+
+.datos-personales-confirmar {
+    /* position: relative;
+    left: 1%; */
+    background-color: blue;
+    color: yellow;
+    padding: 1px;
+    border: 2px solid black;
+    width: 100px;
+    /* text-transform: uppercase; porque sino su contraseña sería todo mayúsculas */
+}
+
+
+
+.datos-musicales {
+    display: inline-block;
+    background-color: rgb(12, 106, 178);
+    padding: 1px;
+    color: white;
+}
+
+#formulario-datos-musicales {
+    /* este sería el segundo de nuestros contenedores div */
+    background-color: rgb(0, 160, 299);
+    padding: 10px;
+    border: 2px solid rgb(0, 64, 255);
+    border-style: inset;
+
+    font-family: garamond;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.otras-musicas {
+    background-color: rgb(8, 8, 118);
+    color: yellow;
+    padding: 1px;
+    border: 2px solid black;
+    width: 100px;
+    text-transform: uppercase;
+}
+
+/* .casillasVerificacion{
+    display: inline-block; 
+    text-align: left;
+    color: red;
+    no lo pilla si lo pongo la class="casillasVerificacion" dentro de label de los tipos de música o dentro del div que las coje todas.
+} */
+
+
+.forma-de-pago {
+    display: inline-block;
+    background-color: rgb(12, 106, 178);
+    padding: 1px;
+    color: white;
+}
+
+#formulario-forma-de-pago {
+    /* este sería el tercero de nuestros contenedores div */
+    background-color: rgb(0, 160, 299);
+    padding: 10px;
+    border: 2px solid rgb(0, 64, 255);
+    border-style: inset;
+
+    font-family: garamond;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.numeroTarjeta {
+    background-color: blue;
+    color: yellow;
+    padding: 1px;
+    border: 2px solid black;
+    width: 100px;
+    text-transform: uppercase;
+}
+
+
+p {
+    /* para que coja todos los párrafos y le aplique esta letra */
+    font-family: garamond;
+    font-size: 1.2em;
+}
+
+
+/* Para los botones de envío y borrado(el "limpiar" que hemos puesto) Esto NO es genérico, ya que solo llamaría a la class="botones" y el resto ya me los coje todos, pero son solo 2 input de distinto tipo */
+.botones input[type="submit"],
+.botones input[type="reset"] {
+    font-family: Garamond;
+    font-size: 1.1em;
+    background-color: rgb(200, 200, 200);
+    text-align: center;
+    /* align-items: center; */
+}
+
+.botones {
+    /* para que coja botones, no hacer dentro de .botones input */
+    display: flex;
+    /* lo centra */
+    justify-content: center;
+    /* lo centra */
+    flex-direction: row;
+}

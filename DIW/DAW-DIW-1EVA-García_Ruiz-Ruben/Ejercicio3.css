@@ -1,0 +1,120 @@
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.formatoTextoAzul {
+    color: blue;
+}
+
+/* pruebas no usadas.
+margin y padding no hay que poner, preguntado a profesor.
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.seccion {
+    margin-bottom: 20px;
+}
+*/
+
+@media only screen and (min-width: 1201px) {
+/* También se puede poner más simple:   @media (min-width: 1201px) { */
+    /* .pantallaGrande */
+
+    /* Ya no utilizado el .seccion
+    .seccion{
+        background-color: lightgreen;
+        font-size: 18px; 
+
+        column-count:3; /* 3 Columnas 
+        display: flex;
+        justify-content: space-between;
+    } */
+
+    #datosPersonales {
+        float: left;
+        width: 30%;
+    }
+    #curriculum {
+        float: left;
+        width: 70%;
+    }
+    #formacion {
+        float: left;
+        width: 50%;
+    }
+    #experiencia {
+        float: left;
+        width: 50%;  
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 601px) {
+    /* También se puede poner más simple: @media (min-width: 601px) and (max-width: 1200px) { */
+
+    /* .pantallaMediana */
+
+    /* Ya no utilizado el .seccion
+    .seccion {
+        background-color: lightblue;
+        font-size: 14px;
+
+        column-count:2; /* 2 Columnas 
+        flex-wrap: wrap;
+        justify-content: space-between;
+    } */
+
+    #datosPersonales {
+        float: left;
+        width: 30%;
+    }
+    #curriculum {
+        float: left;
+        width: 70%;
+    }
+    #datosPersonales ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    #datosPersonales li + li {
+        margin-top: 10px;
+    }
+    
+    #datosPersonales li strong {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 600px)  {
+    /* También se puede poner más simple: @media (max-width: 600px) { */
+
+    /* .pantallaMovil */
+
+    /* Ya no utilizado el .seccion
+    .seccion {
+        background-color: lightsalmon;
+        font-size: 16px;
+
+        column-count:1; /* Columna única 
+        display: flex;
+        flex-direction: column;
+    } */
+
+    h2 {
+        /* para poner el color de la línea que aparece en el ejercicio debajo de cada línea de Título 2 */
+        border-bottom: 1px solid #000000;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    li + li {
+        /* para que haya un poco de separación entre el texto de arriba y abajo*/
+        margin-top: 10px;
+    }
+    li strong {
+        display: block;
+    }
+}

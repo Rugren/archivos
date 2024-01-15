@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.blog-post {
+    margin-bottom: 20px;
+}
+
+.blog-post h2 {
+    color: #333;
+}
+
+/* Estilos para controlar el desbordamiento del contenido (para cuando es mucho texto por ejemplo) */
+
+/* Si pongo .blog-post p { sería para que nos aplicase solo a los párrafos, pero queremos hasta el título y todo el texto que exceda */
+.blog-post { 
+    overflow: auto; /* Se puede cambiar a "hidden" o dejarlo en "auto" para que se muestre */
+    text-overflow: ellipsis;
+    white-space: nowrap; /* Esto evita que el texto se divida en múltiples líneas y nos lo ponga todo en una sóla línea */
+}
+
+.blog-post2 { 
+    overflow: auto; /* Se puede cambiar a "hidden" o dejarlo en "auto" para que se muestre */
+
+    display: -webkit-box; /* muestra los 3 puntos suspensivos si hay más cosas que hemos quitado u ocultado */
+    -webkit-line-clamp: 3; /* muestra el Número de líneas */
+    -webkit-box-orient: vertical;
+
+    text-overflow: ellipsis;
+    white-space: nowrap; /* Esto evita que el texto se divida en múltiples líneas y nos lo ponga todo en una sóla línea */
+}
+
+
+.blog-post-parrafo2 {
+    overflow: hidden; /* Con "hidden" está oculto */
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    /* Número de líneas a mostrar (hemos puesto 3 para que nos muestre hasta el párrafo final puesto. 
+    Si ponemos 1, solo muestra una línea y solo se ve "Otro Artículo"  */
+    -webkit-box-orient: vertical;
+
+    text-overflow: ellipsis; /* Se puede agregar puntos suspensivos (...) para indicar que hay más texto (ver arriba con el -webkit-box) */
+    white-space: nowrap;
+}
+
+
+.pieDePagina{
+    text-align: center;
+}

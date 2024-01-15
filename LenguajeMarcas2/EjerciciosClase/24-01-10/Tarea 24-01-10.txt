@@ -1,0 +1,11 @@
+
+UT04 - Tarea de clase - Personalizando el feed RSS de tu web
+
+Modificar el archivo news.xml (carpeta UT04), visto en clase, en formato RSS, para que represente un canal de noticias sobre tecnología, salud, deporte, nutrición u otro tema a elegir (consultar con el profesor).
+
+Parte I
+Se deberá actualizar todo el contenido de los elementos que hay en dicho documento, para que se adapten a tu web, y le aparezcan como artículos nuevos a los posibles suscriptores.
+
+Parte II
+Añadir un nuevo elemento para poder visualizar un video relacionado con la temática de la web.
+

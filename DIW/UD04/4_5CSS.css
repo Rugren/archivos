@@ -1,0 +1,33 @@
+
+/* Así está mal, corregidos abajo los errores a subsanar de este ejercicio 4.5
+div {
+    color: red: font: Verdana;
+    opacity: 0, 5;
+}
+
+body {
+    border-width: 10px;
+    border-color: blue;
+    color: red;
+}
+
+h1 {
+    border: inherit;
+} */
+
+div {
+    color: red; /* El color red debe terminar con punto y coma, no con 2 puntos como estaba */
+    font-family: Verdana; /* Para el tipo de letra hay que poner font-family: (y aquí el tipo de fuente o letra que queramos poner); */
+    opacity: 0.5; /* El valor decimal se pone con un punto, no una coma. (Error: opacity: 0, 5;) */
+}
+
+body {
+    border-width: 10px;
+    border-style: solid; /* Hay que definir un estilo de borde para que el color sea visible. (Error: puesto solo: border-color: blue;) */
+    border-color: blue;
+    color: red;
+}
+
+h1 {
+    border: inherit; /* Esta línea no establece ninguna propiedad de borde visible. Pero como ya hemos puesto border-style: solid; pues ya funciona. (Error: que estuviese puesto solo; border-color: blue; pero como ya hemos puesto el border-style: solid; pues ya no haría falta y funcionaría esto correctamente, ya que aplica todas las propiedades de border) */
+}

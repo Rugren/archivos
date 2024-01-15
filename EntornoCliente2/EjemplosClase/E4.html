@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PruebaDia1</title>
+</head>
+<body>
+    <h1>4. Ejemplos y ejercicios</h1>
+
+    <script>
+        var arreglo = new Array(10);
+        arreglo[0]=4;
+        arreglo[4]="Cesur";
+
+        arreglo=["Rubén", 5, false]
+        arreglo["Cantidad"]=3
+        console.log("hola 0: " + arreglo[0]);
+        console.log("hola 1: " + arreglo[1]);
+        console.log("hola 2: " + arreglo[2]);
+        // console.log(arreglo[3]); aquí saldría undefined por lo que habría que hacerlo como la siguiente línea:
+        console.log(arreglo["Cantidad"]); // aquí ya nos daría 3, que es el valor que le hemos dado a "Cantidad".
+
+        arreglo={"pasta":3, "arroz":5, "sopa":"no hay"}
+        console.log(arreglo["sopa"]);
+    </script>
+
+    <h4>Ejercicio inventado a practicar en clase (ver en console)</h4>
+    <!-- 
+    1º Que esté en la posición 1 Número 
+    2º Que esté en la posición 5 Booleano
+    3º Que esté en la posición 8 Cadena
+    4º Crea un Array asociativo
+    5º Que esté en la posición 15, array asociativo Fútbol (goles de futbolistas)
+    Crear variables distintas para no machacar ninguna anterior -->
+
+    <script>
+    // Array clásico
+    var arrayClasico = new Array(15); // 1º parte del ejercicio
+    arrayClasico[1]= 5; // 2º 
+    arrayClasico[5]= true; // 3º 
+    arrayClasico[8]= "hola que tal"; // 4º Array asociativo 
+    arrayClasico["Mbappe"]=35; // este array asociativo lo mete en la última cadena de texto. // 5º habría que hacerlo en otro array distinto. 
+
+    console.log(arrayClasico); // muestra todas las posiciones del array
+
+    // Si queremos pedir uno en concreto vamos eligiendo: console.log(arrayClasico[1]);
+    // console.log(arrayClasico[5]);
+    // console.log(arrayClasico[8]);
+
+    console.log("__________________");
+
+    // Otro ejemplo de Array
+    var posiciones = new Array(15);
+    posiciones=["posicion 0", "posicion 1", "posicion 2"]
+    console.log(posiciones); // muestra todas las posiciones del array
+    console.log(posiciones[1]);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Si tiene 18 puede conducir</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+
+    <!-- https://tutobasico.com/basicos-javascript/ -->
+    <!-- 
+        <script>
+            // AQUÍ VA EL CÓDIGO JAVASCRIPT
+        </script>
+        -->
+
+        <h3>Prueba para saber si puedes conducir o no</h3>
+    <script>
+        // PIDE POR TECLADO LA EDAD
+        var edad = prompt("¿Qué edad tienes? Introduce tu edad para saber si puedes conducir o no");
+        // COMPRUEBA QUE LO INTRODUCIDO ES UN NÚMERO
+        if (Number(edad) == edad) {
+            // SI ES MAYOR DE 18
+            if (edad >= 18 && edad <= 69) {
+                // IMPRIME EN PANTALLA EL MENSAJE de mayor de edad
+                document.write("Puedes conducir");
+            }
+            else if (edad <= 17) {
+                // IMPRIME EN PANTALLA EL MENSAJE de menor de edad
+                document.write("No puedes conducir, eres menor de edad");
+            }
+            else if (edad >= 70) {
+                // IMPRIME EN PANTALLA EL MENSAJE de menor de edad
+                document.write("No debes conducir, pasas la edad permitida");
+            }
+        }
+        // Si no es un número válido
+        else {
+            // MUESTRA UN MENSAJE
+            alert("Introduce un numero válido");
+        }
+    </script>
+
+</body>
+
+</html>

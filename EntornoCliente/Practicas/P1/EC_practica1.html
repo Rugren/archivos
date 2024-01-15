@@ -1,0 +1,168 @@
+<!-- 
+Archivo Práctica 1 - DWEC 
+
+Ejercicio 1.1)
+Ejercicio 1: Ejemplo
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Modificando el código HTML</h1>
+
+<p id="prueba">Modificando el contenido. </p>
+
+<button type="button"
+onclick="document.getElementById('prueba').innerHTML= 'CAMBIANDO el contenido!' ">
+¡Dale!</button>
+
+</body>
+</html>
+-->
+
+<!-- 
+Ejercicio 1.1) Ejercicio 1 
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Para evolucionar pokemon con el código HTML</h1>
+
+<p id="prueba">¿Listo para evolucionar tu pokemon?. </p>
+
+<button type="button"
+onclick="document.getElementById('prueba').innerHTML= '¡Pokemon evolucionado!' ">
+¡Evolucionar!</button>
+
+</body>
+</html>
+-->
+
+
+<!-- 
+Ejercicio 1.1)
+Ejercicio 2: Ejemplo
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Cambio de imágenes con JavaScript</h1>
+
+< id="myFPImage" onclick="cambiaPic()" src= "http://myfpschool.com/wp-content/uploads/2016/06/myblack.jpeg" width="100" height="180">
+
+<p>Haz click sobre las letras para cambiarlas.</p>
+
+<script>
+function cambiaPic() {
+var image = document.getElementById('myFPImage');
+if (image.src.match("green")) {
+image.src = "http://myfpschool.com/wp-content/uploads/2016/06/my-black.jpeg";
+} else {
+image.src = "http://myfpschool.com/wp-content/uploads/2016/06/my-green.jpeg";
+}
+}
+</script>
+
+</body>
+</html>
+-->
+
+<!-- Ejercicio 1.1) Ejercicio 2 -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Cambio de las imágenes de evolución con JavaScript</h1>
+
+<img id="miPokemon" onclick="cambiaPic()" src= "https://www.goodvinilos.com/4608/pegatina-pokemon-charmander.jpg" width="100" height="180">
+
+<p>Haz click sobre la imagen para evolucionar al Pokemon.</p>
+
+<!--
+puesto dentro del if lo que contiene la imagen para que vuelva a ponerse de nuevo la imagen anterio.
+Es decir, puesto: "3783b47987aef2a15c1b24a10a8b434c" que lo contiene el enlace de la imagen del else
+(esto comentar de nuevo, desde el "puesto dentro del if lo que contiene..." hasta "lo contiene el enlace de la imagen del else")
+-->
+
+<script>
+function cambiaPic() {
+var image = document.getElementById('miPokemon');
+if (image.src.match("3783b47987aef2a15c1b24a10a8b434c")) {
+image.src = "https://www.goodvinilos.com/4608/pegatina-pokemon-charmander.jpg";
+} else {
+image.src = "https://i.pinimg.com/originals/37/83/b4/3783b47987aef2a15c1b24a10a8b434c.png";
+}
+}
+</script>
+
+</body>
+</html>
+
+
+<!-- 
+Ejercicio 1.1)
+Ejercicio 3: Ejemplo
+<!DOCTYPE html>
+<html>
+<body>
+<p id="mytxt">Aprende Javascript con MyFPSchool!</p>
+<button type="button" onclick="myFunction()">iDale!</button>
+<script>
+function myFunction() {
+var x = document.getElementById("mytxt");
+x.style.fontSize = "25px";
+x.style.color = "red";
+}
+</script>
+</body>
+</html>
+-->
+
+<!-- 
+Ejercicio 1.1) Ejercicio 3
+-->
+<!-- 
+<!DOCTYPE html>
+<html>
+<body>
+<p id="miTexto">Para cambiar el tamaño y color de la letra con Javascript</p>
+<button type="button" onclick="myFunction()">¡Cámbialo todo!</button>
+<script>
+function myFunction() {
+var x = document.getElementById("miTexto");
+x.style.fontSize = "25px";
+x.style.color = "blue";
+}
+</script>
+-->
+
+<!-- 
+Ejercicio 1.2)
+-->
+<!-- 
+<script>
+    console.log("Síntesis, ejemplo de consola") ;
+</script>
+
+<script>
+    window.alert ( "Bienvenido" ) ;
+</script>
+
+</body>
+</html>
+-->
+
+<!-- 
+Ejercicio 1.2) Ejercicio de ejemplo
+<script>
+    console.log("Síntesis, ejemplo de consola") ;
+</script>
+
+<script>
+    window.alert ( "Bienvenido" ) ;
+</script>
+-->
+
+
+<!-- XXX -->

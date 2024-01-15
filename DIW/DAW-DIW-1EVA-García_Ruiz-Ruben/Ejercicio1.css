@@ -1,0 +1,61 @@
+/* .texto-lista1 {
+    color: green;
+    outline: none;
+    text-decoration: none;
+    /* para que no nos muestre la línea de subrayado 
+} */
+
+/* Ejercicio a) */
+a {
+    color: green;
+    text-decoration: none; /* para que no nos muestre la línea de subrayado */
+}
+
+/* Ejercicio b) */
+a:hover {
+    /* Color rojo y Subrayado al pasar el ratón */
+    color: red;
+    text-decoration: underline;
+}
+
+/* Ejercicio c) */
+a:visited {
+    /* Color negro y Texto en negrita para los enlaces que visitemos */
+    color: black;
+    font-weight: bold;
+}
+
+/* Ejercicio d) */
+ul, li {
+    /* Todos los tipo de Listas en cursiva */
+    font-style: italic;
+}
+
+/* Ejercicio e) */
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: underline; 
+    /* Todos los títulos son subrayados, 
+    lo hemos puesto aquí para no tener que repetirlo en los títulos pares e impares */
+}
+
+
+/* Clases para títulos impares y pares */
+
+/* Para los Títulos "impares" puestos en negro */
+/* h1.impar, h3.impar, h5.impar,
+h2.par, h4.par, h6.par {
+    color: black; 
+} */
+h1.impar, h3.impar, h5.impar {
+    color: black; 
+}
+
+/* Para los Títulos "pares" puestos en gris */
+/* h2.impar, h4.impar, h6.impar,
+h1.par, h3.par, h5.par {
+    color: grey; 
+} */
+h2.par, h4.par, h6.par{
+    color: grey; 
+}
+

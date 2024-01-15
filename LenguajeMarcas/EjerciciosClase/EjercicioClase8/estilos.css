@@ -1,0 +1,129 @@
+/* Estilos generales, para el cuerpo en general */
+body {
+    width: 80%; /* el ancho de la página será el 80% del ancho de la ventana */
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Encabezado */
+header {
+    background-image: url("imagen_de_fondo.jpg");
+    background-size: cover;
+    height: 200px; /* para ajusta la altura */
+    color: rgb(36, 185, 22);
+}
+
+/* Barra lateral */
+aside {
+    background-color: blue;
+    /* color: white; aquí no coje el color blanco a las letras */
+    width: 200px; /* para ajusta el ancho como queramos */
+}
+
+.menu {
+    list-style-type: none;
+    /* padding: 100px; quitado el padding, porque sino al poner menu en index.html, en: <ul class="menu"> no me coge los recuadros*/
+}
+
+.menu li {
+    padding: 10px;
+}
+.menu li:hover { /* para cuando pases el ratón por encima */
+    background-color: black;
+}
+
+/* Cuerpo central */
+main {
+    background-color: lightblue;
+    padding: 20px;
+
+    display: flex; /* para que esté lo de Opción1, Opción2 y Opción3 en la barra lateral izquierda */
+    flex-direction: row; /* para que salga ordenado por filas */
+}
+
+form {
+    background-color: grey;
+    border: 1px solid #00f; /* Línea azul del borde */
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column; /* para que nos ordene el formulario en columnas cada apartado, como lo pide el ejercicio. */
+    /* si nos cargamos display y flex-direction saldría todo en una línea */
+}
+
+label {
+    color: #00008b; /* Letra Azul oscuro para las letras del formulario, y de las opciones, dónde ponga en todos los "label" */
+}
+
+input[type="text"] {
+    border: 1px solid #008000; /* Línea verde para usuario */
+    background-color: #54d8d1; /* Azul claro del fondo del formulario */    
+}
+
+input[type="password"] {
+    border: 1px solid red; /* Línea roja para contraseña */
+    background-color: #54d8d1; /* Azul claro del fondo del formulario */
+}
+
+button {
+    border: 2px solid green;
+    background-color: green;
+    color: white;
+    font-style: arial;
+    font-size: 16px;
+}
+
+li { /* aquí me coje todos los <li> */
+    border: 2px solid black;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    background-color: #f5f5f5; /* Color de fondo gris claro, porque lo pide así el ejercicio */
+    padding: 10px;
+}
+
+
+/* animación del pie de página añadido (siguiente ejercicio) */
+
+.zoomInLeft {
+    -webkit-animation-name: zoomInLeft;
+    animation-name: zoomInLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes zoomInLeft {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+    transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+    60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+    transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+    }
+    @keyframes zoomInLeft {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+    transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+    60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+    transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+    } 

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Práctica 3 (Entorno cliente)</title>
+
+  <!-- +++ IMPORTANTE PONER AQUÍ la clase de javascript, la clase .js a la que llamamos 
+  Y PONER ABAJO EL <script> -->
+  <script src="P3_1.js"></script>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+
+
+<body>
+  <header>
+    <h1>Ejercicio 1</h1>
+    <p>Esa fue tu nota</p>
+
+    <!--
+    Crea una web con html y JavaScript, que te pida la nota y muestre la calificación según la nota: (1 punto)
+    • 0-3: Muy deficiente
+    • 3-5: Insuficiente
+    • 5-6: Suficiente
+    • 6-7: Bien
+    • 7-9: Notable
+    • 9-10: Sobresaliente
+    -->
+
+    
+    <!-- NO PONER EL <script>, llamar a la clase P3_1.js aquí, en lugar de ponerlo dentro del <script>.
+    <script>
+      do {
+        var nota = prompt("Introduce tu nota"); // en el prompt pide la nota por teclado
+        if (Number(nota) == nota) {
+          if (nota >= 0 && nota <= 10) {
+            if (nota <= 3) {
+              alert("Muy deficiente");
+            }
+            else if (nota < 5) {
+              alert("Insuficiete");
+            } else if (nota < 6) {
+              alert("Suficiente");
+            } else if (nota < 7) {
+              alert("Bien");
+            } else if (nota < 9) {
+              alert("Notable"); 5
+            } else if (nota >= 9) {
+              alert("Sobresaliente");
+            }
+          }
+          else {
+            alert("Nota erronea, debe ser un número entre 0 y 10");
+          }
+        }
+        // Si no se introduce un número:
+        else {
+          // Si se pulsa sin introducir nada
+          if (nota != undefined) { // (No es Undefined cuando se pulsa aceptar)
+            alert("Introduce un número entre el 0 y el 10");
+          }
+        }
+        // El bucle se está ejecutando hasta que no se pulse cancela o se pulse exit.
+      }
+      while (nota != undefined); // Undefined es cuando se pulsa Cancelar.
+    </script>
+-->
+
+
+<!-- +++ Para llamar al script de la clase P3_1.js 
+PONER ARRIBA SI O SI la llamada a la clase: <script src="P3_1.js"></script> para después ejercutar aquí el script-->
+<!-- <script>
+  const instancia = new P3_1();
+  instancia.comprobarNotas();
+</script> -->
+
+
+
+  </header>
+  <main>
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

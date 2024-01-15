@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    /* Sombra inferior negra: 10px de desplazamiento vertical y con un desenfoque de 15px */
+}
+
+
+/* Lo ideal sería que hubiera hecho en el html lo siguiente: 
+Dentro del <nav> haber puesto <nav class="menu"> 
+y aquí en el css haber hecho un clase: .menu { y aquí dentro haber dado el formato }
+
+Porque de la manera que lo he hecho ha sido genérica para todos los apartado del <nav>, 
+porque si hubiera hecho varios <nav> me cogería siempre el mismo formato de estilo.
+Como lo he hecho, con nav ul (<ul> son las listas no ordenadas), nav li (<li> listas ordenadas) y nav a (el <a> es el enlace: <a href="...")
+
+me coge el estilo para todas las <ul> <li> y <a> que estén dentro de un <nav>
+*/
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+
+    transition: color 0.3s;
+    /* Transición para suavizar el cambio de color (para que no sea tan brusco al cambiar de color el texto */
+}
+
+/* Esto es para que haga algo cada vez que pasamos el ratón por encima del menú */
+nav a:hover {
+    color: #007bff;
+    /* cambia el color al texto al pasar el ratón */
+}
+
+section {
+    padding: 20px;
+}
+
+
+
+/* Quitado el estilo que dimos en el ejercicio 5.4 y puesto uno normal nuevo para h1, h2 */
+h1, h2, p {
+    margin-bottom: 10px;
+}
+
+.contenedor {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 10px;
+}
+
+.contenedor-con-gradiente {
+    background: linear-gradient(to right, #3498db, #2c3e50);
+    /* el background: linear-gradient es para aplicar el GRADIENTE */
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
+}
+
+

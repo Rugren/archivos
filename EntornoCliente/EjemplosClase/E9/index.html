@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+
+    <!--
+    <style>
+        #imagenGrande {
+            display: none;
+            position: absolute;
+            z-index: 1;
+        }
+    </style>
+    -->
+
+    <title>E9</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+-->
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+
+        <h2 style="text-align: center;">E9</h2>
+
+        <!--
+        <img src="img/furgoneta1.jpg">
+        <img src="img/furgoneta2.jpg">
+        <img src="img/furgoneta3.jpg">
+        <img src="img/furgoneta4.jpg">
+        <img src="img/furgoneta5.jpg">
+        -->
+
+        <!--
+        <img id="imagenPequena" src="imagen-pequena1.jpg" alt="Imagen Pequeña 1"
+            onmouseover="cambiarImagen('imagen-grande1.jpg')" onmouseout="restaurarImagen()">
+        <img id="imagenPequena2" src="imagen-pequena2.jpg" alt="Imagen Pequeña 2"
+            onmouseover="cambiarImagen('imagen-grande2.jpg')" onmouseout="restaurarImagen()">
+        <div id="imagenGrande"><img id="imagenGrandeContenido" alt="Imagen Grande"></div>
+
+        <script src="myscript.js"></script>
+        -->
+
+        <!-- Esto es, que al pasar por encima de la imagen, vuelve a coger la misma imagen y aparece de nuevo -->
+        <!--
+        <img src="img/furgoneta1.jpg" alt="Imagen Pequeña" onmouseover="mostrarImagenGrande()"
+            onmouseout="ocultarImagenGrande()">
+        <div id="imagenGrande"><img src="img/furgoneta1.jpg" alt="Imagen Grande"></div>
+
+        <script>
+            function mostrarImagenGrande() {
+                var imagenGrande = document.getElementById('imagenGrande');
+                imagenGrande.style.display = 'block';
+            }
+
+            function ocultarImagenGrande() {
+                var imagenGrande = document.getElementById('imagenGrande');
+                imagenGrande.style.display = 'none';
+            }
+        </script>
+        -->
+
+        <div class="container">
+            <h1>Galería con Efecto de Agrandamiento</h1>
+
+            <div id="enlarged-container">
+                <img src="" alt="Imagen agrandada" id="enlarged-image" class="img-fluid">
+            </div>
+
+            <div class="row">
+
+                <div class="col-3">
+                    <div class="thumbnail">
+                        <img src="img/img1.jpg" alt="Imagen 1" class="img-thumbnail" onmouseover="showImage(this)">
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="thumbnail">
+                        <img src="img/img2.jpg" alt="Imagen 2" class="img-thumbnail" onmouseover="showImage(this)">
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="thumbnail">
+                        <img src="img/img3.jpg" alt="Imagen 3" class="img-thumbnail" onmouseover="showImage(this)">
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="thumbnail">
+                        <img src="img/img4.jpg" alt="Imagen 4" class="img-thumbnail" onmouseover="showImage(this)">
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="thumbnail">
+                        <img src="img/img5.jpg" alt="Imagen 5" class="img-thumbnail" onmouseover="showImage(this)">
+                    </div>
+                </div>
+
+                <!-- Agregar más imágenes de manera similar si queremos -->
+
+            </div>
+
+        </div>
+
+
+        <script src="myscript.js"></script>
+
+    </header>
+    <main>
+
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

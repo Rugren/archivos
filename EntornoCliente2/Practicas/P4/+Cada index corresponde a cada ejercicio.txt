@@ -1,0 +1,6 @@
+
+
+
+Cada index corresponde a cada ejercicio
+
+Además que por ejemplo, el ejercicio 1; index1.html lleva el javascript del archivo script1.js

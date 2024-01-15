@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Calculadora HTML</title>
+  <script src="Calculadora.js" defer></script>
+
+  <style>
+    /* En esta etiqueta style estamos metiendo el estilo como si fuera el código en otra clase .css, pero sin llamarla, directamente aquí escrito el código del estilo */
+    /* se podría llamar a un archivo .css, porque y meter ahí este código tal cual. Y luego llamar al archivo .css aquí */
+    body {
+      font-family: sans-serif;
+      text-align: center;
+    }
+
+    input {
+      display: block;
+      margin: auto;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Calculadora HTML</h1>
+  <form action="" method="dialog"> <!-- method="dialog" es para que no me recargue la página, porque si le doy a Calcular no haría el cálculo y volvería a salir todo de nuevo. -->
+    <input type="text" id="op1" placeholder="Operador 1">
+    <input type="text" id="operacion" placeholder="+, -, *, /">
+    <input type="text" id="op2" placeholder="Operador 2">
+
+    <input type="submit" value="Calcular" id="calcular">
+  </form>
+
+  <p id="resultado"></p>
+</body>
+
+</html>

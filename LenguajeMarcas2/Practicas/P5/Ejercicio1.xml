@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<restaurantes>
+    <!-- Región 1 -->
+    <region nombre="Norte">
+        <!-- Restaurante 1 en el Norte -->
+        <restaurante nombre="Restaurante Norte 1" direccion="Dirección 1" gerente="Gerente 1">
+            <!-- Menú del Restaurante 1 -->
+            <menu nombre="Menú Principal">
+                <!-- Categoría 1 en el Menú -->
+                <categoria nombre="Entradas">
+                    <!-- Plato 1 en la Categoría -->
+                    <plato nombre="Entrada 1" precio="10.99" tiempo-preparacion="15 minutos">
+                        <!-- Ingredientes del Plato -->
+                        <ingrediente nombre="Ingrediente 1" cantidad="100g">
+                            <!-- Proveedor del Ingrediente -->
+                            <proveedor nombre="Proveedor A" frecuencia-entrega="semanal" />
+                        </ingrediente>
+                        <ingrediente nombre="Ingrediente 2" cantidad="50g">
+                            <proveedor nombre="Proveedor B" frecuencia-entrega="quincenal" />
+                        </ingrediente>
+                    </plato>
+                    <!-- Plato 2 en la Categoría -->
+                    <plato nombre="Entrada 2" precio="12.99" tiempo-preparacion="20 minutos">
+                        <ingrediente nombre="Ingrediente 3" cantidad="75g">
+                            <proveedor nombre="Proveedor C" frecuencia-entrega="mensual" />
+                        </ingrediente>
+                        <ingrediente nombre="Ingrediente 4" cantidad="40g">
+                            <proveedor nombre="Proveedor A" frecuencia-entrega="semanal" />
+                        </ingrediente>
+                    </plato>
+                </categoria>
+                <!-- Categoría 2 en el Menú -->
+                <categoria nombre="Platos Principales">
+                    <!-- Plato 3 en la Categoría -->
+                    <plato nombre="Plato Principal 1" precio="25.99" tiempo-preparacion="30 minutos">
+                        <ingrediente nombre="Ingrediente 5" cantidad="150g">
+                            <proveedor nombre="Proveedor B" frecuencia-entrega="quincenal" />
+                        </ingrediente>
+                        <ingrediente nombre="Ingrediente 6" cantidad="80g">
+                            <proveedor nombre="Proveedor C" frecuencia-entrega="mensual" />
+                        </ingrediente>
+                    </plato>
+                    <!-- Plato 4 en la Categoría -->
+                    <plato nombre="Plato Principal 2" precio="22.99" tiempo-preparacion="25 minutos">
+                        <ingrediente nombre="Ingrediente 7" cantidad="120g">
+                            <proveedor nombre="Proveedor A" frecuencia-entrega="semanal" />
+                        </ingrediente>
+                        <ingrediente nombre="Ingrediente 8" cantidad="60g">
+                            <proveedor nombre="Proveedor B" frecuencia-entrega="quincenal" />
+                        </ingrediente>
+                    </plato>
+                </categoria>
+            </menu>
+        </restaurante>
+    </region>
+
+    <!-- Región 2 -->
+    <region nombre="Sur">
+        <!-- Restaurante 2 en el Sur -->
+        <restaurante nombre="Restaurante Sur 1" direccion="Dirección 2" gerente="Gerente 2">
+            <!-- Menú del Restaurante 2 -->
+            <menu nombre="Menú Especial">
+                <!-- Categoría 3 en el Menú -->
+                <categoria nombre="Postres">
+                    <!-- Plato 5 en la Categoría -->
+                    <plato nombre="Postre 1" precio="8.99" tiempo-preparacion="10 minutos">
+                        <ingrediente nombre="Ingrediente 9" cantidad="200g">
+                            <proveedor nombre="Proveedor C" frecuencia-entrega="mensual" />
+                        </ingrediente>
+                        <ingrediente nombre="Ingrediente 10" cantidad="100g">
+                            <proveedor nombre="Proveedor A" frecuencia-entrega="semanal" />
+                        </ingrediente>
+                    </plato>
+                    <!-- Plato 6 en la Categoría -->
+                    <plato nombre="Postre 2" precio="10.99" tiempo-preparacion="15 minutos">
+                        <ingrediente nombre="Ingrediente 11" cantidad="180g">
+                            <proveedor nombre="Proveedor B" frecuencia-entrega="quincenal" />
+                        </ingrediente>
+                        <ingrediente nombre="Ingrediente 12" cantidad="90g">
+                            <proveedor nombre="Proveedor C" frecuencia-entrega="mensual" />
+                        </ingrediente>
+                    </plato>
+                </categoria>
+            </menu>
+        </restaurante>
+    </region>
+</restaurantes>

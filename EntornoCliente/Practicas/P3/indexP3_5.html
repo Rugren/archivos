@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Práctica 3 (Entorno cliente)</title>
+  <script src="P3_5.js" defer></script>
+  <link href="P3_5.css" rel="stylesheet">
+  <!-- Poniendo esto también enlaza al .css : <link rel="stylesheet" href="P3_5.css"> -->
+
+</head>
+
+<body>
+  <h1>Ejercicio 5</h1>
+
+  <h1>Funciones y Areas</h1>
+
+  <div class="formulario-contenedor">
+    <form action="#" method="dialog">
+      <!-- ethod="dialog" es para que no me recargue la página, porque si le doy a Calcular no haría el cálculo y volvería a salir todo de nuevo.  -->
+      <p><b>Área Cuadrado</b></p>
+      <label for="cuadrado_Largo">Largo:</label>
+      <input type="number" id="cuadrado_Largo" step="0.01">
+      <label for="cuadrado_Ancho">Ancho:</label>
+      <input type="number" id="cuadrado_Ancho" step="0.01">
+      <button class="botonesArea" id="calculo_areaRectangulo">Área Rectángulo</button>
+      <!-- aunque sea "cuadrado" ponemos "rectangulo" porque así lo pone en la imagen del ejercicio-->
+      <p class="formulario-respuestaArea" id="resultado_areaRectangulo"></p>
+      <!-- si meto la línea del párrafo anterior ( <p class="formulario-resp...), dentro de un input no funciona al calcular Área Rectángulo -->
+      <br>
+      <br>
+      <!-- Debería estar aquí dentro del imput el resultado del Área Rectángulo (para hacerlo como el ejercicio, pero no funciona, preguntar profesor)
+      <label for="resultado_areaRectangulo"></label>
+      <input class="formulario-respuestaArea" id="resultado_areaRectangulo"> -->
+    </form>
+  </div>
+
+  <div class="formulario-contenedor">
+    <form action="#" method="dialog">
+      <p><b>Área Triángulo</b></p>
+      <label for="triangulo_Base">Base:</label>
+      <input type="number" id="triangulo_Base" step="0.01">
+      <label for="triangulo_Altura">Altura:</label>
+      <input type="number" id="triangulo_Altura" step="0.01">
+      <button class="botonesArea" id="calculo_areaTriangulo">Área Triángulo</button>
+      <p class="formulario-respuestaArea" id="resultado_areaTriangulo"></p>
+      <!-- 
+              <br>
+      <br>
+    </form>
+  </div>
+
+<div class="formulario-contenedor">
+    <form action="#" method="dialog"> -->
+
+      <!-- COMENTADO PARA QUE AMBAS TABLAS ESTÉN JUNTAS, COMO EN LA IMAGEN -->
+
+      <p style="color: brown;"><b>______________________</b></p>
+
+      <p><b>Área Círculo</b></p>
+      <p>Radio</p>
+      <input type="number" id="radioInput">
+      <button class="botonesArea" id="botonCalcularAreaCirculo">Área Círculo</button>
+      <p id="resultadoAreaCirculo"></p>
+
+      <br>
+      <br>
+    </form>
+  </div>
+
+</body>
+
+</html>

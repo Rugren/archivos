@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empresa_tecnologia>
+    <oficina>
+    <nombre>Oficina Murcia</nombre>
+    
+    <equipos>
+    
+    <equipo>
+    <nombre>Equipo 1</nombre>
+    <numero_miembros>2</numero_miembros>
+    <miembros>
+    
+    <miembro>
+    <nombre>Ruben</nombre>
+    <edad>31</edad>
+    <especializacion>Desarrollo de Software</especializacion>
+    <habilidades>
+    <habilidad>
+    <nombre>Programación en PHP</nombre>
+    <nivel_experiencia>Avanzado</nivel_experiencia>
+    </habilidad>
+    </habilidades>
+    </miembro>
+    
+    <miembro>
+    <nombre>Adri</nombre>
+    <edad>25</edad>
+    <especializacion>Desarrollo de Sistemas</especializacion>
+    <habilidades>
+    <habilidad>
+    <nombre>Programación en Laravel</nombre>
+    <nivel_experiencia>Medio</nivel_experiencia>
+    </habilidad>
+    </habilidades>
+    </miembro>
+    
+    </miembros>
+    </equipo>
+    
+    <equipo>
+    <nombre>Equipo 2</nombre>
+    <numero_miembros>2</numero_miembros>
+    <miembros>
+    
+    <miembro>
+    <nombre>Fran</nombre>
+    <edad>20</edad>
+    <especializacion>Ingeniero de Software</especializacion>
+    <habilidades>
+    <habilidad>
+    <nombre>Programación en HTML</nombre>
+    <nivel_experiencia>Avanzado</nivel_experiencia>
+    </habilidad>
+    </habilidades>
+    </miembro>
+    
+    <miembro>
+    <nombre>Miguel</nombre>
+    <edad>27</edad>
+    <especializacion>Ingeniero de Sistemas</especializacion>
+    <habilidades>
+    <habilidad>
+    <nombre>Programación en CSS</nombre>
+    <nivel_experiencia>Alto</nivel_experiencia>
+    </habilidad>
+    </habilidades>
+    </miembro>
+    
+    </miembros>
+    </equipo>
+    
+    </equipos>
+    </oficina>
+    
+    <proyectos>
+    <proyecto>
+    <nombre>Proyecto Hombre</nombre>
+    <fecha_finalizacion>2024-01-25</fecha_finalizacion>
+    <habilidades_relacionadas>
+    <habilidad>Programación en PHP</habilidad>
+    </habilidades_relacionadas>
+    </proyecto>
+    </proyectos>
+    </empresa_tecnologia>
+    

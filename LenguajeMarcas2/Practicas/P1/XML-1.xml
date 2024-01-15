@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Solo puede haber un elemento padre
+Por ejemplo solo una etiqueta creada <recetas>, que sería el padre. -->
+
+<recetas>
+    <receta>
+    <nombre>Pastel de calabaza</nombre>
+    <tipoReceta>Postre</tipoReceta>
+    <dificultad>Normal</dificultad>
+    <tiempoTotal>1 hora aproximadamente</tiempoTotal>
+    <numeroRaciones>8</numeroRaciones>
+    <caloriasRacion>300 kilocalorias</caloriasRacion>
+    </receta>
+
+    <ingredientes>
+        <ingrediente>250 gr calabaza asada limpia.</ingrediente>
+        <ingrediente>200 gr panela</ingrediente>
+        <ingrediente>3 huevos.</ingrediente>
+        <ingrediente>70 gr aceite de girasol</ingrediente>
+        <ingrediente>250 gr harina repostería</ingrediente>
+        <ingrediente>3 sobres dobles de gaseosas.</ingrediente>
+    </ingredientes>
+
+    <pasos>
+        <paso id="1">Forrar un molde rectangular de 18 x 30 cm aprox.</paso>
+        <paso id="2">Batir la calabaza asada con la panela.</paso>
+        <paso id="3">Añadir los huevos y seguir batiendo hasta que la panela esté disuelta.</paso>
+        <paso id="4">Añadir el aceite y seguir batiendo hasta que quede mezclado.</paso>
+        <paso id="5">Añadir la harina y los sobres blancos. Remover con cuidado y sin que queden grumos</paso>
+        <paso id="6">Añadir los sobres azules. Remover hasta que queden mezclados.</paso>
+        <paso id="7">Verter la mezcla en el molde ya preparado. Espolvorear la superficie con azúcar y canela.</paso>
+        <paso id="8">Hornear a 175%C durante 25 minutos con horno precalentado.</paso>
+    </pasos>
+
+</recetas>

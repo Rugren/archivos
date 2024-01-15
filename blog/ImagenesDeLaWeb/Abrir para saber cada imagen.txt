@@ -1,0 +1,14 @@
+
+
+Imagen 1 index web (reducido al 50% para que se vea todo)
+Imagen 2 index web (al 100% y con otra imagen movida por el carousel destacados)
+Imagen 3 detalle (reducido al 50% para que se vea todo al completo, podrás verlo dentro de cada artículo)
+Imagen 4 Crud index (estilo propio y distinto a las otras partes del CRUD)
+Imagen 5 Crud añadir artículo (estilo propio y distinto a las otras partes del CRUD)
+Imagen 6 Crud modificar artículo (estilo propio y distinto a las otras partes del CRUD)
+Imagen 7 Guardado todo correctamente y lo editado en Base de Datos.
+
+Todos los enlaces y demás funciona todo correctamente.
+
+
+

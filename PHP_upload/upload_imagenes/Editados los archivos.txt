@@ -1,0 +1,16 @@
+
+
+
+Editados los archivos:
+
+form2.php
+form4.php (aquí está metido el carrousel)
+Creado: form5.php
+
+
+Ruta xampp:
+http://localhost/archivos/PHP_upload/upload_imagenes/form2.php
+http://localhost/archivos/PHP_upload/upload_imagenes/form4.php
+http://localhost/archivos/PHP_upload/upload_imagenes/form5.php
+
+

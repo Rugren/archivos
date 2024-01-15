@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+}
+
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.tablaProvincia{
+    background-color: rgba(0, 0, 255, 0.673);
+    color: white;
+}
+
+/*
+#ciudades1, #ciudades2, #ciudades3{
+}
+*/
+
+.tablaMeses{
+    background-color: rgba(0, 0, 255, 0.673);
+    color: white;
+}
+
+.tablaNombreProvincia{
+    background-color: rgba(0, 0, 255, 0.673);
+    color: yellow;
+}
+
+.tablaCantidadLluvia{
+    background-color: rgba(255, 149, 0, 0.673);
+    color: black;
+}

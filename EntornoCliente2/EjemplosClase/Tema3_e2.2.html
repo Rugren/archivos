@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema3_e1</title>
+
+    <script type="text/javascript">
+        function inicializar() {
+            document.getElementById("crear-ventana").onclick = crearNueva;
+            document.getElementById("cerrar-ventana").onclick = cerrarNueva
+        }
+        var nuevaVentana;
+        function crearNueva() {
+            // añadido esto con respecto al ejercicio Tema3_e1
+            if (window.confirm()){
+            // nuevaVentana = window.location.pathname("E4.html", "", "height=400,width=800");
+            // pathname no tiene paréntesis
+
+
+            /* Con window.location pongo el archivo directamente y me lo coge 
+            (con window.location.pathname HAY QUE PONER LA RUTA EXACTA)
+            nuevaVentana = window.location = "E4.html";
+            */
+            nuevaVentana = window.location.pathname = "archivos/EntornoCliente2/EjemplosClase/E4.html";
+            }
+        }
+        function cerrarNueva() {
+            if (nuevaVentana) {
+                nuevaVentana.close(); nuevaVentana = null;
+            }
+        }
+    </script>
+</head>
+
+<body onLoad="inicializar()">
+    <h1>Confirmar abrir el archivo (abriendo en la misma ventana)</h1>
+    <p>Con un archivo local si cierra</p>
+    <form>
+        <p> <input type="button" id="crear-ventana" value="Abrir en la misma Ventana ejercicio E4">
+            <input type="button" id="cerrar-ventana" value="Cerrar en la misma Ventana ejercicio E4">
+        </p>
+    </form>
+
+</body>
+
+</html>

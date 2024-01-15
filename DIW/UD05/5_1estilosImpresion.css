@@ -1,0 +1,6 @@
+/* Esta sería la HOJA de IMPRESION */
+
+/* Para ocultar los elementos al imprimir: hay que utilizar el "display: none" */
+header, nav, aside, footer {
+    display: none;
+  }

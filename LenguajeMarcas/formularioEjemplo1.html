@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <form action="mailto:rubgarciaruiz@gmail.com" method="post" encrypte="text/plain">
+        <fieldset>
+        <legend> Datos personales </legend>
+        <label> Nombre: </label>
+        <input type="text" name="Nombre" size="50">
+        <br>
+        <br>
+        <label> Apellidos: </label>
+        <input type="text" name="Apellidos" size="80">
+        <br>
+        </fieldset>
+
+        <p> Mensaje </p>
+        <textarea placeholder="Escriba su mensaje aquí" rows="5" cols="40" name="Mensaje"></textarea>
+        <br>
+        <br>
+
+        <label> ¿Eres socio? </label>
+        <input type="radio" name="opcion1" checked> <label> No </label>
+        <input type="radio" name="opcion2"> <label> Si </label>
+
+        <p> ¿Deseas suscribirte al boletín de noticias?</p>
+        <input type="checkbox" checked> <label> Si, acepto recibir información</label>
+
+        <br>
+        <br>
+        
+        <input type="submit" value ="Enviar" name="enviar">
+        <input type="reset" value ="Borrar" name="borrar">
+    </form>
+</body>
+</html>
