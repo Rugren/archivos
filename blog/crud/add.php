@@ -5,7 +5,7 @@
     require_once "../modelo/Articulo.php";
     require_once "../modelo/RepositorioArticulos.php";
 
-    // Esto cogido del crudd crear.php de TIENDA (que añadimos la línea que nos coja por defecto la imagen: if(isset($_FILES['imagen']) && $_FILES[... )
+    // Esto cogido del crud crear.php de TIENDA (que añadimos la línea que nos coja por defecto la imagen: if(isset($_FILES['imagen']) && $_FILES[... )
     if (isset($_POST['submit'])) {
         if(isset($_FILES['imagen']) && $_FILES['imagen']['tmp_name']!=""){
         $nombreFichero = date("Y-m-d - H-i-s") . "-" . $_FILES['imagen']['name'];
