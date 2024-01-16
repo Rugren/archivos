@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Feed RSS para "Recetas de Chef para Eventos Especiales" -->
+<rss version="2.0">
+    <channel>
+        <title>Recetas de Chef para Eventos Especiales</title>
+        <link>http://www.chefrecetaseventos.com</link>
+        <description>Recetas exclusivas y sofisticadas para eventos y fiestas.</description>
+        <lastBuildDate>Tue, 16 Jan 2024 09:00:00 GMT</lastBuildDate>
+        <image>
+            <url>http://www.chefrecetaseventos.com/logo.png</url>
+            <title>Logo del Canal</title>
+            <link>http://www.chefrecetaseventos.com</link>
+        </image>
+
+        <item>
+            <title>Risotto de Trufa y Champiñones</title>
+            <link>http://www.chefrecetaseventos.com/risotto-trufa</link>
+            <category>Cenas Elegantes</category>
+            <pubDate>Tue, 16 Jan 2024 10:00:00 GMT</pubDate>
+        </item>
+
+        <item>
+            <title>Cóctel de Camarones Estilo Gourmet</title>
+            <link>http://www.chefrecetaseventos.com/coctel-camarones</link>
+            <category>Entrantes</category>
+            <pubDate>Tue, 16 Jan 2024 10:30:00 GMT</pubDate>
+        </item>
+
+        <item>
+            <title>Mousse de Chocolate Negro y Naranja</title>
+            <link>http://www.chefrecetaseventos.com/mousse-chocolate</link>
+            <category>Postres Gourmet</category>
+            <pubDate>Tue, 16 Jan 2024 11:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

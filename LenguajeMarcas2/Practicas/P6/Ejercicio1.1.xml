@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Feed RSS para "Recetas Familiares del Chef" -->
+<rss version="2.0">
+    <channel>
+        <title>Recetas Familiares del Chef</title>
+        <link>http://www.chefrecetasfamiliares.com</link>
+        <description>Recetas fáciles y deliciosas para reuniones familiares.</description>
+        <lastBuildDate>Mon, 15 Jan 2024 12:00:00 GMT</lastBuildDate>
+        <pubDate>Mon, 15 Jan 2024 10:00:00 GMT</pubDate>
+        <ttl>180</ttl>
+
+        <item>
+            <title>Tarta de Manzana Casera</title>
+            <link>http://www.chefrecetasfamiliares.com/tarta-manzana</link>
+            <category>Postres</category>
+            <pubDate>Mon, 15 Jan 2024 10:30:00 GMT</pubDate>
+        </item>
+
+        <item>
+            <title>Paella Valenciana Auténtica</title>
+            <link>http://www.chefrecetasfamiliares.com/paella-valenciana</link>
+            <category>Platos Principales</category>
+            <pubDate>Mon, 15 Jan 2024 11:00:00 GMT</pubDate>
+        </item>
+
+        <item>
+            <title>Ensalada César con Pollo</title>
+            <link>http://www.chefrecetasfamiliares.com/ensalada-cesar</link>
+            <category>Ensaladas</category>
+            <pubDate>Mon, 15 Jan 2024 11:30:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>
