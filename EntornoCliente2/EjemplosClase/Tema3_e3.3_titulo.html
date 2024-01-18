@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>Ventana Principal</title>
+
+    <!-- Página 13/26 2.3.- Comunicación entre múltiples ventanas.
+    pero cambiado a que modifique el texto al título
+    La ventana nueva en la que escribamos, CAMBIARÁ EL TÍTULO  -->
+
+    <script type="text/javascript">
+        function abrirSubVentana() {
+            // hemos cambiado la ruta al Tema3_e3.3.1_titulo.html
+            nuevaVentana = window.open("Tema3_e3.3.1_titulo.html", "sub", "height=300,width=400");
+        }
+        function cerrarSubVentana() {
+            if (nuevaVentana) {
+                nuevaVentana.close();
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1 id="cambiarTitulo">Ventana padre - principal</h1>
+    <form action="">
+        <p>
+            <input type="button" value="Abrir sub ventana" id="abrir" onclick="abrirSubVentana()">
+            <input type="button" value="Cerrar sub ventana" id="cerrar" onclick="cerrarSubVentana()">
+        </p>
+        <p>
+            <label>Texto proveniente de la sub-ventana:</label>
+            <input type="text" id="original">
+        </p>
+    </form>
+</body>
+
+</html>
