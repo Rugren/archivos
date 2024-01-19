@@ -32,10 +32,37 @@
         // Al imprimilo no habrá ningún problema, imprimirá I'm "hungry"
         document.write(textoSecuencias);
     </script>
-    
+    <br>
 
+    <br>
+    <button onclick='this.innerHTML=Date()'>Pulsa para saber la hora 0</button>
+    <br>
 
+    <br>
+    <script>
+        function mostrarHora() {
+            var boton = document.getElementById('botonHora');
+            boton.innerHTML = Date();
+        }
+    </script>
+    <button onclick="mostrarHora()" id="botonHora">Pulsa para saber la hora 1</button>
+    <br>
 
+    <script>
+        // ejemplo bucle for:
+        // var dd = 75;
+        var dd = "";
+        for (i = 0; i <= 10; i++) {
+            dd += "Número: " + i + " ";
+        }
+        console.log(dd);
+    </script>
+
+    <script>
+        var dias = ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo'];
+        // dias.forEach(muestra);
+        console.log(dias);
+    </script>
 
 </body>
 

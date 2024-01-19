@@ -42,17 +42,29 @@
         document.write(fechaActual.toLocaleDateString('de-DE', opciones));
         // da en alemán: Freitag, 2, Juli 2021
 
+
+
+        // página 58, 59, 60, 61/71 Unidad 2: UD02_DWEC.pdf
+
+        // conocer su longitud
         longitud = dias.length;
         document.write(longitud);
 
+        // ordenarlo en alfabéticamente dias1 = dias.short();
         dias1 = dias.short;
         document.write(dias1);
 
+        // añadir un nuevo elemento:
         dias2 = dias.push("juernes");
         document.write(dias2);
 
+        // extraer el último elemento lastDay = dias.pop();
         lastDay = dias.pop;
         document.write(lastDay);
+        // El último elemento se eliminará del array. Extrar significa retirar.
+
+        // Eliminar el primer elemento: dias.shif();
+        // Eliminar un elemento concreto: delete dias [2];
 
         var diasMeses = [['Lunes', 'Martes', 'Miercoles','Jueves', 'Viernes', 'Sabado', 'Domingo']];
         // Estas 3 líneas es en .js (javascript)
