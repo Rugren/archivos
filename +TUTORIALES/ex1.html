@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iteración de Números</title>
+</head>
+<body>
+
+<script>
+    // Función recursiva para obtener el número justamente superior
+    function obtenerNumeroSuperior(n) {
+        // Preguntar por el número justamente superior
+        var respuesta = prompt("¿Cuál es el número justamente superior a " + n + "?");
+
+        // Verificar si la respuesta es correcta
+        if (parseInt(respuesta) === n + 1) {
+            // Si es correcta, actualizar n y hacer una nueva llamada recursiva
+            obtenerNumeroSuperior(n + 1);
+        } else {
+            // Si es incorrecta, mostrar un alert y detener la iteración
+            alert("Número incorrecto. Fin de la iteración.");
+        }
+    }
+
+    // Iniciar el proceso con el primer número introducido por el usuario
+    var numeroInicial = prompt("Introduce un número:");
+    obtenerNumeroSuperior(parseInt(numeroInicial));
+</script>
+
+</body>
+</html>

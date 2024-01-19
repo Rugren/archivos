@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Edad</title>
+</head>
+<body>
+
+<script>
+    // Pedir al usuario el año de nacimiento mediante prompt
+    var añoNacimiento = prompt("Ingresa tu año de nacimiento:");
+
+    // Obtener el año actual mediante el objeto Date
+    var añoActual = new Date().getFullYear();
+
+    // Calcular la edad del usuario
+    var edad = añoActual - parseInt(añoNacimiento);
+
+    // Mostrar la edad por consola
+    console.log("La edad del usuario es: " + edad);
+</script>
+
+</body>
+</html>

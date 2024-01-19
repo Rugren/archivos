@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprobar Par o Impar</title>
+</head>
+<body>
+
+<script>
+    // Pedir un número por prompt
+    var inputNumero = prompt("Introduce un número:");
+
+    // Convertir el valor del prompt a un número
+    var numero = parseFloat(inputNumero);
+
+    // Verificar si el valor introducido es un número
+    if (!isNaN(numero)) {
+        // Sumar 5 al número
+        var resultado = numero + 5;
+
+        // Comprobar si el resultado es par o impar
+        if (resultado % 2 === 0) {
+            alert("El resultado ( " + resultado + " ) es un número PAR.");
+        } else {
+            alert("El resultado ( " + resultado + " ) es un número IMPAR.");
+        }
+    } else {
+        // Mostrar un mensaje si el valor introducido no es un número
+        alert("Por favor, introduce un número válido.");
+    }
+</script>
+
+<script>
+    // Pedir un número por prompt y convertirlo a número
+    var numero = +prompt("Introduce un número:");
+
+    // Sumar 5 al número
+    var resultado = numero + 5;
+
+    // Comprobar si el resultado es par o impar
+    var mensaje = (resultado % 2 === 0) ? "PAR" : "IMPAR";
+    alert("El resultado (" + resultado + ") es un número " + mensaje + ".");
+</script>
+
+</body>
+</html>

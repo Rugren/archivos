@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen 1º Evaluación</title>
+</head>
+
+<body>
+    <h1>Ejercicio 3</h1>
+
+    <script>
+        var anoNacimiento = prompt("Escribe tu año de nacimiento:");
+
+        // aquí obtener el año actual mediante el objeto Date y con getFullYear para el año acctual
+        var anoActual = new Date().getFullYear();
+
+        // para calcular la edad del usuario
+        var suEdad = anoActual - parseInt(anoNacimiento);
+
+        console.log("La edad del usuario es: " + suEdad);
+    </script>
+
+    <p>La respuesta no se muestra por pantalla</p>
+    <p>Se muestra por consola porque nos lo pide el ejercicio</p>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen 1º Evaluación</title>
+</head>
+
+<body>
+    <h1>Ejercicio 1</h1>
+
+    <script>
+        function obtenerNumeroSuperior(numero) {
+            var respuesta = prompt("¿Cuál es el número justamente superior a " + numero + "?");
+
+            // para si es correcto
+            if (parseInt(respuesta) === numero + 1) {
+                obtenerNumeroSuperior(numero + 1);
+            } else {
+                // Si es incorrecta hay qye mostrar un alert y dejar de preguntar, es decir, que acabe la aplicación
+                alert("Número incorrecto. Fin.");
+            }
+        }
+
+        // aquí el inicio del número que meta el usuario
+        var numeroInicial = prompt("Introduce un número cualquiera:");
+        obtenerNumeroSuperior(parseInt(numeroInicial));
+    </script>
+
+</body>
+
+</html>

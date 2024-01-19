@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen 1º Evaluación</title>
+</head>
+
+<body>
+    <h1>Ejercicio 2</h1>
+
+    <script>
+        var numeroIntroducido = prompt("Introduce un número cualquiera (Se le va a sumar 5)");
+
+        // por si el valor introducido es con decimales, que valga y que también nos lo sume al + 5.
+        var numero = parseFloat(numeroIntroducido);
+
+        // Nota profesor: comprobamos si es par o impar después de escribir el número.
+
+        // si es un número entonces que haga lo siguiente:
+        if (numero) {
+            // para sumarle 5 al número que nos pide el ejercicio
+            var resultadoFinal = numero + 5;
+
+            // después de la suma, comprobamos si el resultado(el nº introducido + 5) es par o impar
+            if (resultadoFinal % 2 === 0) {
+                alert("El resultado de tu nº + 5 es = " + resultadoFinal + " . Y " + resultadoFinal + " es un número PAR.");
+            } else {
+                alert("El resultado de tu nº + 5 es = " + resultadoFinal + " . Y " + resultadoFinal + " es un número IMPAR.");
+            }
+        } else {
+            // Si no es un número que diga que es un error:
+            alert("Solo puedes introducir un número.");
+        }
+    </script>
+
+</body>
+
+</html>
