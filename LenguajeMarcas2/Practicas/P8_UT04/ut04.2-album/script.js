@@ -21,7 +21,8 @@ document.getElementById('btnAgregar').addEventListener('click', function() {
         // Añadir evento click para alternar la clase seleccionada
         nuevaImagen.addEventListener('click', function(event) {
             event.stopPropagation(); // Evitar que el evento se propague al contenedor
-            imagenContainer.classList.toggle('seleccionada');
+            nuevaImagen.classList.toggle('seleccionada');
+            // tenía puesta imagenContainer: imagenContainer.classList.toggle('seleccionada'); pero es con nuevaImagen.
         });
 
         // Crear el botón Eliminar
