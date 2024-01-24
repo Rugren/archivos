@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Álbum de Imágenes Estilizado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<!-- Entrega individual de la carpeta del proyecto comprimida con el código javascript, y el resto de ficheros del proyecto.
+
+El formato del archivo será:
+UT04-ALBUM-TUNOMBRE-APELLIDO.ZIP (EJEMPLO: UT04-ALBUM-MIGUEL-MARTIN.ZIP).
+
+Enunciado: Completa el código javascript adjunto, para una aplicación web para crear un álbum de imágenes. Implementa las siguientes funcionalidades:
+
+Añadir Nuevas Imágenes: Permite al usuario añadir nuevas imágenes al álbum mediante URLs.
+Eliminar Imágenes: Cada imagen debe tener un botón para eliminarla del álbum.
+Cambiar el Estilo de las Imágenes: Al hacer clic en una imagen, alterna un marco alrededor de ella para indicar que ha sido seleccionada.
+Funcionalidad con JavaScript:
+
+Escribe un script JavaScript donde agregues un oyente de eventos click al botón con id btnAgregar.
+Dentro del evento click, obtén la URL de la imagen del campo de entrada urlImagen.
+Verifica si la URL no está vacía. Si contiene una URL válida, procede con los siguientes pasos.
+Crea un nuevo elemento img y establece su atributo src con la URL obtenida.
+Establece un ancho fijo para la imagen (por ejemplo, 300px) para mantener la consistencia en el tamaño de las imágenes en el álbum.
+Agrega un evento click a cada imagen que permita alternar la clase seleccionada. Esta clase se utilizará para estilizar las imágenes seleccionadas (por ejemplo, aplicando un borde o cambiando la opacidad).
+Crea un botón Eliminar para cada imagen. Este botón permitirá a los usuarios eliminar la imagen correspondiente del álbum.
+Asegúrate de que, al hacer clic en el botón Eliminar, tanto la imagen como el botón sean eliminados del contenedor del álbum.
+Una vez agregada la imagen y el botón de eliminar, limpia el campo de entrada para permitir la introducción de una nueva URL. -->
+
+
+<body>
+    <div class="container">
+        <h1>Álbum de Imágenes</h1>
+        <div class="input-group">
+            <input type="text" id="urlImagen" placeholder="Pega la URL de una imagen aquí">
+            <button id="btnAgregar">Agregar Imagen</button>
+        </div>
+        <div id="album" class="album"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+<!--  
+ Ejercicio: Álbum de Imágenes Interactivo
+Enunciado:
+Desarrolla una aplicación web para crear un álbum de imágenes. Implementa las siguientes funcionalidades:
+
+Añadir Nuevas Imágenes: Permite al usuario añadir nuevas imágenes al álbum mediante URLs.
+Eliminar Imágenes: Cada imagen debe tener un botón para eliminarla del álbum.
+Cambiar el Estilo de las Imágenes: Al hacer clic en una imagen, alterna un marco alrededor de ella para indicar que ha sido seleccionada.
+
+-->
