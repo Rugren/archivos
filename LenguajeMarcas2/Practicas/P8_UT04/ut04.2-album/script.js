@@ -1,33 +1,3 @@
-
-/* document.getElementById('btnAgregar').addEventListener('click', function() {
-    let imagen = document.getElementById('urlImagen').value;
-    if (imagen) {
-        // Obtener elementos lista e item de la lista
-        let lista = document.getElementById('listaProfesiones');
-        let li = document.createElement('li');
-        // Añadir el texto que el usuario ha escrito en imagen, al contenido del item
-        li.textContent = imagen;
-        // Crear un botón con texto Eliminar, que al pulsarlo elimine el item de la lista
-        let btnEliminar = document.createElement('button');
-        btnEliminar.textContent = 'Eliminar';
-        btnEliminar.className='eliminar';
-        btnEliminar.onclick = function() {
-            lista.removeChild(li);
-        };
-        // Añadir el botón creado para eliminar el item como nodo hijo del item
-        li.appendChild(btnEliminar);
-        // Al hacer click sobre el nombre del item de la lista, se cambiará su clase a completada.
-        li.addEventListener('click', function() {
-            li.classList.toggle('completada');
-        });
-
-        // Añadir el item a la lista, como nodo hijo.
-        lista.appendChild(li);
-    }
-    document.getElementById('urlImagen').value = '';
-});
-*/
-
 document.getElementById('btnAgregar').addEventListener('click', function() {
     // Obtener la URL de la imagen del campo de entrada
     var urlImagen = document.getElementById('urlImagen').value;
@@ -49,7 +19,8 @@ document.getElementById('btnAgregar').addEventListener('click', function() {
         imagenContainer.appendChild(nuevaImagen);
 
         // Añadir evento click para alternar la clase seleccionada
-        nuevaImagen.addEventListener('click', function() {
+        nuevaImagen.addEventListener('click', function(event) {
+            event.stopPropagation(); // Evitar que el evento se propague al contenedor
             imagenContainer.classList.toggle('seleccionada');
         });
 
