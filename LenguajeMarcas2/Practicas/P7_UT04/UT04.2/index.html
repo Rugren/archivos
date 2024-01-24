@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Profesiones y Habilidades</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+        <!-- DAW2-LM-UT04.2 Registro de profesiones y habilidades 
+
+        Requisitos de entrega:
+        Entregar la carpeta comprimida con todo el proyecto, y las modificaciones del fichero script.js.
+
+        Enunciado: Completa el código javascript adjunto, para una aplicación web que permita a los usuarios registrar
+        diferentes profesiones y sus habilidades asociadas. La aplicación proporcionará la capacidad de añadir nuevas
+        profesiones, agregar habilidades específicas a cada profesión, y eliminar profesiones de la lista. Esto lo hace,
+        a través de los botones de agregar profesión y eliminar.
+
+
+        Funcionalidad con JavaScript:
+
+        Completa el código Javascript del script.js, de la siguiente manera:
+        Asigna un evento click al botón "Agregar Profesión".
+        Dentro del evento click, realiza los siguientes pasos:
+        Obtén los valores ingresados en los campos de profesión y habilidad.
+        Verifica que ambos campos contengan información.
+
+        Si se cumplen las condiciones, crea un nuevo elemento li para la lista, que combinará el nombre de la profesión
+        y la habilidad en un formato legible, como "Profesión - Habilidad".
+        Agrega un botón "Eliminar" a cada elemento li. Este botón permitirá eliminar la entrada de la lista.
+        Asegúrate de que el botón "Eliminar" funcione correctamente, eliminando el elemento li correspondiente de la
+        lista cuando se haga clic.
+        Una vez agregada la entrada a la lista, limpia los campos de profesión y habilidad para permitir nuevas
+        entradas.
+        -->
+
+    <div class="container">
+        <h1>Registro de Profesiones y Habilidades</h1>
+        <div class="input-group">
+            <input type="text" id="profesion" placeholder="Nombre de la profesión">
+            <input type="text" id="habilidad" placeholder="Habilidad">
+            <button id="btnAgregar">Agregar Profesión</button>
+        </div>
+        <ul id="listaProfesiones"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

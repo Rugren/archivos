@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>Canal de noticias</title>
+        <link>http://www.tusitioweb.com</link>
+        <description>Las últimas noticias de nuestro sitio</description><!-- Imagen del canal -->
+        <image>
+            <url>http://localhost/cesdaw2lmtrim2/ut04a/sitioweb2/logocesur.png</url>
+            <title>Logo del Canal</title>
+            <link>http://www.ejemplo.com</link>
+        </image>
+        <item>
+            <title>Noticia 1</title>
+            <link>http://www.tusitioweb.com/noticia1</link>
+            <description>Descripción de la noticia 1</description>
+            <pubDate>Wed, 26 Dec 2023 18:25:16 +0100</pubDate>
+            <enclosure url="http://localhost/cesdaw2lmtrim2/ut04a/sitioweb2/logocesur.png" length="5814" type="image/png" />
+        </item>
+        <item>
+            <title>Noticia 2</title>
+            <link>http://www.tusitioweb.com/noticia2</link>
+            <description>Descripción de la noticia 2</description>
+            <pubDate>Wed, 26 Dec 2023 18:28:16 +0100</pubDate>
+        </item>
+        <item>
+            <title>Noticia 3</title>
+            <link>http://www.tusitioweb.com/noticia3</link>
+            <description>Descripción de la noticia 3</description>
+            <pubDate>Wed, 27 Dec 2023 11:28:16 +0100</pubDate>
+        </item>
+        <item>
+            <title>Noticia 4</title>
+            <link>http://www.tusitioweb.com/noticia4</link>
+            <description>Descripción de la noticia 4</description>
+            <pubDate>Wed, 27 Dec 2023 12:28:16 +0100</pubDate>
+        </item><!-- Más noticias -->
+    </channel>
+</rss>
