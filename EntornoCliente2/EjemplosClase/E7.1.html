@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <h1>Ejercicio Equipos fútbol</h1>
+    <h3>Array bimimensional - Arrays bimimensionales</h3>
+    <h2>Traspasos de futbolistas: (ver por consola)</h2>
+
+    <script>
+        var equipo = new Array();
+        equipo[0] = new Array("Girona", "Pepe");
+        equipo[1] = new Array("Madrid", "Vinicius");
+        equipo[2] = new Array("Athletic", "Mbappé");
+        equipo[3] = new Array("Barcelona", "Messi");
+        equipo[4] = new Array("Athlético de Madrid", "Griezman");
+
+        // 1. Buscar un jugador dado en el arreglo equipo y mostrar su índice en el arreglo.
+        function buscarJugador(nombreJugador) {
+            for (var i = 0; i < equipo.length; i++) {
+                if (equipo[i][1] === nombreJugador) {
+                    console.log(nombreJugador + " encontrado en el índice " + i);
+                    return i;
+                }
+            }
+            console.log(nombreJugador + " no encontrado en el equipo.");
+            return -1;
+        }
+
+        // 2. Realizar el traspaso de un jugador de un equipo a otro.
+        function traspasarJugador(nombreJugador, equipoOrigen, equipoDestino) {
+            var indiceOrigen = buscarJugador(nombreJugador);
+            if (indiceOrigen !== -1) {
+                equipoDestino.push(equipoOrigen[indiceOrigen]);
+                equipoOrigen.splice(indiceOrigen, 1);
+                console.log(nombreJugador + " ha sido traspasado de " + equipoOrigen + " a " + equipoDestino);
+            } else {
+                console.log("El jugador no puede ser traspasado porque no está en el equipo original.");
+            }
+        }
+
+        // 3. Eliminar un jugador del equipo original.
+        function eliminarJugador(nombreJugador) {
+            var indiceJugador = buscarJugador(nombreJugador);
+            if (indiceJugador !== -1) {
+                equipo.splice(indiceJugador, 1);
+                console.log(nombreJugador + " ha sido eliminado del equipo.");
+            } else {
+                console.log("El jugador no puede ser eliminado porque no está en el equipo.");
+            }
+        }
+
+        // 4. Comprobar que el jugador eliminado ya no esté en el equipo original.
+        function comprobarEliminacion(nombreJugador) {
+            var indiceJugador = buscarJugador(nombreJugador);
+            if (indiceJugador === -1) {
+                console.log(nombreJugador + " ya no está en el equipo.");
+            } else {
+                console.log(nombreJugador + " todavía está en el equipo.");
+            }
+        }
+
+        console.log("Equipo original:");
+        console.log(equipo);
+
+        // Buscar un jugador y mostrar su índice
+        buscarJugador("Messi");
+
+        // Traspasar un jugador
+        traspasarJugador("Vinicius", equipo, []);
+
+        console.log("Equipo después del traspaso:");
+        console.log(equipo);
+
+        // Eliminar un jugador del equipo original
+        console.log("eliminar un jugador del equipo original:");
+        eliminarJugador("Mbappé");
+
+        console.log("Equipo después de la eliminación:");
+        console.log(equipo);
+
+        // Comprobar que el jugador eliminado ya no está en el equipo original
+        comprobarEliminacion("Mbappé");
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
