@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- Escribimos en el texto, si es un número que nos lo meta en un checkbox, si hacemos click fuera del texto, nos lo comprueba. -->
+<!-- No funciona el ejercicio -->
+
+
+<body>
+
+    <script>
+        function buscarNumero() {
+            // isNan comprueba si es un número, lo negamos para si no es un número.
+            if (!isNan(document.getElementById("textoNumero").value)) {
+                // como cogemos con getElementById ponemos entre paréntesis el id del input, el: EsNumero
+                document.getElementById("EsNumero").checked = true;
+                } 
+                /* else {
+                    // esto desmarcaría
+                    document.getElementById("EsNumero").checked = false;
+            }*/
+        }
+
+        function desmarcar() {
+            document.getElementById("EsNumero").checked = false;
+        }
+
+    </script>
+
+    <form action="" method="get">
+        <input type="checkbox" id="EsNumero" />¿Es un número?
+        <input type="text" id="textoNumero" onblur="buscarNumero()" />
+
+    </form>
+    <button onclick="buscarNumero()">Si es un número lo marca (clic fuera)</button>
+    <button onclick="desmarcar()">Si es un número lo marca (clic fuera)</button>
+</body>
+
+</html>

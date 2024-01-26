@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+                input {
+                        padding: 10px;
+                        font-size: 16px;
+                }
+        </style>
+
+        <script>
+                window.addEventListener('DOMContentLoaded', function () {
+                        const inputElement = document.getElementById('texto');
+
+                        inputElement.addEventListener('blur', function () {
+                                this.value = this.value.toUpperCase();
+                        });
+                });
+        </script>
+
+        <h1>Ejercicios clases</h1>
+        <h3>Convertir a mayúscula al hacer clic fuera del texto</h3>
+
+
+        <!-- Creamos un input text, que al clicar fuera del texto, nos lo convierta en mayúscula. -->
+        <!-- Otra manera más liosa de hacerla -->
+
+        <script>
+
+        </script>
+
+</head>
+
+<body>
+
+        <label for="texto">Introduce un texto:</label><br>
+        <input type="text" id="texto">
+
+</body>
+
+</html>
