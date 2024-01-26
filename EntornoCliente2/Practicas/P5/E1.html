@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios tema 5</title>
+    <style>
+        /* para ocultar el formulario de Dirección */
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Se entrega solo el 1, los demás se harán después -->
+
+    <h1>Ejercicio 1</h1>
+    <h2>Formulario de Envío</h2>
+
+    <form id="formularioEnvio" onsubmit="enviarDatos(event)">
+        <label for="nombre">Nombre y Apellidos:</label><br>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="contraseña">Contraseña ("hola"):</label><br>
+        <input type="password" id="contraseña" name="contraseña"><br><br>
+
+        <label>Tipo de Envío:</label><br>
+        <!-- // que se muestre solo el campo si hacemos click en Envío a domicilio. -->
+        <!-- El ejercicio nos dice que este campo debe estar escondido hasta que se escoge la
+        opción “Envío a domicilio” y vuelve a esconderse cuando se selecciona otra opción -->
+        <input type="radio" id="domicilio" name="envio" value="domicilio" onclick="mostrarDireccion()"> Envío a
+        domicilio<br>
+        <!-- <input type="radio" id="domicilio" name="envio" value="domicilio"> Envío a domicilio<br> -->
+        <input type="radio" id="recogerEnTienda" name="envio" value="recogerEnTienda" onclick="ocultarDireccion()">
+        Recogida en tienda<br>
+        <input type="radio" id="puntoRecogida" name="envio" value="puntoRecogida" onclick="ocultarDireccion()"> Recogida
+        en punto<br><br>
+
+        <div id="direccion" class="hidden">
+            <label for="direccionInput">Dirección:</label><br>
+            <input type="text" id="direccionInput" name="direccion"><br><br>
+        </div>
+
+
+        <label for="velocidadEnvio">Velocidad del Envío:</label><br>
+        <select id="velocidadEnvio" name="velocidadEnvio">
+            <option value="express">Express</option>
+            <option value="24horas">24 horas</option>
+            <option value="48horas">48 horas</option>
+        </select><br><br>
+
+        <input type="checkbox" id="aceptarTerminos" name="aceptarTerminos"> Aceptar términos de uso<br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+
+        function mostrarDireccion() {
+            var direccionDiv = document.getElementById("direccion");
+            direccionDiv.classList.remove("hidden");
+        }
+
+        function ocultarDireccion() {
+            var direccionDiv = document.getElementById("direccion");
+            direccionDiv.classList.add("hidden");
+            document.getElementById("direccionInput").value = ""; // Limpiar el campo de dirección
+        }
+
+        /* otra manera, no probada
+        if(document.getElementById("tienda").cheked = true){
+                    document.getElementById("campoDomicilio").hidden = true;
+                }
+        function mostrarDireccion(){
+                if(document.getElementById("domicilio").cheked = true){
+                    document.getElementById("campoDomicilio").hidden = false;
+                }
+            }
+        function ocultarDireccion(){
+                if(document.getElementById("tienda").cheked = true){
+                    document.getElementById("campoDomicilio").hidden = true;
+                }
+            }
+        */
+
+        function enviarDatos(event) {
+            event.preventDefault();
+            var nombre = document.getElementById("nombre").value;
+            var contraseña = document.getElementById("contraseña").value;
+            var direccion = document.getElementById("direccionInput").value;
+            var aceptarTerminos = document.getElementById("aceptarTerminos").checked;
+
+            if (nombre.trim() === "") {
+                alert("Por favor, introduce tu nombre y apellidos.");
+                return;
+            }
+
+            if (contraseña !== "hola") {
+                alert("La contraseña es incorrecta.");
+                return;
+            }
+
+            if (document.getElementById("domicilio").checked && direccion.trim() === "") {
+                alert("Por favor, introduce tu dirección para el envío a domicilio.");
+                return;
+            }
+
+            if (!aceptarTerminos) {
+                alert("Debes aceptar los términos de uso.");
+                return;
+            }
+
+            // Recoger los demás datos del formulario
+            var envioSeleccionado = document.querySelector('input[name="envio"]:checked').value;
+            var velocidadEnvio = document.getElementById("velocidadEnvio").value;
+
+            // Mostrar el resumen de pedido
+            var resumen = "Resumen del Pedido:\n\n" +
+                "Nombre y Apellidos: " + nombre + "\n" +
+                "Tipo de Envío: " + envioSeleccionado + "\n" +
+                (envioSeleccionado === "domicilio" ? "Dirección: " + direccion + "\n" : "") +
+                "Velocidad del Envío: " + velocidadEnvio + "\n";
+            alert(resumen);
+        }
+    </script>
+
+</body>
+
+</html>
