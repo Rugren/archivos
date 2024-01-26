@@ -31,12 +31,12 @@
         <!-- // que se muestre solo el campo si hacemos click en Envío a domicilio. -->
         <!-- El ejercicio nos dice que este campo debe estar escondido hasta que se escoge la
         opción “Envío a domicilio” y vuelve a esconderse cuando se selecciona otra opción -->
-        <input type="radio" id="domicilio" name="envio" value="domicilio" onclick="mostrarDireccion()"> Envío a
+        <input type="radio" id="domicilio" name="envio" value="Envío a domicilio" onclick="mostrarDireccion()"> Envío a
         domicilio<br>
         <!-- <input type="radio" id="domicilio" name="envio" value="domicilio"> Envío a domicilio<br> -->
-        <input type="radio" id="recogerEnTienda" name="envio" value="recogerEnTienda" onclick="ocultarDireccion()">
+        <input type="radio" id="recogerEnTienda" name="envio" value="Recogida en tienda" onclick="ocultarDireccion()">
         Recogida en tienda<br>
-        <input type="radio" id="puntoRecogida" name="envio" value="puntoRecogida" onclick="ocultarDireccion()"> Recogida
+        <input type="radio" id="puntoRecogida" name="envio" value="Recogida en punto" onclick="ocultarDireccion()"> Recogida
         en punto<br><br>
 
         <div id="direccion" class="hidden">
@@ -67,7 +67,7 @@
         function ocultarDireccion() {
             var direccionDiv = document.getElementById("direccion");
             direccionDiv.classList.add("hidden");
-            document.getElementById("direccionInput").value = ""; // Limpiar el campo de dirección
+            document.getElementById("direccionInput").value = ""; // Oculta el campo de dirección de nuevo
         }
 
         /* otra manera, no probada
@@ -93,6 +93,7 @@
             var direccion = document.getElementById("direccionInput").value;
             var aceptarTerminos = document.getElementById("aceptarTerminos").checked;
 
+            // trim() elimina los espacios en blanco al principio y al final de la cadena del texto que haya metido el usuario
             if (nombre.trim() === "") {
                 alert("Por favor, introduce tu nombre y apellidos.");
                 return;
@@ -113,14 +114,17 @@
                 return;
             }
 
-            // Recoger los demás datos del formulario
+            // Recogemos los demás datos del formulario:
+            // Puesto para que muestre en todas las name="envio" su valor: value="Envío a domicilio"(por ejemplo, el que hayamos puesto en su value)
             var envioSeleccionado = document.querySelector('input[name="envio"]:checked').value;
+            // Aquí cogida la id: id="velocidadEnvio", pues mostrará el valor de las 3 opciones según elijamos.
             var velocidadEnvio = document.getElementById("velocidadEnvio").value;
 
             // Mostrar el resumen de pedido
             var resumen = "Resumen del Pedido:\n\n" +
                 "Nombre y Apellidos: " + nombre + "\n" +
                 "Tipo de Envío: " + envioSeleccionado + "\n" +
+                // este campo de "Dirección: " + direccion no se muestra, hacer que se muestre para dejar más perfecto, preguntar al profesor.
                 (envioSeleccionado === "domicilio" ? "Dirección: " + direccion + "\n" : "") +
                 "Velocidad del Envío: " + velocidadEnvio + "\n";
             alert(resumen);
