@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios tema 5</title>
+
+    <style>
+        .boton {
+            display: block;
+            width: 100px;
+            cursor: pointer;
+            margin: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- En esta página tienes dos bloques div a modo de botones, como ves en este código HTML
+de abajo. Debes escribir una única función Javascript (llamada pulsar)para manejar los 
+eventos click de ambos botones. Cuando pulses con el ratón en cualquier botón deberá 
+aparecer una ventana alert indicando el id del botón donde se ha pulsado.
+<head>
+<style>
+.boton{display:block; width:100px;cursor:pointer;margin: 10px;border:1px solid black}
+</style> 
+</head>
+<body>
+<div id="boton1" class="boton">Pulsar aquí</div>
+<div id="boton2" class="boton">Pulsar aquí</div>
+</body>
+-->
+
+    <h3>Ejercicio 6. Eventos click en botones </h3>
+
+    <div id="boton1" class="boton" onclick="pulsar(this.id)">Pulsar aquí</div>
+    <div id="boton2" class="boton" onclick="pulsar(this.id)">Pulsar aquí</div>
+
+    <script>
+        function pulsar(id) {
+            alert("Se ha pulsado en el botón con id: " + id);
+        }
+    </script>
+
+</body>
+
+</html>

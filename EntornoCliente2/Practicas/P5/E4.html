@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios tema 5</title>
+</head>
+
+<body>
+
+    <!-- En esta página web debes agregar un script para asignar un manejador de eventosal botón 
+button. Este script deberá escribir en el campo total el valor de multiplicar los otros dos
+campos.
+<form>
+<input id="precio" type="number">
+<input id="cantidad" type="number">
+<input type="button" id="enviar" value="Calcular">
+<input id="total" readonly>
+</form> -->
+
+
+    <h3>Ejercicio 4. </h3>
+
+    <form>
+        <input id="precioCampo" type="number">
+        <input id="cantidadCampo" type="number">
+        <input type="button" id="enviarCampo" value="Calcular">
+        <input id="totalCampo" readonly>
+    </form>
+
+
+    <script>
+        var precio = document.getElementById("precioCampo");
+        var cantidad = document.getElementById("cantidadCampo");
+        var enviar = document.getElementById("enviarCampo");
+        var total = document.getElementById("totalCampo");
+        enviar.addEventListener("click", calcular);
+
+        function calcular() {
+            // isNaN convertir el parámetro pasado a un número
+            if (isNaN(parseInt(precio.value))) {
+                alert('Tienes que poner un número válido en "Precio".');
+            } else if (isNaN(parseInt(cantidad.value))) {
+                alert('Tienes que poner un número válido en "Cantidad".')
+            } else {
+                let subTotal = parseInt(precio.value) * parseInt(cantidad.value);
+                total.value = subTotal;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

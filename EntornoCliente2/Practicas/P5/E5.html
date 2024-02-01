@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios tema 5</title>
+
+    <style>
+        #cuadro {
+            display: block;
+            width: 100px;
+            height: 100px;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Crea un script para que se active cuando la página se haya cargado completamente 
+(evento load de window). Una vez cargada la página el script asignará un evento al bloque
+de manera que al entrar el ratón su fondo pase a rojo yal salir vuelva al blanco.
+El script se colocará en la sección head. de la página.
+<div style="display: block; width: 100px; height: 100px;" id="cuadro">
+Cuadro que cambia al entrar el ratón
+</div> -->
+
+    <h3>Ejercicio 5. Cuadro que cambia al entrar el ratón (rojo cuando paso por encima y se quita al pasar el ratón por fuera)</h3>
+
+    <div id="cuadro">Cuadro que cambia al entrar el ratón</div>
+
+    <script>
+        window.addEventListener('load', function () {
+            var cuadro = document.getElementById('cuadro');
+
+            cuadro.addEventListener('mouseenter', function () {
+                this.style.backgroundColor = 'red';
+            });
+
+            cuadro.addEventListener('mouseleave', function () {
+                this.style.backgroundColor = 'white';
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Ejercicio: TRIM2-LMSGI-UT5-Tarea de clase - Creación de un DTD -->
+
+<rss version="2.0">
+    <channel>
+        <title>Ejemplo de Feed en RRSS</title>
+        <link>http://www.ejemplo.com</link>
+        <description>Este es un ejemplo de Feed en RRSS</description>
+        <item>
+            <title>Artículo de ejemplo</title>
+            <link>http://www.ejemplo.com/tarta-manzana</link>
+            <description>Este es un ejemplo de Feed en RRSS</description>
+            <pubDate>Mon, 06 Sep 2021 00:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

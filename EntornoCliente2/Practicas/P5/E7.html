@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios tema 5</title>
+
+    <style>
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 200px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- La página descrita con este código HTML posee dos bloques div cuyos atributos id 
+son cX, cY. Debes escribir un manejador para el evento de movimiento del ratón por el 
+documento. Este script deberá anotar en los cuadros cX y cY las coordenadas donde se 
+encuentra el puntero del ratón mientras se mueve por todo el documento.
+<label>Coordenada X</label>
+<input id="cX"> </div>
+<label>Coordenada Y</label>
+<input id="cY"> </div>
+</body>
+-->
+
+    <h3>Ejercicio 7. (Registro de coordenadas del ratón)</h3>
+
+    <label>Coordenada X</label>
+    <input id="cX">
+    <label>Coordenada Y</label>
+    <input id="cY">
+
+    <script>
+        document.addEventListener('mousemove', function (event) {
+            var cXInput = document.getElementById('cX');
+            var cYInput = document.getElementById('cY');
+
+            cXInput.value = event.clientX;
+            cYInput.value = event.clientY;
+        });
+    </script>
+
+</body>
+
+</html>

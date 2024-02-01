@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios tema 5</title>
+
+    <style>
+        #primerBloque {
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Necesitas una página web con dos bloques div. El primer bloque contiene el texto"Pasa
+por aquí" y el segundo "Efectos del movimiento" con un argumento id = "efecto"
+. Cuando el ratón pase por el primer bloque se llamará a la función color que cambiael fondo
+del segundo bloque a color verde (backgroundColor: green") -->
+
+    <h3>Ejercicio 3. Efectos del movimiento </h3>
+
+    <div id="primerBloque" onmouseover="cambiaAColorVerde()">Pasa por aquí</div>
+    <div id="segundoBloque">Efectos del movimiento</div>
+
+    <script>
+        function cambiaAColorVerde() {
+            var segundoBloque = document.getElementById('segundoBloque');
+            segundoBloque.style.backgroundColor = 'green';
+        }
+    </script>
+
+
+</body>
+
+</html>

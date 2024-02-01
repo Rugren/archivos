@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios tema 5</title>
+</head>
+
+<body>
+
+    <!-- En este input no se deben aceptar valores que sean numéricos. Todo lo que esté entre 0 y 9 
+no se deben aceptar. Diseña un manejador de eventos para evitar que en el control se 
+anoten números.
+<form>
+<label>No se aceptan dígitos</label>
+<input type="text" id="letras">
+</form>
+-->
+
+    <h3>Ejercicio 8. (No se aceptan dígitos)</h3>
+
+    <form>
+        <label>No se aceptan dígitos: </label>
+        <input type="text" id="letras">
+        <!-- <p>(No puedes escribir números)</p> -->
+        <label>(No puedes escribir números)</label>
+    </form>
+
+    <script>
+        document.getElementById('letras').addEventListener('input', function (event) {
+            var input = event.target;
+            var valor = input.value;
+
+            // Esto elimina los dígitos que se ingresen en el input
+            input.value = valor.replace(/\d/g, '');
+        });
+    </script>
+
+</body>
+
+</html>
