@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen 2º Evaluación (Simulacro)</title>
+</head>
+
+<body>
+    <!-- Examen 2º Evaluación (Simulacro) -->
+
+    <!-- 3.Crea el mismo código html que aparece abajo pero utilizando únicamente los
+métodos DOM createElement(), createTextNode(), appendChild() y setAttribute(). 
+La función mostrar() muestra la respuesta introducida mediante un alert.
+<body>
+    <h1>Contesta a la pregunta</h1>
+    <div id="contenedor" name="cont">
+        <p>¿Esto es <b><em>texto en negrita y enfatizado</em></b> verdad?</p>
+        <input id="texto" type="text" value="Contesta">
+        <input type="button" value="mostrar" onclick="mostrar()">
+    </div>
+</body> -->
+
+    <h1>Ejercicio 3</h1>
+
+    <script>
+        // Los elementos creados:
+        const body = document.body;
+        const h1 = document.createElement('h1');
+        const div = document.createElement('div');
+        const p = document.createElement('p');
+        const b = document.createElement('b');
+        const em = document.createElement('em');
+        const inputText = document.createElement('input');
+        const inputButton = document.createElement('input');
+
+        /* Los nodos de texto creados: 
+        (por ejemplo const textoH1 luego lo llamamos en la estructura DOM creada) */
+        const textoH1 = document.createTextNode('Contesta a la pregunta');
+        const textoP = document.createTextNode('¿Esto es ');
+        const textoEm = document.createTextNode('texto en negrita y enfatizado');
+        const textoRestanteP = document.createTextNode(' verdad?');
+        const textoInput = document.createTextNode('Contesta');
+        const textoInputButton = document.createTextNode('mostrar');
+
+        // Los atributos configurados:
+        div.setAttribute('id', 'contenedor');
+        div.setAttribute('name', 'cont');
+        inputText.setAttribute('id', 'texto');
+        inputText.setAttribute('type', 'text');
+        inputText.setAttribute('value', 'Contesta');
+        inputButton.setAttribute('type', 'button');
+        inputButton.setAttribute('value', 'mostrar');
+        inputButton.setAttribute('onclick', 'mostrar()');
+
+        // La estructura del DOM construida:
+        body.appendChild(h1);
+        h1.appendChild(textoH1);
+        body.appendChild(div);
+        div.appendChild(p);
+        p.appendChild(textoP);
+        p.appendChild(b);
+        b.appendChild(em);
+        em.appendChild(textoEm);
+        p.appendChild(textoRestanteP);
+        div.appendChild(inputText);
+        div.appendChild(inputButton);
+        inputButton.appendChild(textoInputButton);
+
+        // La función de mostrar para ver los elementos.
+        function mostrar() {
+            const respuesta = document.getElementById('texto').value;
+            alert(respuesta);
+        }
+    </script>
+
+</body>
+
+</html>

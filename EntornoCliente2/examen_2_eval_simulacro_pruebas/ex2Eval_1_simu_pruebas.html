@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen 2º Evaluación (Simulacro)</title>
+
+    <style>
+        .ventana {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Examen 2º Evaluación (Simulacro) -->
+    
+    <!-- 1. Desarrolla una ventana que contenga un botón “crear subventana”. Este botón
+creará una subventana pero solo se puede crear una subventana a la vez. Además
+tendrá una entrada de texto con un botón “enviar”. Este botón “enviar” enviará el
+texto introducido a una entrada de texto de la subventana. Por su parte la
+subventana también tendrá un botón “enviar” que enviará el texto introducido en la
+entrada de texto a la entrada de texto de la ventana padre. Aunque en este caso con
+una peculiaridad, si le introducimos una frase nos devolverá solo la segunda palabra
+de esa frase. En resumen, la ventana de texto del padre enviará cualquier texto a la
+subventana hija utilizando el botón “enviar” mientras que la subventana hija enviará
+al padre solo el segundo elemento de cualquier frase introducida. -->
+
+    <h1>Ejercicio 1</h1>
+
+    <div class="ventana">
+        <h2>Ventana Principal</h2>
+        <input type="text" id="textoPadre" placeholder="Pon cualquier texto aquí">
+        <button onclick="crearSubventana()">Crear Subventana</button>
+        <button onclick="enviarTextoPadre()">Enviar</button>
+    </div>
+
+    <script>
+        let subventanaAbierta = false;
+        let subventana;
+
+        function crearSubventana() {
+            if (!subventanaAbierta) {
+                subventana = window.open("", "Subventana", "width=500,height=300");
+                // Comentado el subventana.document.write porque JavaScript no acepta los <input>
+                subventana.document.write(`
+            <div class="ventana">
+              <h2>Subventana</h2>
+              <input type="text" id="textoSubventana" placeholder="Pon algún texto">
+              <button onclick="enviarTextoSubventana()">Enviar</button>
+            </div>`);
+                subventanaAbierta = true;
+                subventana.onbeforeunload = () => {
+                    subventanaAbierta = false;
+                };
+            }
+        }
+
+        function enviarTextoPadre() {
+            const textoPadre = document.getElementById("textoPadre").value;
+            if (subventana) {
+                subventana.document.getElementById("textoSubventana").value = textoPadre;
+            }
+        }
+
+        function enviarTextoSubventana() {
+            const textoSubventana = subventana.document.getElementById("textoSubventana").value;
+            const segundaPalabra = textoSubventana.split(" ")[1] || "";
+            window.opener.document.getElementById("textoPadre").value = segundaPalabra;
+        }
+    </script>
+
+</body>
+
+</html>
