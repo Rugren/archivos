@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios tema 6</title>
+</head>
+
+<body>
+
+    <!-- Asignar ahora un atributo tipo contraseña al segundo input del segundo
+    formulario utilizando setAtribute. Obtén este input utilizando getElementsByName. Después
+    elimina el atributo tipo del tercer input del segundo formulario. -->
+
+    <h1>Ejercicio 2</h1>
+
+    <form name="formulario" id="formulario">
+        <input type="text" id="input1Form1" value="Rubén">
+        <input name="nombreInput" type="text" id="input2Form1" value="123">
+        <input type="text" id="input3Form1" value="Buenas tardes">
+    </form>
+    <br>
+    <form name="formulario2" id="formulario2">
+        <input type="text" id="input1Form2" value="Rubén">
+        <input name="nombreInput" id="input2Form2" value="123">
+        <input type="text" id="input3Form2" value="Buenas tardes">
+    </form>
+
+    <script>
+        // Para obtener el segundo input del segundo formulario por su nombre (los formularios son del ejercicio 1)
+        var segundoInput = document.getElementsByName("nombreInput")[1];
+
+        // Para asignar el atributo "type" con valor "password" al segundo input del segundo formulario
+        segundoInput.setAttribute("type", "password");
+
+        // Para obtener el tercer input del segundo formulario por su id
+        var tercerInput = document.getElementById("input3Form2");
+
+        // Para eliminar el atributo "type" del tercer input del segundo formulario
+        tercerInput.removeAttribute("type");
+    </script>
+
+</body>
+
+</html>

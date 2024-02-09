@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen 2º Evaluación (Simulacro)</title>
+    <!-- <style>
+        #contenedor {
+            display: block;
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+    </style> -->
+</head>
+
+<body>
+    <!-- Examen 2º Evaluación (Simulacro) -->
+
+    <!--    2.
+<body>
+    <div style="display: block; width: 100px; height: 100px; background-color: aqua;" id="contenedor">
+        <form id="formulario" hidden="true">
+            <select id="select">
+                <option value="opcion1">opcion1</option>
+                <option value="opcion2">opcion2</option>
+            </select>
+        </form>
+    </div>
+    <button id="seleccionar">Seleccionar</button>
+</body>
+En este contenedor cuadrado hay un formulario oculto el cual tiene un objeto select
+con dos opciones. Tendrás dos objetivos:
+
+-El primero será gestionar eventos de tal manera que cuando pases el ratón por
+encima del contenedor cuadrado el formulario deje de estar oculto pero vuelva a
+ocultarse cuando el ratón salga del cuadrado.
+
+-Utilizar el botón de debajo del contenedor para mostrar la opción seleccionada del
+select mediante un alert(). Para obtener la opción seleccionada es obligatorio utilizar
+las propiedades options y selectedIndex del objeto select.
+-->
+
+    <h1>Ejercicio 2</h1>
+
+    <p>Este el formulario del ejercicio (Muestra del profesor) (el formulario oculto normal)</p>
+    <div style="display: block; width: 100px; height: 100px; background-color: aqua;" id="contenedor">
+        <form id="formulario" hidden="true">
+            <select id="select">
+                <option value="opcion1">opcion1</option>
+                <option value="opcion2">opcion2</option>
+            </select>
+        </form>
+    </div>
+    <button id="seleccionar">Seleccionar</button>
+
+    <br></br>
+    <br></br>
+
+    <p>Este el formulario del ejercicio (Hecho por mi) (el formulario oculto que vamos a mostrar y marcar la opción elegida)</p>
+    <!-- Dentro del formulario nos lo muestra mostrarFormulario y si salimos lo oculta ocultarFormulario-->
+    <div style="display: block; width: 100px; height: 100px; background-color: aqua;" 
+    id="contenedor" onmouseover="mostrarFormulario()" onmouseout="ocultarFormulario()">
+        <form id="formulario1" hidden="true">
+            <select id="select1">
+                <option value="opcion1">opcion1</option>
+                <option value="opcion2">opcion2</option>
+            </select>
+        </form>
+    </div>
+    <!-- El alert que nos dice si hemos puesto la opcion1 o la opcion2 -->
+    <button id="seleccionar" onclick="mostrarSeleccion()">Seleccionar (Prueba 1)</button>
+
+    <br></br>
+
+
+    <script>
+        function mostrarFormulario() {
+            document.getElementById("formulario1").removeAttribute("hidden");
+        }
+
+        function ocultarFormulario() {
+            document.getElementById("formulario1").setAttribute("hidden", "true");
+        }
+
+        function mostrarSeleccion() {
+            var select = document.getElementById("select1");
+            var selectedOption = select.options[select.selectedIndex].text;
+            alert("La opción seleccionada es: " + selectedOption);
+        }
+    </script>
+
+</body>
+
+</html>

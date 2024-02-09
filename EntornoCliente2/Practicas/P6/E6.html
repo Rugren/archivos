@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios tema 6</title>
+</head>
+
+<body>
+
+    <!-- Ejercicio 6. Llevar el contenido del texto de “Hola luna” al nodo <p name=”sol”> recorriendo
+        entre nodos hijos, padres y hermanos. Utilizaremos solamente las propiedades childNodes,
+        parentNode y nextSibling. Desde el primer contenedor bajaremos hasta el “Hola Luna”,
+        obtendremos su contenido, subiremos al nodo padre, iremos al nodo hermano de éste y
+        bajaremos a “Hola sol”.
+    <div id="contenedor">
+        <div>
+            <p name="mundo">Hola mundo</p>
+            <p name="luna">Hola luna</p>
+        </div>
+        <div>
+            <p name="sol">Hola sol</p>
+        </div>
+    </div> -->
+
+    <h1>Ejercicio 6</h1>
+
+    <div id="contenedor">
+        <div>
+            <p name="mundo">Hola mundo</p>
+            <p name="luna">Hola luna</p>
+        </div>
+        <div>
+            <p name="sol">Hola sol</p>
+        </div>
+    </div>
+
+    <script>
+        // Para obtener el primer contenedor
+        var primerContenedor = document.getElementById('contenedor');
+
+        // Para descender al primer hijo del primer contenedor
+        var primerHijo = primerContenedor.childNodes[1];
+
+        // Aquí itera sobre los hijos hasta encontrar el nodo <p> con el atributo name="luna"
+        var nodoActual = primerHijo.firstChild;
+        while (nodoActual) {
+            if (nodoActual.nodeType === 1 && nodoActual.getAttribute("name") === "luna") {
+                break;
+            }
+            nodoActual = nodoActual.nextSibling;
+        }
+
+        // Para obtener el contenido del nodo <p> con el atributo name="luna"
+        var contenido = nodoActual.firstChild.nodeValue;
+
+        // Para subir al nodo padre
+        var nodoPadre = nodoActual.parentNode;
+
+        // Para mover al siguiente hermano del nodo padre
+        var siguienteHermano = nodoPadre.nextSibling;
+
+        // Para descender al primer hijo del nuevo nodo padre
+        var nuevoNodo = siguienteHermano.firstChild;
+
+        // Aquí itera sobre los hijos hasta encontrar el nodo <p> con el atributo name="sol"
+        while (nuevoNodo) {
+            if (nuevoNodo.nodeType === 1 && nuevoNodo.getAttribute("name") === "sol") {
+                break;
+            }
+            nuevoNodo = nuevoNodo.nextSibling;
+        }
+
+        // Aquí actualizamos el contenido del nodo <p> con el atributo name="sol" con el contenido de "Hola luna"
+        nuevoNodo.firstChild.nodeValue = contenido;
+    </script>
+
+</body>
+
+</html>

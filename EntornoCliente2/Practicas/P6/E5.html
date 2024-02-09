@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios tema 6</title>
+</head>
+
+<body>
+
+    <!-- Ejercicio 5. 
+        Reemplaza el nodo <p=”luna”> por <p=”mundo”>. 
+        Después elimina el nodo <p=”mundo”>. 
+    -->
+
+
+    <h1>Ejercicio 5</h1>
+
+    <div id="contenedor">
+        <div name="contenedor2">
+            <p name="mundo">Hola mundo</p>
+            <p name="luna">Hola luna</p>
+        </div>
+    </div>
+
+    <script>
+        // Para obtener el contenedor padre
+        var contenedorPadre = document.querySelector('div[name="contenedor2"]');
+
+        // Para obtener el nodo a reemplazar (p con name="luna")
+        var nodoAReemplazar = contenedorPadre.querySelector('p[name="luna"]');
+
+        // Para crear un nuevo nodo p con name="mundo"
+        var nuevoNodo = document.createElement("p");
+        nuevoNodo.setAttribute("name", "mundo");
+        var contenidoNuevo = document.createTextNode("Texto del Ejercicio 4");
+        nuevoNodo.appendChild(contenidoNuevo);
+
+        // Para reemplazar el nodo a reemplazar con el nuevo nodo
+        contenedorPadre.replaceChild(nuevoNodo, nodoAReemplazar);
+
+        // Para obtener el nodo a eliminar (p con name="mundo")
+        var nodoAEliminar = contenedorPadre.querySelector('p[name="mundo"]');
+
+        // Para eliminar el nodo
+        contenedorPadre.removeChild(nodoAEliminar);
+
+    </script>
+
+</body>
+
+</html>

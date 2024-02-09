@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios tema 6</title>
+</head>
+
+<body>
+
+    <!-- Utilizando el siguiente código html obtén los inputs únicamente del segundo formulario.
+Obtén el formulario utilizando getElementsByName y los inputs mediante
+getElementsByTagName. Después recorre los atributos de cada uno de los inputs
+comprobando si alguno es de tipo text y si es así cambialo por tipo password. 
+
+    <form name="formulario" id="formulario">
+        <input type="text" id="input1Form1" value="Escribe">
+        <input name="nombreInput" type="text" id="input2Form1" value="Escribe">
+        <input type="text" id="input3Form1" value="Escribe">
+    </form>
+    <br>
+    <form name="formulario" id="formulario2">
+        <input type="text" id="input1Form2" value="Escribe">
+        <input name="nombreInput" id="input2Form2" value="Escribe">
+        <input type="text" id="input3Form2" value="Escribe">
+    </form>
+-->
+
+    <h1>Ejercicio 1</h1>
+
+    <p>Así es cómo estaban los 2 formularios</p>
+    <form name="formulario" id="formulario">
+        <input type="text" id="input1Form1" value="Escribe">
+        <input name="nombreInput" type="text" id="input2Form1" value="Escribe">
+        <input type="text" id="input3Form1" value="Escribe">
+    </form>
+    <br>
+    <form name="formulario" id="formulario2">
+        <input type="text" id="input1Form2" value="Escribe">
+        <input name="nombreInput" id="input2Form2" value="Escribe">
+        <input type="text" id="input3Form2" value="Escribe">
+    </form>
+
+    <h3>Modificados los Inputs del segundo Formulario (el primero dejado como el normal)</h3>
+
+    <form name="formulario" id="formulario">
+        <input type="text" id="input1Form1" value="Hola">
+        <input name="nombreInput" type="text" id="input2Form1" value="Holaaa">
+        <input type="text" id="input3Form1" value="123">
+    </form>
+    <br>
+    <form name="formulario2" id="formulario2">
+        <input type="text" id="input1Form2" value="Hola">
+        <input name="nombreInput" id="input2Form2" value="Holaaa">
+        <input type="text" id="input3Form2" value="123">
+    </form>
+
+    <script>
+        // Para obtener y coger el segundo formulario por su nombre
+        var segundoFormulario = document.getElementsByName("formulario2")[0];
+
+        // Coger los inputs del segundo formulario
+        var inputsSegundoFormulario = segundoFormulario.getElementsByTagName("input");
+
+        // Aquí para recorrer los inputs y cambiar el tipo de aquellos de tipo "text" pasarlos a "password"
+        for (var i = 0; i < inputsSegundoFormulario.length; i++) {
+            if (inputsSegundoFormulario[i].type === "text") {
+                inputsSegundoFormulario[i].type = "password";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

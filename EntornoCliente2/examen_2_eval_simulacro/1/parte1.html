@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ventana Principal</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        text-align: center;
+        margin-top: 50px;
+    }
+    .input-container {
+        margin-bottom: 20px;
+    }
+</style>
+</head>
+<body>
+
+    <!-- Hay que abrirla con run y ejecutarlo en edge, en Google Chrome no funciona. 
+    La segunda palabra es la que manda al padre, si mando solo una no la envía.
+    -->
+
+        <!-- 1. Desarrolla una ventana que contenga un botón “crear subventana”. Este botón
+creará una subventana pero solo se puede crear una subventana a la vez. Además
+tendrá una entrada de texto con un botón “enviar”. Este botón “enviar” enviará el
+texto introducido a una entrada de texto de la subventana. Por su parte la
+subventana también tendrá un botón “enviar” que enviará el texto introducido en la
+entrada de texto a la entrada de texto de la ventana padre. Aunque en este caso con
+una peculiaridad, si le introducimos una frase nos devolverá solo la segunda palabra
+de esa frase. En resumen, la ventana de texto del padre enviará cualquier texto a la
+subventana hija utilizando el botón “enviar” mientras que la subventana hija enviará
+al padre solo el segundo elemento de cualquier frase introducida. -->
+
+<div class="container">
+    <h2>Ventana Padre</h2>
+    <div class="input-container">
+        <input type="text" id="inputParent" placeholder="Introduce un texto aquí">
+        <button onclick="enviarTextoPadre()">Enviar a Subventana</button>
+    </div>
+    <div id="messageFromChild"></div>
+    <button onclick="crearSubventana()">Crear Subventana</button>
+</div>
+
+<script>
+    let subventana;
+
+    function crearSubventana() {
+        if (!subventana || subventana.closed) {
+
+
+            // Enlazado al segundo html de la subventana: parte2.html
+            subventana = window.open("parte2.html", "_blank", "width=400,height=300");
+        } else {
+            alert("Ya hay una subventana abierta. Cierra la actual antes de abrir una nueva.");
+        }
+    }
+
+    function enviarTextoPadre() {
+        const texto = document.getElementById("inputParent").value;
+        if (subventana && !subventana.closed) {
+            subventana.postMessage(texto, "*");
+        } else {
+            alert("La subventana está cerrada.");
+        }
+    }
+
+    window.addEventListener("message", function(event) {
+        document.getElementById("messageFromChild").innerText = `Mensaje de la subventana: ${event.data}`;
+    });
+</script>
+</body>
+</html>

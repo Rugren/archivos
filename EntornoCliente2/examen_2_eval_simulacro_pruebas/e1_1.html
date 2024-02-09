@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subventana</title>
+    <style>
+        .subventana {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="crearSubventana">Crear subventana</button>
+    <div id="contenedorSubventana" class="subventana">
+        <input type="text" id="textoSubventana" placeholder="Introduce texto">
+        <button id="enviarTexto">Enviar</button>
+    </div>
+
+    <script>
+        let subventanaAbierta = false;
+
+        document.getElementById("crearSubventana").addEventListener("click", function () {
+            if (!subventanaAbierta) {
+                document.getElementById("contenedorSubventana").style.display = "block";
+                subventanaAbierta = true;
+            }
+        });
+
+        document.getElementById("enviarTexto").addEventListener("click", function () {
+            const texto = document.getElementById("textoSubventana").value;
+            if (texto.trim() !== "") {
+                // aquí he probado cambiar subventana por e1_2 que es como se llama la segunda ventana, pero hace lo mismo que si está puesto "subventana".
+                const subventana = window.open("", "subventana", "width=400,height=200");
+                subventana.document.write(`<p>${texto}</p>`);
+            }
+        });
+    </script>
+</body>
+
+</html>

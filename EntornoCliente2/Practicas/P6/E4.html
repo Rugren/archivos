@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios tema 6</title>
+</head>
+
+<body>
+
+<!-- Ejercicio 4. Crea el mismo código HTML que en el ejercicio 3 pero usando createElement(),
+createTextNode() y appendChild(). Después clona el nodo <p name=”luna>Hola luna</p>,
+modifica su valor e insertalo entre <p name=”mundo”> y <p name=”luna” utilizando
+insertBefore. -->
+
+
+    <h1>Ejercicio 4</h1>
+
+    <!-- Modificar el contenido con createElement, createTextNode y appendChild -->
+    
+    <div id="contenedor">
+        <div name="contenedor2">
+            <p name="mundo">Hola mundo</p>
+            <p name="luna">Hola luna</p>
+        </div>
+    </div>
+    
+    <script>
+        // Para crear un nuevo elemento p
+        var nuevoParrafo = document.createElement("p");
+    
+        // Para crear un nodo de texto con el contenido deseado
+        var contenidoNuevo = document.createTextNode("Esto el texto del Ejercicio 4");
+    
+        // Para añadir el nodo de texto al elemento p
+        nuevoParrafo.appendChild(contenidoNuevo);
+    
+        // Para obtener el contenedor padre
+        var contenedorPadre = document.querySelector('div[name="contenedor2"]');
+    
+        // Para obtener el nodo de referencia, que en este caso el segundo párrafo
+        var nodoReferencia = contenedorPadre.querySelector('p[name="luna"]');
+    
+        // Para insertar el nuevo párrafo antes del nodo de referencia
+        contenedorPadre.insertBefore(nuevoParrafo, nodoReferencia.nextSibling);
+    </script>
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>

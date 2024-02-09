@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subventana (Parte 2)</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .input-container {
+        margin-bottom: 20px;
+    }
+</style>
+</head>
+<body>
+<h2>Subventana</h2>
+<div class="input-container">
+    <input type="text" id="inputChild" placeholder="Introduce texto">
+    <button onclick="enviarTextoHijo()">Enviar al Padre</button>
+</div>
+<div id="messageFromParent"></div>
+
+<script>
+    function enviarTextoHijo() {
+        const textoCompleto = document.getElementById("inputChild").value;
+        const palabras = textoCompleto.split(" ");
+        const segundaPalabra = palabras.length >= 2 ? palabras[1] : "";
+        window.opener.postMessage(segundaPalabra, "*");
+    }
+
+    window.addEventListener("message", function(event) {
+        document.getElementById("messageFromParent").innerText = `Mensaje del padre: ${event.data}`;
+    });
+</script>
+</body>
+</html>

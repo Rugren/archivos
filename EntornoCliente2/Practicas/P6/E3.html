@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios tema 6</title>
+</head>
+
+<body>
+
+    <!-- Ejercicio 3. Con el siguiente código javascript cargar el primer contenedor y usandolo de
+referencia, conseguir acceder usando solamente childNodes al nodo de texto “Hola Luna” y
+añadir su contenido a “Hola mundo”. 
+    <div id="contenedor">
+        <div name="contenedor2">
+            <p name="mundo">Hola mundo</p>
+            <p name="luna">Hola luna</p>
+        </div>
+    </div>
+-->
+
+    <h1>Ejercicio 3</h1>
+
+    <div id="contenedor">
+        <div name="contenedor2">
+            <p name="mundo">Hola mundo</p>
+            <p name="luna">Hola luna</p>
+        </div>
+    </div>
+
+    <script>
+        // Aquí obtenemos el primer contenedor por su id
+        var primerContenedor = document.getElementById("contenedor");
+
+        // Aquí obtenemos el nodo de texto "Hola Luna" usando childNodes
+        var nodoHolaLuna = primerContenedor.childNodes[0].childNodes[3].childNodes[1];
+
+        // Aquí obtenemos el contenido del nodo de texto "Hola Luna"
+        var contenidoHolaLuna = nodoHolaLuna.nodeValue;
+
+        // Modificar el contenido del nodo de texto "Hola mundo" añadiendo el contenido de "Hola Luna"
+        var nodoHolaMundo = primerContenedor.childNodes[0].childNodes[3].childNodes[0];
+        nodoHolaMundo.nodeValue += contenidoHolaLuna;
+    </script>
+
+</body>
+
+</html>
