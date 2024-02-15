@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Ventana Padre</h2>
+        <div class="input-container">
+            <input type="text" id="inputParent" placeholder="Introduce texto">
+            <button onclick="enviarTextoPadre()">Enviar a Subventana</button>
+        </div>
+        <div id="messageFromChild"></div>
+        <button onclick="crearSubventana()">Crear Subventana</button>
+    </div>
+</body>
+
+<script>
+    var subventana
+    function crearSubventana(){
+        subventana= window.open("subventana.html","subventana")
+    }
+    function enviarTextoPadre(){
+        subventana.document.getElementById("inputChild").value=document.getElementById("inputParent").value
+    }
+</script>
+</html>
