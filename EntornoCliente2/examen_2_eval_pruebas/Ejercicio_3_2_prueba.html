@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen - Ejercicio 3.2 prueba</title>
+</head>
+
+<!-- 3. Crea el mismo código html que aparece abajo pero utilizando únicamente los
+métodos DOM createElement(), createTextNode(), appendChild() y setAttribute().
+
+<body>
+    <div>
+        <h1>Tienda de <b>ropa</b></h1>
+        <p id="parrafo">Esta es la <b>mejor tienda del <i>mundo</i></b> entero</p>
+        <label for="check"><i>¿verdad?</i></label>
+        <input type="checkbox" id="check" name="check">
+    </div>
+</body> -->
+
+<body>
+    <script>
+        // Aquí creamos los elementos
+        /* const body = document.body;
+        const div = document.createElement('div');
+        const h1 = document.createElement('h1');
+        const b1 = document.createElement('b');
+        const p = document.createElement('p');
+        const b2 = document.createElement('b');
+        const i1 = document.createElement('i');
+        const label = document.createElement('label');
+        const i2 = document.createElement('i');
+        const input = document.createElement('input'); */
+
+        const body = document.body;
+        const div = document.createElement('div');
+        const h1 = document.createElement('h1');
+        const b1 = document.createElement('b');
+        const p = document.createElement('p');
+        const b2 = document.createElement('b');
+        const i1 = document.createElement('i');
+        const label = document.createElement('label');
+        const i2 = document.createElement('i');
+        const input = document.createElement('input');
+
+        // Aquí creamos los nodos de texto
+        /* const h1Text = document.createTextNode('Tienda de ');
+        const b1Text = document.createTextNode('ropa');
+        const pText1 = document.createTextNode('Esta es la ');
+        const b2Text = document.createTextNode('mejor tienda del ');
+        const i1Text = document.createTextNode('mundo');
+        const i2Text = document.createTextNode('¿verdad?'); */
+
+        const h1Text = document.createTextNode('Tienda de ');
+        const b1Text = document.createTextNode('ropa');
+        const pText1 = document.createTextNode('Esta es la ');
+        const b2Text = document.createTextNode('mejor tienda del ');
+        const i1Text = document.createTextNode('mundo');
+        const i2Text = document.createTextNode('¿verdad?');
+
+        // Aquí añadimos los nodos de texto a elementos
+        /* h1.appendChild(h1Text);
+        b1.appendChild(b1Text);
+        b2.appendChild(i1Text);
+        i1.appendChild(b2Text);
+        i2.appendChild(i2Text); */
+
+        h1.appendChild(h1Text);
+        b1.appendChild(b1Text);
+        b2.appendChild(i1Text);
+        i1.appendChild(b2Text);
+        i2.appendChild(i2Text);
+
+        // Para añadir atributos a elementos
+        /* p.setAttribute('id', 'parrafo');
+        label.setAttribute('for', 'check');
+        input.setAttribute('type', 'checkbox');
+        input.setAttribute('id', 'check');
+        input.setAttribute('name', 'check'); */
+
+        p.setAttribute('id', 'parrafo');
+        label.setAttribute('for', 'check');
+        input.setAttribute('type', 'checkbox');
+        input.setAttribute('id', 'check');
+        input.setAttribute('name', 'check');
+
+        // Para añadir elementos al DOM
+        /* h1.appendChild(b1);
+        p.appendChild(pText1);
+        p.appendChild(b2);
+        p.appendChild(i1);
+        p.appendChild(i2);
+        div.appendChild(h1);
+        div.appendChild(p);
+        div.appendChild(label);
+        div.appendChild(input);
+        body.appendChild(div); */
+
+        h1.appendChild(b1);
+        h1.appendChild(b2);
+        b2.appendChild(i1);
+        p.appendChild(pText1);
+        p.appendChild(i2);
+        div.appendChild(h1);
+        div.appendChild(p);
+        div.appendChild(label);
+        div.appendChild(input);
+        body.appendChild(div);
+    </script>
+</body>
+
+</html>
+

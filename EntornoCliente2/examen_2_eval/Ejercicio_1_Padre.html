@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Examen - Ejercicio 1 (Ventana Padre)</title>
+</head>
+
+<!-- 1.Desarrolla una pequeña web que permita crear varias ventanas hijas. Desde la
+ventana padre se podrá modificar el texto del encabezado <h1> que tiene cada una
+    de las hijas. Para ello existirá un objeto select en la ventana padre y cada vez que se
+    crea una nueva subventana se creará una opción para la ventana padre dentro del
+    select, de manera que se pueda escoger en todo momento a qué ventana se envía el
+    mensaje. También existirá un input text en el que introducir el texto que queremos
+    que aparezca en la subventana. Utilizad como base el siguiente código html para la
+    ventana padre:
+    <div id="contenedor">
+        <input type="button" id="crearHijo" value="Crear subventana">
+        <label for="textoPadre">Enviar a hijo</label>
+        <input type="text" name="textoPadre" id="textoPadre">
+        <form id="formulario">
+            <select id="select">
+            </select>
+        </form>
+        <button id="enviarMensaje">Enviar mensaje</button>
+    </div>
+    Y este código html para las subventanas:
+
+    <body>
+        <h1 id="textoHijo">Texto a cambiar</h1>
+    </body> 
+-->
+
+<body>
+    <h3>Enviar a ventana hijo</h3>
+    <div id="contenedor">
+        <input type="button" id="crearHijo" value="Crear Subventana" />
+        <label for="textoPadre">Enviar a hijo: </label>
+        <input type="text" name="textoPadre" id="textoPadre" />
+        <form id="formulario">
+            <select id="select"></select>
+        </form>
+        <button id="enviarMensaje">Enviar Mensaje</button>
+    </div>
+
+    <script>
+        var todasSubVentanas = [];
+
+        function crearLaSubVentana() {
+            var subVentana = window.open("Ejercicio_1_Hijo.html");
+            todasSubVentanas.push(subVentana);
+
+            var option = document.createElement("option");
+            option.text = "La Subventana nº: " + todasSubVentanas.length;
+            document.getElementById("select").add(option);
+        }
+
+        function enviarMensaje() {
+            var selectedIndex = document.getElementById("select").selectedIndex;
+            var mensaje = document.getElementById("textoPadre").value;
+            var subVentana = todasSubVentanas[selectedIndex];
+            subVentana.document.getElementById("textoHijo").innerText = mensaje;
+        }
+
+        document.getElementById("crearHijo").addEventListener("click", crearLaSubVentana);
+        document.getElementById("enviarMensaje").addEventListener("click", enviarMensaje);
+    </script>
+</body>
+
+</html>

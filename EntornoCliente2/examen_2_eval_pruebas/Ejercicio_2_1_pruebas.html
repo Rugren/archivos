@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen - Ejercicio 2.1 pruebas</title>
+
+    <style>
+        /* El estilo para los bloques que le vamos a dar a los cuadrados */
+        .cuadrado {
+            display: block;
+            width: 100px;
+            height: 100px;
+            cursor: pointer; /* Esto es lo que hace que cambie el cursor al pasar sobre los cuadrados */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="azul" class="cuadrado" style="background-color: aqua;"></div>
+    <div id="rojo" class="cuadrado" style="background-color: red;"></div>
+    <div id="verde" class="cuadrado" style="background-color: green;"></div>
+
+    <script>
+        // esta será la función que nos haga intercambiar los colores
+        function intercambiarColores(cuadrado1, cuadrado2) {
+            var colorTemporal = cuadrado1.style.backgroundColor;
+            cuadrado1.style.backgroundColor = cuadrado2.style.backgroundColor;
+            cuadrado2.style.backgroundColor = colorTemporal;
+        }
+
+        // Esta función para manejar el evento con el clic derecho (con derecho no, el profesor se equivocó y dijo clic izquierdo)
+
+        // hecho con el clic izq en Ejercicio_2.html del examen.
+
+        function handleRightClick(event) {
+            event.preventDefault(); // Evitar menú contextual
+
+            var cuadradoActual = event.target;
+            if (cuadradoActual.classList.contains('cuadrado')) {
+                if (!window.cuadradoSeleccionado) {
+                    window.cuadradoSeleccionado = cuadradoActual;
+                } else {
+                    intercambiarColores(window.cuadradoSeleccionado, cuadradoActual);
+                    window.cuadradoSeleccionado = null; // Reiniciar la selección
+                }
+            }
+        }
+
+        // Para agregar el evento de clic derecho a los cuadrados
+        var cuadrados = document.querySelectorAll('.cuadrado');
+        cuadrados.forEach(function(cuadrado) {
+            cuadrado.addEventListener('contextmenu', handleRightClick);
+        });
+    </script>
+</body>
+
+</html>

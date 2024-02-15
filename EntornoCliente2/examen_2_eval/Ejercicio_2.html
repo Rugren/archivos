@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen - Ejercicio 2</title>
+
+    <style>
+        /* El estilo para los bloques que le vamos a dar a los cuadrados */
+        .cuadrado {
+            display: block;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            /* Esto es lo que hace que cambie el cursor al pasar sobre los cuadrados */
+        }
+    </style>
+</head>
+
+<!-- 2.Tenemos tres cuadrados de tres colores diferentes. Sin modificar el código html se
+le debe dar funcionalidad a estos cuadrados. La funcionalidad consiste en pulsar el
+botón derecho del ratón en un cuadrado y soltar el botón pulsado en otro cuadrado
+distinto. Cuando esto ocurra los dos cuadrados involucrados deben intercambiar su
+color. Este es el código html que hay que utilizar pero no modificar:
+
+<body>
+    <div id="azul" style="display: block; width: 100px; height: 100px; background-color:
+aqua;">
+    </div>
+    <div id="rojo" style="display: block; width: 100px; height: 100px; background-color:
+red;">
+    </div>
+    <div id="verde" style="display: block; width: 100px; height: 100px;
+background-color: green;>
+</div>
+</body> -->
+
+
+<body>
+
+    <h3>Haz clic con el botón derecho para cambiar de color (Si funciona)</h3>
+
+    <div id=" azul" class="cuadrado" style="background-color: aqua;"></div>
+    <div id="rojo" class="cuadrado" style="background-color: red;"></div>
+    <div id="verde" class="cuadrado" style="background-color: green;"></div>
+
+    <script>
+        // esta será la función que nos haga intercambiar los colores
+        function intercambiarColores(cuadrado1, cuadrado2) {
+            var colorTemporal = cuadrado1.style.backgroundColor;
+            cuadrado1.style.backgroundColor = cuadrado2.style.backgroundColor;
+            cuadrado2.style.backgroundColor = colorTemporal;
+        }
+
+        // Esta función para manejar el evento con el clic derecho (con derecho no, el profesor se equivocó y dijo clic izquierdo)
+
+        function handleRightClick(event) {
+            event.preventDefault(); // para evitar menú contextual (con el preventDefault)
+
+            var cuadradoActual = event.target;
+            if (cuadradoActual.classList.contains('cuadrado')) {
+                if (!window.cuadradoSeleccionado) {
+                    window.cuadradoSeleccionado = cuadradoActual;
+                } else {
+                    intercambiarColores(window.cuadradoSeleccionado, cuadradoActual);
+                    window.cuadradoSeleccionado = null; // para reiniciar la selección
+                }
+            }
+        }
+
+
+        // Para agregar el evento de clic derecho a los cuadrados
+        var cuadrados = document.querySelectorAll('.cuadrado');
+        cuadrados.forEach(function (cuadrado) {
+            cuadrado.addEventListener('contextmenu', handleRightClick);
+        });
+
+    </script>
+</body>
+
+</html>

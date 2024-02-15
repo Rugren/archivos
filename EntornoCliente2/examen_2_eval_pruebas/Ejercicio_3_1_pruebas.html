@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen - Ejercicio 3.1 prueba</title>
+</head>
+
+<body>
+    <script>
+        // Así sí va todo
+        document.addEventListener("DOMContentLoaded", function () {
+            var body = document.body;
+
+            var div = document.createElement("div");
+
+            var h1 = document.createElement("h1");
+            var h1Text = document.createTextNode("Tienda de ");
+            var bold = document.createElement("b");
+            var boldText = document.createTextNode("ropa");
+            bold.appendChild(boldText);
+            h1.appendChild(h1Text);
+            h1.appendChild(bold);
+
+            var p = document.createElement("p");
+            p.setAttribute("id", "parrafo");
+            var pText = document.createTextNode("Esta es la ");
+            var bold2 = document.createElement("b");
+            var bold2Text = document.createTextNode("mejor tienda del ");
+            var i = document.createElement("i");
+            var iText = document.createTextNode("mundo");
+            i.appendChild(iText);
+            bold2.appendChild(bold2Text);
+            bold2.appendChild(i);
+            var bold3 = document.createElement("b");
+            bold3.appendChild(bold2);
+            p.appendChild(pText);
+            p.appendChild(bold3);
+
+            var label = document.createElement("label");
+            label.setAttribute("for", "check");
+            var i2 = document.createElement("i");
+            var i2Text = document.createTextNode("¿verdad?");
+            i2.appendChild(i2Text);
+            label.appendChild(i2);
+
+            var input = document.createElement("input");
+            input.setAttribute("type", "checkbox");
+            input.setAttribute("id", "check");
+            input.setAttribute("name", "check");
+
+            div.appendChild(h1);
+            div.appendChild(p);
+            div.appendChild(label);
+            div.appendChild(input);
+
+            body.appendChild(div);
+        });
+    </script>
+
+</body>
+
+</html>

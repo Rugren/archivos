@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen - Ejercicio 2.2 pruebas</title>
+    <style>
+        #azul,
+        #rojo,
+        #verde {
+            display: block;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            /* para cambiar el cursor al pasar el ratón sobre los cuadrados */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="azul" style="background-color: aqua;"></div>
+    <div id="rojo" style="background-color: red;"></div>
+    <div id="verde" style="background-color: green;"></div>
+
+    <script>
+        // para obtener los elementos div por su id
+        const azulDiv = document.getElementById('azul');
+        const rojoDiv = document.getElementById('rojo');
+        const verdeDiv = document.getElementById('verde');
+
+        let cuadradoSeleccionado = null;
+
+        // la función para intercambiar los colores
+        function intercambiarColores(cuadrado1, cuadrado2) {
+            const colorTemp = cuadrado1.style.backgroundColor;
+            cuadrado1.style.backgroundColor = cuadrado2.style.backgroundColor;
+            cuadrado2.style.backgroundColor = colorTemp;
+        }
+
+        // Event listeners para cada cuadrado
+        azulDiv.addEventListener('mousedown', function (event) {
+            event.preventDefault(); // para evitar el comportamiento predeterminado del botón del ratón
+            cuadradoSeleccionado = azulDiv;
+        });
+
+        rojoDiv.addEventListener('mousedown', function (event) {
+            event.preventDefault(); // para evitar el comportamiento predeterminado del botón del ratón
+            cuadradoSeleccionado = rojoDiv;
+        });
+
+        verdeDiv.addEventListener('mousedown', function (event) {
+            event.preventDefault(); // para evitar el comportamiento predeterminado del botón del ratón
+            cuadradoSeleccionado = verdeDiv;
+        });
+
+        azulDiv.addEventListener('mouseup', function () {
+            if (cuadradoSeleccionado && cuadradoSeleccionado !== azulDiv) {
+                intercambiarColores(cuadradoSeleccionado, azulDiv);
+                cuadradoSeleccionado = null;
+            }
+        });
+
+        rojoDiv.addEventListener('mouseup', function () {
+            if (cuadradoSeleccionado && cuadradoSeleccionado !== rojoDiv) {
+                intercambiarColores(cuadradoSeleccionado, rojoDiv);
+                cuadradoSeleccionado = null;
+            }
+        });
+
+        verdeDiv.addEventListener('mouseup', function () {
+            if (cuadradoSeleccionado && cuadradoSeleccionado !== verdeDiv) {
+                intercambiarColores(cuadradoSeleccionado, verdeDiv);
+                cuadradoSeleccionado = null;
+            }
+        });
+    </script>
+
+</body>
+
+</html>

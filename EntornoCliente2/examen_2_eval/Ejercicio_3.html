@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen - Ejercicio 3</title>
+</head>
+
+<!-- 3. Crea el mismo código html que aparece abajo pero utilizando únicamente los
+métodos DOM createElement(), createTextNode(), appendChild() y setAttribute().
+
+<body>
+    <div>
+        <h1>Tienda de <b>ropa</b></h1>
+        <p id="parrafo">Esta es la <b>mejor tienda del <i>mundo</i></b> entero</p>
+        <label for="check"><i>¿verdad?</i></label>
+        <input type="checkbox" id="check" name="check">
+    </div>
+</body> -->
+
+<body>
+    <script>
+        // Así sí va todo (este hecho bien)
+        document.addEventListener("DOMContentLoaded", function () {
+            var body = document.body;
+
+            var div = document.createElement("div");
+
+            var h1 = document.createElement("h1");
+            var h1Texto = document.createTextNode("Tienda de ");
+            var negrita = document.createElement("b");
+            var negritaTexto = document.createTextNode("ropa");
+            negrita.appendChild(negritaTexto);
+            h1.appendChild(h1Texto);
+            h1.appendChild(negrita);
+
+            var p = document.createElement("p");
+            p.setAttribute("id", "parrafo");
+            var pTexto = document.createTextNode("Esta es la ");
+            var negrita2 = document.createElement("b");
+            var negrita2Texto = document.createTextNode("mejor tienda del ");
+            var i = document.createElement("i");
+            var iTexto = document.createTextNode("mundo");
+            i.appendChild(iTexto);
+            negrita2.appendChild(negrita2Texto);
+            negrita2.appendChild(i);
+            var negrita3 = document.createElement("b");
+            negrita3.appendChild(negrita2);
+            p.appendChild(pTexto);
+            p.appendChild(negrita3);
+
+            var label = document.createElement("label");
+            label.setAttribute("for", "check");
+            var i2 = document.createElement("i");
+            var i2Texto = document.createTextNode("¿verdad?");
+            i2.appendChild(i2Texto);
+            label.appendChild(i2);
+
+            var input = document.createElement("input");
+            input.setAttribute("type", "checkbox");
+            input.setAttribute("id", "check");
+            input.setAttribute("name", "check");
+
+            div.appendChild(h1);
+            div.appendChild(p);
+            div.appendChild(label);
+            div.appendChild(input);
+
+            body.appendChild(div);
+        });
+    </script>
+
+</body>
+
+</html>
